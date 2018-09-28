@@ -1,0 +1,111 @@
+#!/usr/bin/env fish
+
+
+# vars
+set currenthour (math (date +%H) + 1)
+set currentminute (math (date +%M) + 1)
+
+
+# hours
+set h[01] "XXIV"
+set h[02] "I"
+set h[03] "II"
+set h[04] "III"
+set h[05] "IV"
+set h[06] "V"
+set h[07] "VI"
+set h[08] "VII"
+set h[09] "VIII"
+set h[10] "IX"
+set h[11] "X"
+set h[12] "XI"
+set h[13] "XII"
+set h[14] "XIII"
+set h[15] "XIV"
+set h[16] "XV"
+set h[17] "XVI"
+set h[18] "XVII"
+set h[19] "XVIII"
+set h[20] "XIX"
+set h[21] "XX"
+set h[22] "XXI"
+set h[23] "XXII"
+set h[24] "XXIII"
+
+
+# minutes
+set m[01] ""
+set m[02] "I"
+set m[03] "II"
+set m[04] "III"
+set m[05] "IV"
+set m[06] "V"
+set m[07] "VI"
+set m[08] "VII"
+set m[09] "VIII"
+set m[10] "IX"
+set m[11] "X"
+set m[12] "XI"
+set m[13] "XII"
+set m[14] "XIII"
+set m[15] "XIV"
+set m[16] "XV"
+set m[17] "XVI"
+set m[18] "XVII"
+set m[19] "XVIII"
+set m[20] "XIX"
+set m[21] "XX"
+set m[22] "XXI"
+set m[23] "XXII"
+set m[24] "XXIII"
+set m[25] "XXIV"
+set m[26] "XXV"
+set m[27] "XXVI"
+set m[28] "XXVII"
+set m[29] "XXVIII"
+set m[30] "XXIX"
+set m[31] "XXX"
+set m[32] "XXXI"
+set m[33] "XXXII"
+set m[34] "XXXIII"
+set m[35] "XXXIV"
+set m[36] "XXXV"
+set m[37] "XXXVI"
+set m[38] "XXXVII"
+set m[39] "XXXVIII"
+set m[40] "XXXIX"
+set m[41] "XL"
+set m[42] "XLI"
+set m[43] "XLII"
+set m[44] "XLIII"
+set m[45] "XLIV"
+set m[46] "XLV"
+set m[47] "XLVI"
+set m[48] "XLVII"
+set m[49] "XLVIII"
+set m[50] "XLIX"
+set m[51] "L"
+set m[52] "LI"
+set m[53] "LII"
+set m[54] "LIII"
+set m[55] "LIV"
+set m[56] "LV"
+set m[57] "LVI"
+set m[58] "LVII"
+set m[59] "LVIII"
+set m[60] "LIX"
+
+
+# funcs
+function hour
+    printf $h[$currenthour]
+end
+
+function minute
+    printf $m[$currentminute]
+end
+
+# exec
+hour
+printf " "
+minute

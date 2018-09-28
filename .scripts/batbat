@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#
+# This script will alert when battery is less than 20% and discharging
+# Created by Daniel Neemann
+
+while :; do 
+	n=$(cat /sys/class/power_supply/BAT1/capacity)
+	y=$(cat /sys/class/power_supply/BAT1/status)
+	if [ "$n" -lt "20" ] && [ "$y" = "Discharging" ]; then
+	    notify-send -u critical "BITCH I'M DYING $n%"
+        elif [ "$n" -gt "95" ] && [ "$y" = "Charging" ]; then
+            notify-send -u critical "BITCH I'M FULL $n%"
+        fi
+	sleep 3m
+done

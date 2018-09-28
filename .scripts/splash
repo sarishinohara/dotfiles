@@ -1,0 +1,31 @@
+#!/bin/bash
+
+
+# vars
+splash="unsplash-wallpaper -r -d $HOME/Pictures/Splash"
+splash1="unsplash-wallpaper -f --search corner -d $HOME/Pictures/Splash"
+splash2="unsplash-wallpaper -f --search plant -d $HOME/Pictures/Splash"
+splash3="unsplash-wallpaper -f --search minimalsim -d $HOME/Pictures/Splash"
+splash4="unsplash-wallpaper -f --search girl -d $HOME/Pictures/Splash"
+splash5="unsplash-wallpaper -f --search asian -d $HOME/Pictures/Splash"
+# exec
+while true; do
+    wget -q --spider http://google.com
+    if [ $? -eq 0 ]; then
+        $splash && echo "$(notify-send "!!!!New Splash!!!!")"
+	sleep 1m
+        $splash1 && echo "$(notify-send "!!!!New Splash!!!!")"
+	sleep 1m
+        $splash2 && echo "$(notify-send "!!!!New Splash!!!!")"
+	sleep 1m
+        $splash3 && echo "$(notify-send "!!!!New Splash!!!!")"
+	sleep 1m
+        $splash4 && echo "$(notify-send "!!!!New Splash!!!!")"
+	sleep 1m
+        $splash5 && echo "$(notify-send "!!!!New Splash!!!!")"
+	sleep 1m
+    else
+        notify-send -u critical "!!!!No Splash!!!!"
+        sleep 5m
+    fi
+done

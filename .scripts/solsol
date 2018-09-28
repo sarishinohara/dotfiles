@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+COMMANDS=("solid 1" "solid 2" "solid 3" "solid 4" "solid 5" "solid 6" "solid 0" "solid 7" "solid 1g" "solid 2g" "solid 3g" "solid 4g" "solid 5g" "solid 6g" "solid 7g" "solid 1ig" "solid 2ig" "solid 3ig" "solid 4ig" "solid 5ig" "solid 6ig" "solid 7ig" "solid 7ig")
+$(shuf -n1 -e "${COMMANDS[@]}")

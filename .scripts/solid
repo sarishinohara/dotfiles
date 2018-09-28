@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+source "$HOME/.cache/wal/colors.sh"
+
+case "$1" in
+
+	"0") hsetroot -solid $color0 && notify-send "Wallpaper set as color $color0" ;;
+	"1") hsetroot -solid $color1 && notify-send "Wallpaper set as color $color1" ;;
+	"2") hsetroot -solid $color2 && notify-send "Wallpaper set as color $color2" ;;
+	"3") hsetroot -solid $color3 && notify-send "Wallpaper set as color $color3" ;;
+	"4") hsetroot -solid $color4 && notify-send "Wallpaper set as color $color4" ;;
+	"5") hsetroot -solid $color5 && notify-send "Wallpaper set as color $color5" ;;
+	"6") hsetroot -solid $color6 && notify-send "Wallpaper set as color $color6" ;;
+	"7") hsetroot -solid $color7 && notify-send "Wallpaper set as color $color7" ;;
+
+	"1g") hsetroot -add $color1 -add $color0 -gradient 180 && notify-send "Wallpaper set as color $color1" ;;
+	"2g") hsetroot -add $color2 -add $color0 -gradient 180 && notify-send "Wallpaper set as color $color2" ;;
+	"3g") hsetroot -add $color3 -add $color0 -gradient 180 && notify-send "Wallpaper set as color $color3" ;;
+	"4g") hsetroot -add $color4 -add $color0 -gradient 180 && notify-send "Wallpaper set as color $color4" ;;
+	"5g") hsetroot -add $color5 -add $color0 -gradient 180 && notify-send "Wallpaper set as color $color5" ;;
+	"6g") hsetroot -add $color6 -add $color0 -gradient 180 && notify-send "Wallpaper set as color $color6" ;;
+	"7g") hsetroot -add $color7 -add $color0 -gradient 180 && notify-send "Wallpaper set as color $color7" ;;
+
+	"1ig") hsetroot -add $color7 -add $color1 -gradient 180 && notify-send "Wallpaper set as color $color1" ;;
+	"2ig") hsetroot -add $color7 -add $color2 -gradient 180 && notify-send "Wallpaper set as color $color2" ;;
+	"3ig") hsetroot -add $color7 -add $color3 -gradient 180 && notify-send "Wallpaper set as color $color3" ;;
+	"4ig") hsetroot -add $color7 -add $color4 -gradient 180 && notify-send "Wallpaper set as color $color4" ;;
+	"5ig") hsetroot -add $color7 -add $color5 -gradient 180 && notify-send "Wallpaper set as color $color5" ;;
+	"6ig") hsetroot -add $color7 -add $color6 -gradient 180 && notify-send "Wallpaper set as color $color6" ;;
+	"7ig") hsetroot -add $color0 -add $color7 -gradient 180 && notify-send "Wallpaper set as color $color7" ;;
+
+esac
