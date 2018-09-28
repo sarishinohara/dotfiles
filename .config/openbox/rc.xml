@@ -596,12 +596,6 @@
       </action>
     </keybind>
     <!-- Reload and Exit keybinds -->
-    <keybind key="W-S-BackSpace">
-      <action name="Execute">
-        <command>~/.scripts/paintmybox</command>
-      </action>
-      <action name="Restart"/>
-    </keybind>
     <keybind key="W-p">
       <action name="Execute">
         <command>~/.config/polybar/launch</command>
@@ -619,12 +613,12 @@
     </keybind>
     <keybind key="W-i">
       <action name="Execute">
-        <command>~/.scripts/oppd</command>
+        <command>sh -c "wal -i $HOME/Pictures/Wallpapers -o wal-set"</command>
       </action>
     </keybind>
     <keybind key="W-c">
       <action name="Execute">
-        <command>~/.scripts/oppl</command>
+        <command>sh -c "wal -i $HOME/Pictures/Wallpapers -l -o wal-set"</command>
       </action>
     </keybind>
     <keybind key="W-n">

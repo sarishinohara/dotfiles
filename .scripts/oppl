@@ -1,3 +1,0 @@
-#!/bin/bash
-
-wal -i $HOME/Pictures/Wallpapers -l -o wal-set
