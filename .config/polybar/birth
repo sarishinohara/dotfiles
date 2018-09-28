@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#this is supposedly my very first script 'not really)
+#vars
+now=$(date +%s)
+past=$(date +%s --date "1997-06-01")
+difference=$(($now-$past))
+
+#action
+echo $(($difference/(3600*24))) "days on earth"

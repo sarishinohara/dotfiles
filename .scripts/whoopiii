@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+# vars
+wal="wal -i $HOME/Pictures/Wallpapers/"
+
+# exec
+while true
+do
+	$wal && echo "$(notify-send "$(birth)")"
+	sleep 10m
+        $wal -l && echo "$(notify-send "$(imen)")"
+        sleep 10m
+done

@@ -1,0 +1,21 @@
+
+
+
+
+
+(sleep 2s && dunst) &
+(sleep 2s && restt) &
+(sleep 2s && splash) &
+(sleep 2s && batbat) &
+(sleep 2s && cookie) &
+(sleep 2s && tint2) &
+# wal -R & 
+# polybar main &
+(sleep 2s && compton -b) &
+numlockx &
+# netwmpager &
+(sleep 2s && hsetroot -solid "#f2c8aa" &) &
+xfce4-power-manager &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+

@@ -1,0 +1,20 @@
+# Dark theme.
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+# Light theme.
+# rofi.theme: ~/.cache/wal/colors-rofi-light.rasi
+
+rofi.font:          mplus 10
+rofi.width: 13
+rofi.lines:         10
+rofi.columns:       1
+rofi.sidebar-mode:  false
+
+
+
+
+
+
+
+
+
+

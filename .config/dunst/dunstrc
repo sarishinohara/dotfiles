@@ -1,0 +1,60 @@
+[global]
+    font = Roboto 8
+    markup = full
+    format = "%s\n%b"
+    sort = yes
+    indicate_hidden = yes
+    alignment = right
+    bounce_freq = 0
+    show_age_threshold = 10
+    word_wrap = yes
+    ignore_newline = no
+    geometry = "0x0-60-60"
+    title = dunst
+    class = dunst
+    shrink = yes
+    transparency = 0
+    idle_threshold = 120
+    monitor = 0
+    follow = mouse
+    stack_duplicates = true
+    hide_duplicate_count = false
+    sticky_history = yes
+    history_length = 50
+    show_indicators = yes
+    line_height = 1
+    notification_height = 0
+    separator_height = 4
+    padding = 20
+    horizontal_padding = 50
+    separator_color = auto
+    browser = /usr/local/bin/luakit
+    icon_position = off
+    frame_width = 10
+    frame_color = "#ffffff"
+    corner_radius = 0
+
+
+[shortcuts]
+    close = ctrl+space
+    history = ctrl+h
+
+[urgency_low]
+    background = "#ffffff"
+    foreground = "#000000"
+    timeout = 5
+
+[urgency_normal]
+    background = "#ffffff"
+    foreground = "#000000"
+    timeout = 5
+
+[urgency_critical]
+    background = "#ff2727"
+    foreground = "#ffffff"
+    frame_color = "#ff2727"
+    timeout = 60 
+
+[play_sound]
+    summary = "*"
+    script = "notif"

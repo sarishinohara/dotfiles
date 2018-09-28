@@ -1,0 +1,300 @@
+#      ___           ___           ___           ___          _____
+#     /  /\         /__/|         /__/\         /__/|        /  /::\ 
+#    /  /:/_       |  |:|         \  \:\       |  |:|       /  /:/\:\ 
+#   /  /:/ /\      |  |:|          \__\:\      |  |:|      /  /:/  \:\  
+#  /  /:/ /::\   __|__|:|      ___ /  /::\   __|  |:|     /__/:/ \__\:|
+# /__/:/ /:/\:\ /__/::::\____ /__/\  /:/\:\ /__/\_|:|____ \  \:\ /  /:/
+# \  \:\/:/~/:/    ~\~~\::::/ \  \:\/:/__\/ \  \:\/:::::/  \  \:\  /:/
+#  \  \::/ /:/      |~~|:|~~   \  \::/       \  \::/~~~~    \  \:\/:/
+#   \__\/ /:/       |  |:|      \  \:\        \  \:\         \  \::/
+#     /__/:/        |  |:|       \  \:\        \  \:\         \__\/  
+#     \__\/         |__|/         \__\/         \__\/
+
+
+
+#
+# wm independent hotkeys
+#
+
+######################
+##  COMMON COMMAND  ##
+######################
+
+
+# terminal emulator
+super + Return
+	urxvt
+
+# alternative terminal emulator
+super + shift + Return
+	termite
+
+## Drawing terminal
+super + x 
+	$HOME/.scripts/urdraw
+
+## Drawing terminal v0.2
+super + shift + x 
+	$HOME/.scripts/demons
+
+# root thunar
+super + shift + f
+        gksu thunar
+
+# program launcher
+super + d
+	dmenuu
+
+## Launch Rofi start menu
+super + z
+	rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'Roboto 8'
+	
+## Music control
+XF86Audio{Next,Prev,Play,Stop}
+	mpc {next,prev,toggle,stop}
+
+## volume control
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	amixer {set Master 2%+,set Master 2%-,set Master toggle}
+
+## light control
+XF86MonBrightness{Up,Down}
+	xbacklight {-inc 1,-dec 1}
+
+# album art aka "bum"
+super + b
+        bum --size "200"
+
+super + shift + b
+        killall bum 
+
+# notify battery
+super + F1
+        notify-send "$(acpi)"
+
+# notify date
+super + F2
+        notify-send "$(date)"
+
+# notify cookies
+super + F3
+        notify-send "$(fortune)"
+
+# solid colors
+super + F4
+        solsol
+
+# tint2
+super + F5
+        tint2
+
+# tint2
+super + F6
+        killall tint2
+
+
+## Take a screenshot
+Print
+	maim -m 1 ~/Pictures/$(date +%s).png; notify-send "Screenshot taken"
+
+
+## Take a window screenshot
+super + Print
+	maim -m 1 -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; notify-send "Window screenshot taken"
+
+## Take a selection screenshot
+super + shift + Print
+	maim -m 1 -s -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send "Selection screenshot taken" 
+
+
+## Make sxhkd reload its configuration files
+super + s
+	pkill -USR1 -x sxhkd
+
+# pywal with random wallpaper setter [dark]
+super + i 
+	wal -i $HOME/Pictures/Wallpapers -o wal-set
+
+# pywal with random wallpaper setter [light]
+super + c 
+	wal -i $HOME/Pictures/Wallpapers -l -o wal-set
+
+# polybar launch/reload
+super + p
+	$HOME/.config/polybar/launch
+
+# polybar Bar 2
+super + m
+	polybar sec
+
+# polybar kill
+super + shift + m
+	$HOME/.config/polybar/kill
+
+# netwmpager toggle
+super + shift + p
+         killall netwmpager
+        
+super + shift + agrave
+         netwmpager
+
+# lock That baby up!
+super + ccedilla
+        i3lock-next
+
+
+######################
+##  BSPWM COMMANDS  ##
+######################
+
+
+# quit bspwm normally
+super + shift + e
+	bspc quit
+
+## Reload bspwm config
+super + shift + r
+	$HOME/.config/bspwm/bspwmrc
+
+# close and "kill"
+super + shift + c
+	bspc node -k
+
+# close and "kill"
+super + shift + q
+	bspc node -c
+
+# terminate
+super + ctrl + x
+	xkill
+
+
+## tiled / monocle
+super + n
+ 	bspc desktop -l next
+
+
+## spit horizontal & split vertical, like in i3-gaps :D
+super + {h,v}
+	bspc node -p {east,south}
+
+### Change the split ratio of the selected window
+super + ctrl + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla}
+        bspc node -o 0.{1-9}
+
+
+## cancel it, I set it to super + r. like in my herbstluftwm config
+super + r
+	bspc node -p cancel
+
+
+# cancel the preselection for the focused desktop
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+
+# set the window state
+super + {t,shift + t,f}
+	bspc node -t {tiled,pseudo_tiled,fullscreen}
+
+## Toggle beetwen floating & tiled
+super + space
+    bspc node -t "~"{floating,tiled}
+        
+
+## Send the window to another edge of the screen
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+
+#
+# state/flags
+#
+
+
+
+## focus the next node in the current desktop
+alt + Tab
+	bspc node -f next.local
+
+
+## focus the previous node in the current desktop
+alt + shift + Tab
+	bspc node -f prev.local
+
+
+## focus the next/previous desktop in the current monitor
+## Switch workspace
+ctrl + alt + {Left,Right}
+	bspc desktop -f {prev.local,next.local}
+
+
+# set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+
+#
+# focus/swap
+#
+
+## focus the last node/desktop
+super + {Tab,grave}
+	bspc {node,desktop} -f last
+
+
+# focus the older or newer node in the focus history
+super + {o,l}
+	bspc wm -h off; \
+	bspc node {older,newer} -f; \
+	bspc wm -h on
+
+# Move window to selected desktop
+super + shift + {1-9,0}
+	bspc node --to-desktop ^{1-9,10} --focus
+
+## jump to another workspace
+super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+        bspc desktop -f '^{1-9,10}'
+
+
+
+### Toggle window gaps
+super + g
+    bspc config window_gap {5,30,60,100}
+
+
+# Toggle window borders 
+super + y
+    bspc config border_width {0,1,7,10}
+
+
+### Flip the tree
+super + equal
+    bspc desktop -F vertical
+
+super + colon
+    bspc desktop -F horizontal
+
+
+
+
+
+#
+# move/resize
+#
+
+## expanding windows
+super + ctrl + {Left,Right,Up,Down}
+	bspc node -z {left -10 0,right 10 0,top 0 -10,bottom 0 10}
+	
+## shrinking windows
+super + alt + {Right,Left,Down,Up}
+	bspc node -z {left 10 0,right -10 0,top 0 10,bottom 0 -10}
+
+# move a floating window
+super + alt + ctrl + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+
