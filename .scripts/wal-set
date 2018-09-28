@@ -8,15 +8,35 @@
 
 reload_openbox() {
     sed -i"" --follow-symlinks \
-        -e "s/bg.color: #.*/bg.color: ${color0:-#FFFFFF}/" \
-        -e "s/text.color: #.*/text.color: ${color0:-#000000}/" \
-        -e "s/image.color: #.*/image.color: ${color0:-#000000}/" \
+        -e "s/bg.color: #.*/bg.color: ${foreground:-#FFFFFF}/" \
+        -e "s/text.color: #.*/text.color: ${background:-#000000}/" \
+        -e "s/image.color: #.*/image.color: ${background:-#000000}/" \
+        -e "s/items.bg.color: #.*/items.bg.color: #ffffff/" \
+        -e "s/items.text.color: #.*/items.text.color: #000000/" \
+        -e "s/items.active.bg.color: #.*/items.active.bg.color: #ffffff/" \
+        -e "s/items.active.text.color: #.*/items.active.text.color: #ffd5c0/" \
+        -e "s/border.color: #.*/border.color: #ffffff/" \
+        -e "s/separator.color: #.*/separator.color: #ffffff/" \
         "${HOME}/.themes/thicc/openbox-3/themerc"
     openbox --reconfigure
 }
 
+reload_dunst() {
+    pkill dunst && \
+        dunst \
+            -frame_color "$background" \
+            -lb "$background" \
+            -nb "$background" \
+            -cb "$background" \
+            -lf "$foreground"  \
+            -nf "$foreground"  \
+            -cf "$foreground" &
+}
+
 main() {
+    
     reload_openbox &
+    reload_dunst &
     xrdb -merge ~/.cache/wal/rofi.xres &
     wal-discord; beautifuldiscord --css "${HOME}/.cache/wal-discord/style.css"
 }
