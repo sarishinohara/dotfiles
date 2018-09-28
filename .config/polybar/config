@@ -110,7 +110,7 @@ click-left = calendar --popup
 type = custom/script
 exec = birth
 tail = true
-click-left = calendar.sh
+click-left = calendar
 label-padding = 1
 
 [module/mpcc]
@@ -132,11 +132,12 @@ exec = roman
 tail = true
 click-left = kill -USR1 %pid%
 
-[module/weather]
+[module/wewe]
 type = custom/script
-exec = weather
+exec = wewe
 tail = true
-click-left = kill -USR1 %pid%
+click-left = calendar
+label-padding = 1
 
 
 [module/volume]
@@ -563,7 +564,7 @@ padding-right = 4
 
 modules-left = mpcc 
 modules-center =   
-modules-right = birth
+modules-right = wewe
 
 workspace-label-current = "✖" 
 workspace-current-foreground = ${colors.special}
