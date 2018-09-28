@@ -95,8 +95,9 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 exec_always --no-startup-id flashfocus
 exec_always --no-startup-id $HOME/.config/polybar/launch
 exec_always --no-startup-id dunst
-exec_always --no-startup-id compton
-# exec_always --no-startup-id batbat
+exec_always --no-startup-id compton -b
+exec_always --no-startup-id batbat
+exec_always --no-startup-id batbat
 
 # focus_follows_mouse no
 
