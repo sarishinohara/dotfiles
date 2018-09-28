@@ -3,7 +3,7 @@
 KEY="6821ee3676c8d57557b74213f43e0a71"
 CITY="2489987"	
 UNITS="metric"
-SYMBOL="°"
+SYMBOL="°C"
 
 if [ ! -z $CITY ]; then
     weather=$(curl -sf "http://api.openweathermap.org/data/2.5/weather?APPID=$KEY&id=$CITY&units=$UNITS")
