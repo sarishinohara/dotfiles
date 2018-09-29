@@ -154,7 +154,7 @@ super + shift + e
 
 ## Reload bspwm config
 super + shift + r
-	$HOME/.config/bspwm/bspwmrc
+	pkill bspwm && $HOME/.config/bspwm/bspwmrc
 
 # close and "kill"
 super + shift + c
