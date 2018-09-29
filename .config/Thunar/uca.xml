@@ -1,0 +1,51 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1537012602534704-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon></icon>
+	<name>wal</name>
+	<unique-id>1537016935080052-1</unique-id>
+	<command>wal -i %f</command>
+	<description>wal</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>wal light</name>
+	<unique-id>1537016963391997-2</unique-id>
+	<command>wal -i %f -l</command>
+	<description>wal light</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Vertical</name>
+	<unique-id>1537463166561719-1</unique-id>
+	<command>convert -append %F %n.png</command>
+	<description>Join pics vertically</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+<action>
+	<icon></icon>
+	<name>Horizontal </name>
+	<unique-id>1537463206338577-2</unique-id>
+	<command>convert +append %F %n.png</command>
+	<description>Join pics horizontally </description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
+</actions>
