@@ -1,0 +1,6 @@
+#!/bin/bash
+while true
+do
+	pkill dunst && echo "$(notify-send "$(fortune)")"
+	sleep 5m
+done
