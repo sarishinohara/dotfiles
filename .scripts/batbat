@@ -7,9 +7,9 @@ while :; do
 	n=$(cat /sys/class/power_supply/BAT1/capacity)
 	y=$(cat /sys/class/power_supply/BAT1/status)
 	if [ "$n" -lt "20" ] && [ "$y" = "Discharging" ]; then
-	    notify-send -u critical "BITCH I'M DYING $n%"
+	pkill dunst && notify-send -u critical "BITCH I'M DYING $n%"
         elif [ "$n" -gt "95" ] && [ "$y" = "Charging" ]; then
-            notify-send -u critical "BITCH I'M FULL $n%"
+        pkill dunst && notify-send -u critical "BITCH I'M FULL $n%"
         fi
 	sleep 3m
 done
