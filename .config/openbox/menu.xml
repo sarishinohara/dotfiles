@@ -18,16 +18,16 @@
 		</item>
 		<separator/>
 		<menu id="power" label="        power">
+                        <item label="   sleep">
+				<action name="Execute">
+					<execute>systemctl suspend</execute>
+				</action>
+			</item>	
 			<item label="   reboot">
 				<action name="Execute">
 					<execute>reboot</execute>
 				</action>
 			</item>
-			<item label="   sleep">
-				<action name="Execute">
-					<execute>systemctl suspend</execute>
-				</action>
-			</item>	
                         <item label="   Power off">
 				<action name="Execute">
 					<execute>poweroff</execute>
