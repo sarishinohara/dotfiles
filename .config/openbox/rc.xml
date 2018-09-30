@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>thicc</name>
+    <name>o</name>
     <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -124,14 +124,14 @@
     <number>8</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>1</name>
-      <name>2</name>
-      <name>3</name>
-      <name>4</name>
-      <name>5</name>
-      <name>6</name>
-      <name>7</name>
-      <name>8</name>
+      <name>I</name>
+      <name>II</name>
+      <name>III</name>
+      <name>IV</name>
+      <name>V</name>
+      <name>VI</name>
+      <name>VII</name>
+      <name>VIII</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching

@@ -36,11 +36,14 @@
 		</menu>
 		<separator/>
 		<menu id="openbox" label="        openbox">
-			<item label="   exit">
-				<action name="Exit"/>
+			<item label="   reconfigure">
+				<action name="Reconfigure"/>
 			</item>
 			<item label="   restart">
 				<action name="Restart"/>
+			</item>
+                        <item label="   exit">
+				<action name="Exit"/>
 			</item>
 		</menu>
 	</menu>
