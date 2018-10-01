@@ -1,5 +1,5 @@
 # Windows 
-border.width: 7
+border.width: 6
 window.active.border.color: #ffffff
 window.inactive.border.color: #ffffff
 padding.height: 7
