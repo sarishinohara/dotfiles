@@ -144,7 +144,7 @@ menu.title.text.font:shadow=n
 ##################################################  Settings  #####################################################
 
 border.width: 5
-menu.border.width: 0
+menu.border.width: 30
 padding.width: 4
 padding.height: 8
 window.handle.width: 5

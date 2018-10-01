@@ -40,7 +40,7 @@ menu.*.bg.color: #E68A8B
 menu.*.text.color: #f2f3f2
 
 # Add some padding
-menu.border.width: 20
+menu.border.width: 35
 menu.border.color: #E68A8B
 
 # Add some submenu padding

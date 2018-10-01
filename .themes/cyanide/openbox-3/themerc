@@ -1,5 +1,5 @@
 # Menu
-menu.border.width: 16
+menu.border.width: 40
 menu.overlap.x: -20
 menu.overlap.y: 8
 
