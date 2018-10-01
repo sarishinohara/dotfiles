@@ -4,5 +4,5 @@
 while true
 do      
         sleep 60m
-	pkill dunst && notify-send -u critical "!!!TAKE A BREAK!!!"
+	notify-send -u critical "Take A Break."
 done

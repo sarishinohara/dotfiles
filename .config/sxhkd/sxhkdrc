@@ -95,16 +95,16 @@ super + F6
 
 ## Take a screenshot
 Print
-	maim -m 1 ~/Pictures/$(date +%s).png; notify-send "Screenshot taken"
+	maim --hidecursor -m 1 ~/Pictures/$(date +%s).png; notify-send "Screenshot taken"
 
 
 ## Take a window screenshot
 super + Print
-	maim -m 1 -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; notify-send "Window screenshot taken"
+	maim --hidecursor -m 1 -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; notify-send "Window screenshot taken"
 
 ## Take a selection screenshot
 super + shift + Print
-	maim -m 1 -s -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send "Selection screenshot taken" 
+	maim --hidecursor -m 1 -s -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send "Selection screenshot taken" 
 
 
 ## Make sxhkd reload its configuration files
@@ -154,7 +154,7 @@ super + shift + e
 
 ## Reload bspwm config
 super + shift + r
-	pkill bspwm && $HOME/.config/bspwm/bspwmrc
+	$HOME/.config/bspwm/bspwmrc
 
 # close and "kill"
 super + shift + c
@@ -266,7 +266,7 @@ super + g
 
 # Toggle window borders 
 super + y
-    bspc config border_width {0,1,7,10}
+    bspc config border_width {0,1,6,7,10,13}
 
 
 ### Flip the tree

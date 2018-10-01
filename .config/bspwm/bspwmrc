@@ -49,7 +49,7 @@ numlockx
 batbat &
 
 # tint2 
-tint2 &
+# tint2 &
 
 # power manager
 xfce4-power-manager
@@ -61,19 +61,8 @@ xfce4-power-manager
 # hsetroot and solid wallpapers
 # hsetroot -solid "#9ccfe6" &
 
-# tried using this to restore the wallpaper and colorsheme on reload/restart and it seems to work
-wal -R
-
-# Load random "Light" colorscheme on startup
-# wal -i $HOME/Pictures/Wallpapers -l -o wal-set
-
-# Load random "Dark" colorscheme on startup
-# wal -i $HOME/Pictures/Wallpapers -o wal-set
-
-# pywal
-# source the colors.
-. "${HOME}/.cache/wal/colors.sh"
-
+# gamma
+xgamma -gamma 0.9 &
 
 
 ## workspace name
@@ -109,6 +98,9 @@ bspc rule -a mpv state=floating
 bspc rule -a Conky state=floating manage=off
 bspc rule -a stalonetray state=floating manage=off
 
+# pywal
+# source the colors.
+. "${HOME}/.cache/wal/colors.sh"
 
 # Set the border colors.
 bspc config normal_border_color "$foreground"
@@ -119,5 +111,13 @@ bspc config presel_feedback_color "$color1"
 # Use the line below if you are on bspwm < 0.9.4
 #bspc config presel_border_color "$color1"
 
+# tried using this to restore the wallpaper and colorsheme on reload/restart and it seems to work
+wal -R
+
+# Load random "Light" colorscheme on startup
+# wal -i $HOME/Pictures/Wallpapers -l -o wal-set
+
+# Load random "Dark" colorscheme on startup
+# wal -i $HOME/Pictures/Wallpapers -o wal-set
 
 
