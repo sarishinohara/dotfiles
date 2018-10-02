@@ -89,9 +89,9 @@ bindsym $mod+Shift+f exec gksu thunar
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id maim --hidecursor -m 1 ~/Pictures/$(date +%s).png; exec notify-send 'Screenshot taken'
-bindsym $mod+Print --release exec --no-startup-id maim --hidecursor -m 1 -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; exec notify-send 'Window screenshot taken'
-bindsym $mod+Shift+Print --release exec --no-startup-id maim --hidecursor -m 1 -s -b 6 ~/Pictures/$(date +%s).png; exec notify-send 'Selection screenshot taken'
+bindsym Print exec --no-startup-id maim --hidecursor ~/Pictures/$(date +%s).png; exec notify-send 'Screenshot taken'
+bindsym $mod+Print --release exec --no-startup-id maim --hidecursor -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; exec notify-send 'Window screenshot taken'
+bindsym $mod+Shift+Print --release exec --no-startup-id maim --hidecursor -s -b 6 ~/Pictures/$(date +%s).png; exec notify-send 'Selection screenshot taken'
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 exec_always --no-startup-id flashfocus

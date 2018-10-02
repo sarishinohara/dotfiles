@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>o</name>
+    <name>co2</name>
     <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -58,7 +58,7 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>Roboto</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
@@ -67,7 +67,7 @@
     </font>
     <font place="InactiveWindow">
       <name>Roboto</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -76,7 +76,7 @@
     </font>
     <font place="MenuHeader">
       <name>Roboto</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -87,14 +87,14 @@
       <name>Roboto</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>Normal</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="ActiveOnScreenDisplay">
       <name>Roboto</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -103,14 +103,14 @@
     </font>
     <font place="InactiveOnScreenDisplay">
       <name>Roboto</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
-    <cornerRadius menu="yes">0</cornerRadius>
+    <cornerRadius menu="no">3</cornerRadius>
   </theme>
   <desktops>
     <!-- this stuff is only used at startup, pagers allow you to change them
@@ -513,22 +513,22 @@
     <!-- Take a screenshot, say "Cheeeese!" -->
     <keybind key="Print">
       <action name="Execute">
-        <command>sh -c "maim --hidecursor -m 1 ~/Pictures/$(date +%s).png; notify-send 'Screenshot taken' "</command>
+        <command>sh -c "maim --hidecursor ~/Pictures/$(date +%s).png; notify-send 'Screenshot taken' "</command>
       </action>
     </keybind>
     <keybind key="W-Print">
       <action name="Execute">
-        <command>sh -c "maim --hidecursor -m 1 -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; notify-send 'Window screenshot taken' "</command>
+        <command>sh -c "maim --hidecursor -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; notify-send 'Window screenshot taken' "</command>
       </action>
     </keybind>
     <keybind key="W-S-Print">
       <action name="Execute">
-        <command>sh -c "maim --hidecursor -m 1 -s -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send 'Selection screenshot taken' "</command>
+        <command>sh -c "maim --hidecursor -s -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send 'Selection screenshot taken' "</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>sh -c "maim --hidecursor -m 1 -d 4 ~/Pictures/$(date +%s).png; notify-send 'delayed screenshot taken' "</command>
+        <command>sh -c "maim --hidecursor -d 4 ~/Pictures/$(date +%s).png; notify-send 'delayed screenshot taken' "</command>
       </action>
     </keybind>
     <!-- Screen Lock -->

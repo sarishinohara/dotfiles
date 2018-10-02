@@ -1,14 +1,10 @@
-
-
-
-
-maill &
 dunst &
+maill &
 restt &
 # splash &
 batbat &
 cookie &
-tint2 &
+# tint2 &
 # wal -R & 
 # polybar main &
 compton -b &
@@ -16,6 +12,7 @@ numlockx &
 # netwmpager &
 hsetroot -solid "#f2c8aa" &
 # hsetroot -solid "#d4d7de" &
+xgamma -gamma 0.9 &
 xfce4-power-manager &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
