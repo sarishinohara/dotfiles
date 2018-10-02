@@ -1,48 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
 	<menu id="root-menu" label="openbox">
-		<item label="        term">
+		<item label="term">
 			<action name="Execute">
 				<execute>~/.scripts/urdraw2</execute>
 			</action>
 		</item>
-		<item label="        files">
+		<item label="files">
 			<action name="Execute">
 				<execute>thunar</execute>
 			</action>
 		</item>
-		<item label="        www">
+		<item label="www">
 			<action name="Execute">
-				<execute>google-chrome-stable</execute>
+				<execute>firefox</execute>
 			</action>
 		</item>
 		<separator/>
-		<menu id="power" label="        power">
-                        <item label="   sleep">
+		<menu id="power" label="power">
+                        <item label="lock">
+				<action name="Execute">
+					<execute>i3lock-next</execute>
+				</action>
+			</item>
+                        <item label="sleep">
 				<action name="Execute">
 					<execute>systemctl suspend</execute>
 				</action>
 			</item>	
-			<item label="   reboot">
+			<item label="reboot">
 				<action name="Execute">
 					<execute>reboot</execute>
 				</action>
 			</item>
-                        <item label="   Power off">
+                        <item label="Power off">
 				<action name="Execute">
 					<execute>poweroff</execute>
 				</action>
 			</item>			
 		</menu>
 		<separator/>
-		<menu id="openbox" label="        openbox">
-			<item label="   reconfigure">
+		<menu id="openbox" label="openbox">
+			<item label="reconfigure">
 				<action name="Reconfigure"/>
 			</item>
-			<item label="   restart">
+			<item label="restart">
 				<action name="Restart"/>
 			</item>
-                        <item label="   exit">
+                        <item label="exit">
 				<action name="Exit"/>
 			</item>
 		</menu>
