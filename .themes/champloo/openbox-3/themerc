@@ -37,10 +37,11 @@ window.*.button.*.image.color: #000000
 # Set menu colors
 menu.*.bg: Solid Flat
 menu.*.bg.color: #E68A8B
-menu.*.text.color: #f2f3f2
+menu.*.text.color: #ffffff
+menu.*.active.text.color: #000000
 
 # Add some padding
-menu.border.width: 35
+menu.border.width: 40
 menu.border.color: #E68A8B
 
 # Add some submenu padding
