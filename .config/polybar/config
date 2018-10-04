@@ -9,6 +9,7 @@ urgent = ${xrdb:color5:#FFF}
 [bar/main]
 monitor = eDP-1
 
+dpi = 102
 width = 100%
 height = 35
 offset-x = 0%
@@ -517,6 +518,8 @@ bar-empty = ─
 [bar/sec]
 monitor = eDP-1
 
+
+dpi = 102
 width = 100%
 height = 35
 offset-x = 0%
@@ -544,7 +547,7 @@ border-left-color = ${colors.special}
 
 bottom = true
 
-font-0 = Roboto:size=9;1:antialias=true
+font-0 = Roboto:size=9;2:antialias=true
 font-7 = Font Awesome:pixelsize=11;2:antialias=true
 font-2 = Kochi Gothic:pixelsize=8;2
 font-3 = FontAwesome 5 Brands:pixelsize=11;2:antialias=true
