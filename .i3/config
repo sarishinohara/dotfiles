@@ -327,6 +327,8 @@ exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec --no-startup-id hsetroot -solid "#ffd5c0"
 exec_always --no-startup-id numlockx
+exec --no-startup-id xrandr --dpi 102
+
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
