@@ -469,6 +469,11 @@
         <command>solsol</command>
       </action>
     </keybind>
+    <keybind key="W-F5">
+      <action name="Execute">
+        <command>reddit</command>
+      </action>
+    </keybind>
     <keybind key="W-x">
       <action name="Execute">
         <command>~/.scripts/urdraw2</command>
