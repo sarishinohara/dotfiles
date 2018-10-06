@@ -266,7 +266,7 @@ super + g
 
 # Toggle window borders 
 super + y
-    bspc config border_width {0,1,6,7,10,13}
+    bspc config border_width {0,1,5,6,7,10,13}
 
 
 ### Flip the tree
