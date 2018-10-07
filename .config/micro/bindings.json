@@ -1,0 +1,11 @@
+{
+	// unbind
+	"CtrlG": "UnbindKey",
+	"Alt-g": "UnbindKey",
+	"Alt.": "UnbindKey",
+	"Alt,": "UnbindKey",
+
+	// bind
+	"Alt-[": "PreviousTab",
+	"Alt-]": "NextTab"
+}
