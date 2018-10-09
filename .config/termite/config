@@ -1,9 +1,9 @@
 [options]
-allow_bold = true
+allow_bold = false
 #audible_bell = false
 #clickable_url = true
 #dynamic_title = true
-font = Roboto Mono 9
+font = artwiz lime 7
 #fullscreen = true
 #geometry = 640x480
 #icon_name = terminal
