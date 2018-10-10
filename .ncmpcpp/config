@@ -1,22 +1,5 @@
 
 
-
-##### directories ######
-
-ncmpcpp_directory = ~/.config/ncmpcpp
-lyrics_directory = ~/.config/ncmpcpp/Lyrics
-#mpd_host = localhost
-#mpd_port = 6600
-#mpd_connection_timeout = 5
-
-## Needed for tag editor and file operations to work.
-
-
-mpd_host = localhost
-mpd_port = 6600
-mpd_connection_timeout = 5
-mpd_music_dir = "/run/media/hornet/Miso/Music"
-
 #	  ___     ___    ___ ___   _____    ___  _____   _____   
 #	/' _ `\  /'___\/' __` __`\/\ '__`\ /'___/\ '__`\/\ '__`\ 
 #	/\ \/\ \/\ \__//\ \/\ \/\ \ \ \L\ /\ \__\ \ \L\ \ \ \L\ \
@@ -26,6 +9,15 @@ mpd_music_dir = "/run/media/hornet/Miso/Music"
 #	                              \/_/          \/_/    \/_/ 
 
 
+##### directories ######
+
+ncmpcpp_directory = ~/.config/ncmpcpp
+lyrics_directory = ~/.config/ncmpcpp/Lyrics
+
+mpd_host = localhost
+mpd_port = 6600
+mpd_connection_timeout = 5
+mpd_music_dir = "/run/media/hornet/Miso/Music"
 
 
 # display
@@ -37,8 +29,8 @@ playlist_display_mode = "columns"
 
 
 # now playing
-#now_playing_prefix = "$3─── "
-now_playing_suffix = " $8x"
+now_playing_prefix = "$3─ "
+#now_playing_suffix = " $8x"
 
 
 # playlist
@@ -52,7 +44,7 @@ message_delay_time= "1"
 
 # progress bar
 progressbar_look = "───"
-# progressbar_color = "black"
+#progressbar_color = "black"
 progressbar_elapsed_color = "yellow"
 
 
@@ -92,5 +84,4 @@ visualizer_color = "white"
 visualizer_look = "∙│"
 
 # Notify meh
-
-execute_on_song_change = notify-send "Now Playing ♫" "$(mpc current)"
+execute_on_song_change = notify-send "Now Playing : $(mpc current)"
