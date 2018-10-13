@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>bw</name>
+    <name>h2O</name>
     <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -57,10 +57,10 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Roboto</name>
-      <size>9</size>
+      <name>Roboto Medium</name>
+      <size>8</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -435,7 +435,7 @@
     <!-- Keybindings for rofi startmenu -->
     <keybind key="W-z">
       <action name="Execute">
-        <command>rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'Roboto 8'</command>
+        <command>rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -columns 3 -font 'Roboto 8'</command>
       </action>
     </keybind>
     <keybind key="W-d">

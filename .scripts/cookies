@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-notify-send "$(fortune)"
+notify-send "$(fortune -a)"

@@ -44,6 +44,11 @@
 			<item label="reconfigure">
 				<action name="Reconfigure"/>
 			</item>
+                        <item label="configure">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
 			<item label="restart">
 				<action name="Restart"/>
 			</item>

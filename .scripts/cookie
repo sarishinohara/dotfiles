@@ -2,6 +2,6 @@
 while true
 do      
         sleep 3s
-	notify-send "$(fortune)"
+	notify-send "$(fortune -a)"
 	sleep 5m
 done
