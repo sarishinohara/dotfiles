@@ -26,7 +26,7 @@ menu.title.bg: Flat
 menu.title.bg.color: #37BF8D
 menu.title.text.color: #ffffff
 menu.title.text.justify: Right
-menu.border.width: 40
+menu.border.width: 50
 menu.border.color: #37BF8D
 menu.separator.color: #37BF8D
-menu.overlap.x: -20
+menu.overlap.x: -60

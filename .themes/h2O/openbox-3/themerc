@@ -29,4 +29,4 @@ menu.title.text.justify: Right
 menu.border.width: 50
 menu.border.color: white
 menu.separator.color: white
-menu.overlap.x: -40
+menu.overlap.x: -60

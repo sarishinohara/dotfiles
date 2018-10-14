@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+	<menu id="root-menu" label="openbox">
+		<item label="Run">
+			<action name="Execute">
+				<execute>dmenuu</execute>
+			</action>
+		</item>
+		<item label="Editor">
+			<action name="Execute">
+				<execute>subl3</execute>
+			</action>
+		</item>
+		<item label="Browser">
+			<action name="Execute">
+				<execute>firefox</execute>
+			</action>
+		</item>
+                <item label="File Manager">
+			<action name="Execute">
+				<execute>thunar</execute>
+			</action>
+		</item>
+                <item label="Terminal">
+			<action name="Execute">
+				<execute>urxvt</execute>
+			</action>
+		</item>
+                <menu id="openbox" label="System">
+			<item label="reconfigure">
+				<action name="Reconfigure"/>
+			</item>
+                        <item label="configure">
+				<action name="Execute">
+					<execute>obconf</execute>
+				</action>
+			</item>
+			<item label="restart">
+				<action name="Restart"/>
+			</item>
+                        <item label="exit">
+				<action name="Exit"/>
+			</item>
+		</menu>
+		<menu id="power" label="Power">
+                        <item label="lock">
+				<action name="Execute">
+					<execute>i3lock-next</execute>
+				</action>
+			</item>
+                        <item label="sleep">
+				<action name="Execute">
+					<execute>systemctl suspend</execute>
+				</action>
+			</item>	
+			<item label="reboot">
+				<action name="Execute">
+					<execute>reboot</execute>
+				</action>
+			</item>
+                        <item label="Power off">
+				<action name="Execute">
+					<execute>poweroff</execute>
+				</action>
+			</item>			
+		</menu>
+	</menu>
+</openbox_menu>

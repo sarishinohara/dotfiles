@@ -47,7 +47,7 @@ super + d
 
 ## Launch Rofi start menu
 super + z
-	rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'Roboto 8'
+	rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -columns 3 -font 'Roboto 8'
 	
 ## Music control
 XF86Audio{Next,Prev,Play,Stop}

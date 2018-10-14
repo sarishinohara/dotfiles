@@ -84,10 +84,10 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Roboto</name>
-      <size>9</size>
+      <name>Bebas Neue</name>
+      <size>11</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -124,14 +124,14 @@
     <number>8</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>I</name>
-      <name>II</name>
-      <name>III</name>
-      <name>IV</name>
-      <name>V</name>
-      <name>VI</name>
-      <name>VII</name>
-      <name>VIII</name>
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
+      <name>5</name>
+      <name>6</name>
+      <name>7</name>
+      <name>8</name>
     </names>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
