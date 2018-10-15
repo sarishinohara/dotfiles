@@ -75,10 +75,10 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Roboto</name>
-      <size>9</size>
+      <name>Bebas Neue</name>
+      <size>10</size>
       <!-- font size in points -->
-      <weight>Normal</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -435,7 +435,7 @@
     <!-- Keybindings for rofi startmenu -->
     <keybind key="W-z">
       <action name="Execute">
-        <command>rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -columns 3 -font 'Roboto 8'</command>
+        <command>rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -columns 3 -font 'Roboto 9'</command>
       </action>
     </keybind>
     <keybind key="W-d">

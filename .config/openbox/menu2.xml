@@ -6,26 +6,31 @@
 				<execute>dmenuu</execute>
 			</action>
 		</item>
+		<separator/>
 		<item label="Editor">
 			<action name="Execute">
 				<execute>subl3</execute>
 			</action>
 		</item>
+		<separator/>
 		<item label="Browser">
 			<action name="Execute">
 				<execute>firefox</execute>
 			</action>
 		</item>
+		<separator/>
                 <item label="File Manager">
 			<action name="Execute">
 				<execute>thunar</execute>
 			</action>
 		</item>
+		<separator/>
                 <item label="Terminal">
 			<action name="Execute">
 				<execute>urxvt</execute>
 			</action>
 		</item>
+		<separator/>
                 <menu id="openbox" label="System">
 			<item label="reconfigure">
 				<action name="Reconfigure"/>
@@ -42,6 +47,7 @@
 				<action name="Exit"/>
 			</item>
 		</menu>
+		<separator/>
 		<menu id="power" label="Power">
                         <item label="lock">
 				<action name="Execute">
