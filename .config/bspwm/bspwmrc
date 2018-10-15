@@ -92,14 +92,16 @@ bspc config gapless_monocle      false
 ## window rules ##
 ##################
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-# bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a URxvt state=floating
 bspc rule -a feh state=floating 
-bspc rule -a mpv state=floating   
+bspc rule -a mpv state=floating
+bspc rule -a mpv state=floating
+bspc rule -a Thunar state=floating
+bspc rule -a Termite state=floating
+bspc rule -a Mousepad state=floating
+bspc rule -a Nautilus state=floating
 
 ## don't manage my conky & systemtray
 bspc rule -a Conky state=floating manage=off
