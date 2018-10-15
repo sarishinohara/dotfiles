@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>h2O</name>
+    <name>punpun</name>
     <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -479,7 +479,7 @@
         <command>~/.scripts/urdraw2</command>
       </action>
     </keybind>
-    <keybind key="W-S-x">
+    <keybind key="A-x">
       <action name="Execute">
         <command>~/.scripts/demons</command>
       </action>
