@@ -16,11 +16,6 @@
 # wm independent hotkeys
 #
 
-######################
-##  COMMON COMMANDS  ##
-######################
-
-
 # terminal emulator
 super + Return
 	urxvt
@@ -178,7 +173,7 @@ super + n
  	bspc desktop -l next
 
 
-## spit horizontal & split vertical, like in i3-gaps :D
+## spit horizontal & split vertical, like in i3-gaps
 super + {h,v}
 	bspc node -p {east,south}
 
@@ -262,22 +257,31 @@ super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,cc
 super + g
     bspc config window_gap {5,30,60,100}
 
+alt + g
+    bspc config -d focused window_gap {5,30,60,100}
+
 
 # Toggle window borders 
 super + y
-    bspc config border_width {0,1,4,5,6,7,10,13}
+    bspc config -d focused border_width {0,1,4,5,6,7,10,13}
+
+alt + y
+    bspc config -n focused border_width {0,1,4,5,6,7,10,13}
 
 
 # Toggle Rounded borders 
 super + u
-    bspc config border_radius {0,1,4,5,6,7,8,9,10,11,12,13}
+    bspc config -d focused border_radius {-20,0,1,4,5,6,7,8,9,10,11,12,13}
+
+alt + u
+    bspc config -n focused border_radius {-20,0,1,4,5,6,7,8,9,10,11,12,13}
 
 
 ### Flip the tree
-super + equal
+alt + v
     bspc desktop -F vertical
 
-super + colon
+alt + h
     bspc desktop -F horizontal
 
 #
@@ -286,11 +290,11 @@ super + colon
 
 ## expanding windows
 super + ctrl + {Left,Right,Up,Down}
-	bspc node -z {left -10 0,right 10 0,top 0 -10,bottom 0 10}
+	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
 	
 ## shrinking windows
 super + alt + {Right,Left,Down,Up}
-	bspc node -z {left 10 0,right -10 0,top 0 10,bottom 0 -10}
+	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
 
 # move a floating window
 super + alt + ctrl + {Left,Down,Up,Right}
