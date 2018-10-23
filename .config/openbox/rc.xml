@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>punpun</name>
+    <name>h2O</name>
     <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -435,7 +435,7 @@
     <!-- Keybindings for rofi startmenu -->
     <keybind key="W-z">
       <action name="Execute">
-        <command>rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -columns 3 -font 'Roboto 9'</command>
+        <command>rofir</command>
       </action>
     </keybind>
     <keybind key="W-d">
@@ -476,7 +476,7 @@
     </keybind>
     <keybind key="W-x">
       <action name="Execute">
-        <command>~/.scripts/urdraw2</command>
+        <command>~/.scripts/draw</command>
       </action>
     </keybind>
     <keybind key="A-x">

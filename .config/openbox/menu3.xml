@@ -335,12 +335,6 @@
 			</item>
 		</menu>
 		<separator/>
-		<item label="Run">
-			<action name="Execute">
-				<execute>rofi -show run -fullscreen True -lines 3 -line-margin 6 -padding 270 -bw 0 -opacity &quot;70&quot; -font &quot;ShureTechMono Nerd Font 12&quot; -scrollbar-width 0 -separator-style &quot;none&quot;</execute>
-			</action>
-		</item>
-		<separator/>
 		<item label=" Reconfigure">
 			<action name="Reconfigure"/>
 		</item>

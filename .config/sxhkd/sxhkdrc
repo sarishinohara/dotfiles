@@ -26,11 +26,11 @@ super + shift + Return
 
 ## Drawing terminal
 super + x 
-	$HOME/.scripts/urdraw
+	~/.scripts/demons
 
 ## Drawing terminal v0.2
 alt + x 
-	$HOME/.scripts/demons
+	~/.scripts/demons
 
 # root thunar
 super + shift + f
@@ -42,7 +42,7 @@ super + d
 
 ## Launch Rofi start menu
 super + z
-	rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -columns 3 -font 'Roboto 8'
+	rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -columns 3 -font 'Roboto 9'
 	
 ## Music control
 XF86Audio{Next,Prev,Play,Stop}
@@ -112,15 +112,15 @@ super + s
 
 # pywal with random wallpaper setter [dark]
 super + i 
-	wal -i $HOME/Pictures/Wallpapers -o wal-set
+	wal -i ~/Pictures/Wallpapers -o wal-set
 
 # pywal with random wallpaper setter [light]
 super + c 
-	wal -i $HOME/Pictures/Wallpapers -l -o wal-set
+	wal -i ~/Pictures/Wallpapers -l -o wal-set
 
 # polybar launch/reload
 super + p
-	$HOME/.config/polybar/launch
+	~/.config/polybar/launch
 
 # polybar Bar 2
 super + m
@@ -128,7 +128,7 @@ super + m
 
 # polybar kill
 super + shift + m
-	$HOME/.config/polybar/kill
+	~/.config/polybar/kill
 
 # netwmpager toggle
 super + shift + p
@@ -153,7 +153,7 @@ super + shift + e
 
 ## Reload bspwm config
 super + shift + r
-	$HOME/.config/bspwm/bspwmrc
+	~/.config/bspwm/bspwmrc
 
 # kill
 super + shift + c
@@ -229,6 +229,9 @@ ctrl + alt + {Left,Right}
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
+# center a window
+super + a
+	center
 
 #
 # focus/swap

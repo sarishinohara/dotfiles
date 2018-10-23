@@ -48,4 +48,13 @@
 	<patterns>*</patterns>
 	<image-files/>
 </action>
+<action>
+	<icon></icon>
+	<name>wal custom</name>
+	<unique-id>1539374226518801-1</unique-id>
+	<command>wal -f %f</command>
+	<description>wal custom</description>
+	<patterns>*</patterns>
+	<other-files/>
+</action>
 </actions>

@@ -8,8 +8,8 @@ set $mod Mod4
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window pixel 6
-new_float normal 0
+new_window none 
+new_float none
 
 # Hide borders
 hide_edge_borders none
@@ -35,7 +35,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+Shift+Return exec termite
 
 # Drawing terminals
-bindsym $mod+x exec --no-startup-id rails
+bindsym $mod+x exec --no-startup-id draw
 bindsym $mod+Shift+x exec --no-startup-id demons
 
 # kill focused window
@@ -45,7 +45,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec --no-startup-id dmenu_recency -x 30 -y 680 -h 40 -w 800 -nb "$term_background" -nf "$term_foreground"
 
 # launch Rofi 
-bindsym $mod+z exec --no-startup-id rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'artwiz lime 8'
+bindsym $mod+z exec --no-startup-id rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -columns 3 -font 'Roboto 9'
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -80,10 +80,9 @@ bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F1 exec notify-send "$(acpi -b | sed 's/Battery 0: //')"
 bindsym $mod+F2 exec notify-send "$(date)"
 bindsym $mod+F3 exec notify-send "$(fortune)"
-bindsym $mod+F4 exec notify-send "$(imen)"
-bindsym $mod+F5 exec notify-send "$(mpc current)"
-bindsym $mod+F6 exec tint2
-bindsym $mod+F7 exec killall tint2
+bindsym $mod+F4 exec notify-send "$(solsol)"
+bindsym $mod+F5 exec tint2
+bindsym $mod+F6 exec killall tint2
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+f exec gksu thunar
 bindsym $mod+t exec --no-startup-id pkill compton
@@ -95,11 +94,12 @@ bindsym $mod+Shift+Print --release exec --no-startup-id maim --hidecursor -s -b 
 bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 exec_always --no-startup-id flashfocus
-exec_always --no-startup-id $HOME/.config/polybar/launch
+# exec_always --no-startup-id $HOME/.config/polybar/launch
 exec_always --no-startup-id dunst
 exec_always --no-startup-id compton -b
 exec_always --no-startup-id batbat
-exec_always --no-startup-id batbat
+exec_always --no-startup-id cookie
+
 
 # focus_follows_mouse no
 
@@ -155,7 +155,10 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+Shift+s sticky toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+# bindsym $mod+a focus parent
+
+# center the window
+bindsym $mod+a exec center
 
 # move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad
@@ -245,10 +248,12 @@ for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 for_window [class=".*"] title_format "<span font='Roboto 8'> > %title</span>
-for_window [class="URxvt"] floating enable border normal 0 
-for_window [class="Termite"] border pixel 8 
-for_window [class="feh"] floating enable border pixel 0 
+for_window [class="URxvt"] floating enable 
+for_window [class="Termite"] floating enable 
+for_window [class="feh"] floating enable 
 for_window [class="Yad"] floating enable
+for_window [class="Thunar"] floating enable
+for_window [class="Mousepad"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
