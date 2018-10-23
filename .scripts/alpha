@@ -5,12 +5,25 @@
 
 ## INFO
 hostname="$(hostname)"
-os="$(lsb_release -ds)"
+os="$(lsb_release -is)"
 kernel="$(uname -sr)"
 uptime="$(uptime -p | sed 's/up //')"
 packages="666"
 shell="$(basename ${SHELL})"
-WM="$(wmctrl -m | grep Name | cut -d: -f2)"
+if [ -z "${WM}" ]; then
+	if [ "${XDG_CURRENT_DESKTOP}" ]; then
+		envtype='WM'
+		WM="${XDG_CURRENT_DESKTOP}"
+	elif [ "${DESKTOP_SESSION}" ]; then
+		envtype='WM'
+		WM="${DESKTOP_SESSION}"
+	else
+		envtype='WM'
+		WM="$(tail -n 1 "${HOME}/.xinitrc" | cut -d ' ' -f 2)"
+	fi
+else
+	envtype='WM'
+fi
 
 ## DEFINE COLORS
 # Don't change
@@ -42,7 +55,7 @@ ${fc}        ',.__.   ,__.--/
 ${sc}          '._${sc}/_.'${sc}___.-'
 ${sc}
 ${fc}       Pkgs: ${fc}    ${ic}${packages}
-${fc}       WM: ${fc}     ${ic}${WM}
+${fc}       WM: ${fc}      ${ic}${WM}
 ${fc}       SHELL: ${fc}   ${ic}${shell}
 ${rc} 
 EOF
