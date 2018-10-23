@@ -1,0 +1,3 @@
+#!/bin/bash
+
+rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -columns 3 -font 'Roboto 9'
