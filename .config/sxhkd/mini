@@ -1,0 +1,149 @@
+## mini config
+
+# terminal emulator
+super + Return
+	urxvt
+
+# alternative terminal emulator
+super + shift + Return
+	termite
+
+## Drawing terminal
+super + x 
+	~/.scripts/draw
+
+## Drawing terminal v0.2
+alt + x 
+	~/.scripts/demons
+
+# root thunar
+super + shift + f
+        gksu thunar
+
+# program launcher
+super + d
+	dmenuu
+
+## Launch Rofi start menu
+super + z
+	rofi -lines 8 -padding 18 -width 60 -location 0 -show drun -columns 3 -font 'Roboto 9'
+	
+## Music control
+XF86Audio{Next,Prev,Play,Stop}
+	mpc {next,prev,toggle,stop}
+
+## volume control
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+	amixer {set Master 2%+,set Master 2%-,set Master toggle}
+
+## Brightness control
+XF86MonBrightness{Up,Down}
+	xbacklight {-inc 1,-dec 1}
+
+# album art "bum"
+super + b
+        bum --size "200"
+
+super + shift + b
+        killall bum 
+
+# notify battery
+super + F1
+        notify-send "$(acpi)"
+
+# notify date
+super + F2
+        notify-send "$(date)"
+
+# notify cookies
+super + F3
+        notify-send "$(fortune)"
+
+# solid colors
+super + F4
+        solsol
+
+# tint2
+super + F5
+        tint2
+
+# tint2
+super + F6
+        killall tint2
+
+
+## Take a screenshot
+Print
+	maim --hidecursor ~/Pictures/$(date +%s).png; notify-send "Screenshot taken"
+
+
+## Take a window screenshot
+super + Print
+	maim --hidecursor -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; notify-send "Window screenshot taken"
+
+## Take a selection screenshot
+super + shift + Print
+	maim --hidecursor -s -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send "Selection screenshot taken" 
+
+## Take a delayed screenshot
+alt + Print
+	maim --hidecursor -d 4 -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send "Selection screenshot taken"
+
+
+## Make sxhkd reload its configuration files
+super + s
+	pkill -USR1 -x sxhkd
+
+# pywal with random wallpaper setter [dark]
+super + i 
+	wal -i ~/Pictures/Wallpapers -o wal-set
+
+# pywal with random wallpaper setter [light]
+super + c 
+	wal -i ~/Pictures/Wallpapers -l -o wal-set
+
+# polybar launch/reload
+super + p
+	~/.config/polybar/launch
+
+# polybar Bar 2
+super + m
+	polybar sec
+
+# polybar kill
+super + shift + m
+	~/.config/polybar/kill
+
+# netwmpager toggle
+super + shift + p
+         killall netwmpager
+        
+super + shift + agrave
+         netwmpager
+
+# lock That baby up!
+super + ccedilla
+         i3lock-next
+
+
+# terminate
+super + ctrl + x
+	xkill
+
+
+# center a window
+super + a
+	center
+
+
+# quit session
+super + shift + e
+	kill tinywm
+
+
+
+
+
+
+
+
