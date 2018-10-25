@@ -42,16 +42,18 @@ static const char *ignore_names[] = {"bar", "xclock"};
 ///--Menus and Programs---///
 static const char *menucmd[] = { "", NULL };
 static const char *termite[]   = { "termite", NULL };
-static const char *urxvt[]   = { "urxvtc", NULL };
+static const char *urxvt[]   = { "urxvt", NULL };
 static const char *rofi[]   = { "rofir", NULL };
 static const char *dmenu[]   = { "dmenuu", NULL };
 static const char *draw[]   = { "draw", NULL };
-static const char *brightup[]   = { "brightup", NULL };
-static const char *brightdown[]   = { "brightdown", NULL };
+static const char *brightup[]   = { "xbacklight", "-inc","1", NULL };
+static const char *brightdown[]   = { "xbacklight", "-dec", "1", NULL };
 static const char *volup[]   = { "volup", NULL };
 static const char *voldown[]   = { "voldown", NULL };
 static const char *wall[]   = { "wall", NULL };
 static const char *wald[]   = { "wald", NULL };
+static const char *date[]   = { "dato", NULL };
+static const char *bat[]   = { "bato", NULL };
 static const char *lock[]   = { "i3lock-next", NULL };
 ///--Custom foo---///
 static void halfandcentered(const Arg *arg)
@@ -198,6 +200,9 @@ static key keys[] = {
     {  MOD ,              XK_i,          start,             {.com = wald}},
     {  MOD ,              XK_c,          start,             {.com = wall}},
     {  MOD ,              XK_ccedilla,   start,             {.com = lock}},
+    // Misc
+    {  MOD ,              XK_F1,         start,             {.com = date} },
+    {  MOD ,              XK_F2,         start,             {.com = bat} },
     // Brightness Keys
     {  MOD ,              XK_F10,        start,             {.com = brightup} },
     {  MOD ,              XK_F9,         start,             {.com = brightdown} },
