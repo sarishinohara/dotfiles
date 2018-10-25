@@ -1,0 +1,20 @@
+#!/bin/sh
+
+FREQ=${FREQ:-0.02}
+
+
+move=GROW
+
+while :; do
+    for c in $(seq 0 4); do
+        CUR=$(pfw)
+	s1=$(test $move = GROW && echo -1 || echo 1)
+	s2=$(test $move = GROW && echo 2 || echo -2)
+        if pfw >/dev/null 2>/dev/null && test "`wattr wh $CUR`" != "`wattr wh $(lsw -r)`"; then
+		wmv $s1 $s1 $CUR
+		wrs $s2 $s2 $CUR
+	fi
+        sleep $FREQ
+    done
+    test $move = GROW && move=SHRINK || move=GROW
+done

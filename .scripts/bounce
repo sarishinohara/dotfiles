@@ -1,0 +1,19 @@
+#!/bin/sh
+
+offset=8
+move=UP
+
+while :; do
+    off=0
+    pfw >/dev/null 2>/dev/null || { sleep 0.5; continue; }
+    for f in $(seq 0 $offset); do
+        CUR=$(pfw)
+        case $move in
+        UP)   off=-1 ;;
+        DOWN) off=1 ;;
+        esac
+        wattr $CUR && test "`wattr wh $CUR`" != "`wattr wh $(lsw -r)`" && wmv 0 $off $CUR
+        sleep 0.01$((f * 2))
+    done
+    test "$move" = "UP" && move=DOWN || move=UP || move=UP
+done
