@@ -55,7 +55,7 @@ ${fc}        ',.__.   ,__.--/
 ${sc}          '._${sc}/_.'${sc}___.-'
 ${sc}
 ${fc}       Pkgs: ${fc}    ${ic}${packages}
-${fc}       WM: ${fc}      ${ic}${WM}
+${fc}       WM: ${fc}      ${fc}${WM}
 ${fc}       SHELL: ${fc}   ${ic}${shell}
 ${rc} 
 EOF

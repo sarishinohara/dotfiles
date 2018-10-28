@@ -62,5 +62,5 @@ cat << EOF
         ${lc}UPTIME:${rc}   ${tc}${UPTIME}${rc}
         ${lc}PACKAGES:${rc} ${tc}${PACKAGES}${rc}
         ${lc}SHELL:${rc}    ${tc}${SHELL}${rc}
-        ${lc}WM:${rc}       ${tc}${WM}${rc}
+        ${lc}WM:${rc}       ${lc}${WM}${rc}
 EOF
