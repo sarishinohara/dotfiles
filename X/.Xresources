@@ -1,7 +1,3 @@
-##### THIS FILE IS BEING CURRENTLY MANAGED BY URXVTCONFIG #####
-##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
-##### PROCEED WITH CAUTION! #####
-
 ! special colors
 *.foreground:  #ffffff
 *.background:  #012128
@@ -58,12 +54,12 @@ Xft.lcdfilter: lcddefault
 
 
 twobwm.border_width: 8
-twobwm.outer_border: 8
+twobwm.outer_border: 4
 twobwm.focus_color: #3a3c4a
 twobwm.unfocus_color: #3a3c4a
 twobwm.fixed_color: #ffffff
 twobwm.unkill_color: #ffffff
-twobwm.outer_border_color: #3a3c4ax
+twobwm.outer_border_color: #3a3c4a
 twobwm.fixed_unkill_color: #ffffff
 twobwm.inverted_colors: false
 twobwm.enable_compton: true

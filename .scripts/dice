@@ -1,0 +1,60 @@
+#!/bin/bash
+
+f=3
+b=4
+
+for i in f b; do
+    for j in {0..7}; do
+        printf -v "$i$j" "%b" "\e[${!i}${j}m"
+    done
+done
+
+b=$'\e[1m'
+rst="\e[0m"
+
+# output
+#cat << EOF
+#
+#  $f1███$f2███$f3███$f4███$f5███$f6███$f7███$f8
+#
+#EOF
+
+if [ -z "${WM}" ]; then
+	if [ "${XDG_CURRENT_DESKTOP}" ]; then
+		envtype='WM'
+		WM="${XDG_CURRENT_DESKTOP}"
+	elif [ "${DESKTOP_SESSION}" ]; then
+		envtype='WM'
+		WM="${DESKTOP_SESSION}"
+	else
+		envtype='WM'
+		WM="$(tail -n 1 "${HOME}/.xinitrc" | cut -d ' ' -f 2)"
+	fi
+else
+	envtype='WM'
+fi
+
+
+color-echo()
+{  # print with colors
+  echo -e " $f2$1  $rst$2"
+}
+
+cat << "EOF"
+           ____
+          /\' .\    _____
+         /: \___\  / .  /\
+         \' / . / /____/..\
+          \/___/  \'  '\  /
+                   \'__'\/
+EOF
+
+echo
+echo    "         x $(lsb_release -is)"
+color-echo    "        x $WM"
+echo    "         x 666"
+echo    "         x $(basename ${SHELL})"
+echo    "         x $(uptime -p | sed 's/up //')"
+echo    "         x $(mpc current)"
+echo
+echo

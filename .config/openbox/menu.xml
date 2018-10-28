@@ -3,7 +3,7 @@
 	<menu id="root-menu" label="openbox">
 		<item label="term">
 			<action name="Execute">
-				<execute>~/.scripts/urdraw2</execute>
+				<execute>~/.scripts/draw</execute>
 			</action>
 		</item>
 		<item label="files">

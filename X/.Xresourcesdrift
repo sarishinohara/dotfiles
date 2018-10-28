@@ -1,7 +1,3 @@
-##### THIS FILE IS BEING CURRENTLY MANAGED BY URXVTCONFIG #####
-##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
-##### PROCEED WITH CAUTION! #####
-
 ! special colors
 *.foreground:  #ffffff
 *.background:  #012128
@@ -41,7 +37,7 @@ URxvt.background: [99]#012128
 URxvt.font: xft:drift:size=7,xft:DejaVu Sans Mono:size=7
 URxvt.boldFont:
 URxvt.letterSpace: 0
-URxvt.internalBorder: 90
+URxvt.internalBorder: 80
 
 
 *antialias:  false

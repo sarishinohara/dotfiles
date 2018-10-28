@@ -481,7 +481,7 @@
     </keybind>
     <keybind key="A-x">
       <action name="Execute">
-        <command>~/.scripts/demons</command>
+        <command>~/.scripts/std</command>
       </action>
     </keybind>
     <keybind key="W-S-w">
