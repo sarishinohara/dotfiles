@@ -1,0 +1,41 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* tabs to bottom */
+#browser-panel { /* Deprecated since FF 59 */
+	-moz-box-direction: reverse;
+	padding: 0 !important;
+}
+
+#navigator-toolbox {
+  -moz-box-ordinal-group: 2;
+}
+
+#main-window[sizemode="maximized"] {
+	padding-top: 7px !important;
+}
+
+/* hide tab toolbar when fullscreen */
+#nav-bar[inFullscreen],
+#TabsToolbar[inFullscreen] {
+	display: none;
+}
+
+/* hide titlebar */
+#titlebar {
+	display: none !important;
+}
+
+/* put suggestions popup on top */
+#PopupAutoCompleteRichResult {
+	opacity: 0.9;
+	margin-top: -332px;
+	margin-left: 10px;
+	height: 300px;
+}
+
+#PopupAutoCompleteRichResult .autocomplete-richlistbox > scrollbox {
+	overflow-y: auto !important;
+}
+
+/* or hide suggestions completely */
+#PopupAutoCompleteRichResult { display: none; }
