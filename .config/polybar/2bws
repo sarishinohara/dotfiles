@@ -1,32 +1,3 @@
 #!/usr/bin/env bash
 
-nd=$( xdotool get_num_desktops )
-ws=$( xdotool get_desktop )
-
-CURRENT="$(polybar -d 'workspace-label-current' main)"
-OCCUPIED="$(polybar -d 'workspace-label-occupied' main)"
-UNOCCUPIED="$(polybar -d 'workspace-label-unoccupied' main)"
-
-fg1="$(polybar -d 'workspace-current-foreground' main)"
-fg2="$(polybar -d 'workspace-occupied-foreground' main)"
-fg3="$(polybar -d 'workspace-unoccupied-foreground' main)"
-
-draw() {
-	for i in {0..8}; do
-        windows=$( xdotool search -desktop $i --name "" | wc -l )
-
-		if [[ $i -eq $ws ]]
-		then
-			echo -ne "%{F$fg1} $CURRENT "
-		else
-			if [[ $windows > 0 ]]
-			then
-				echo -ne "%{F$fg2} $OCCUPIED "
-			else
-				echo -ne "%{F$fg3} $UNOCCUPIED "
-			fi
-		fi
-	done
-}
-
-draw
+xprop -root _NET_CURRENT_DESKTOP | sed -e 's/_NET_CURRENT_DESKTOP(CARDINAL) = //'

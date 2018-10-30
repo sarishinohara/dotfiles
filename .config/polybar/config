@@ -10,11 +10,11 @@ urgent = ${xrdb:color5:#FFF}
 monitor = eDP-1
 
 dpi = 102
-width = 100%
-height = 35
-offset-x = 0%
-offset-y = 0%
-radius = 1
+width = 5%
+height = 65
+offset-x = 2%
+offset-y = 88%
+radius = 33
 fixed-center = true
 override-redirect = true
 # wm-restack = i3
@@ -37,7 +37,7 @@ border-left-color = ${colors.special}
 
 bottom = false
 
-font-0 = Roboto:size=9;1:antialias=true
+font-0 = metis:pixelsize=9;1:antialias=true
 font-7 = Font Awesome:pixelsize=11;2:antialias=true
 font-2 = Kochi Gothic:pixelsize=8;2
 font-3 = FontAwesome 5 Brands:pixelsize=11;2:antialias=true
@@ -45,6 +45,7 @@ font-4 = FuraMono Nerd Font Mono:pixelsize=11;2:antialias=true
 font-5 = Material Icons:pixelsize=11;2:antialias=true
 font-6 = icomoon:pixelsize=11;2:antialias=true
 font-1 = Wuncon siji:pixelsize=10;2
+font-8 = metis:pixelsize=10;2:antialias=false
 
 
 
@@ -55,17 +56,17 @@ separator = "  |  "
 padding-left = 3
 padding-right = 4
 
-modules-left = mpcc
-modules-center =  
-modules-right = date  
+modules-left = 
+modules-center = 2bws 
+modules-right =   
 
-workspace-label-current = "✖" 
+workspace-label-current = "#" 
 workspace-current-foreground = ${colors.special}
 
-workspace-label-occupied = ∙
+workspace-label-occupied = #
 workspace-occupied-foreground = ${colors.darkened}
 
-workspace-label-unoccupied = ⋅
+workspace-label-unoccupied = #
 workspace-unoccupied-foreground = ${colors.foreground}
 
 [module/date]
@@ -639,6 +640,218 @@ label-maxlen = 50
 ;   None
 label-empty = q u a c k
 label-empty-foreground = ${colors.background}
+
+[module/ewmh]
+type = internal/xworkspaces
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = true
+
+; Create click handler used to focus desktop
+; Default: true
+enable-click = true
+
+; Create scroll handlers used to cycle desktops
+; Default: true
+enable-scroll = true
+
+; icon-[0-9]+ = <desktop-name>;<icon>
+; NOTE: The desktop name needs to match the name configured by the WM
+; You can get a list of the defined desktops using:
+; $ xprop -root _NET_DESKTOP_NAMES
+icon-0 = 1; un  
+icon-1 = 2; deux 
+icon-2 = 3; trois 
+icon-3 = 4; quatre 
+icon-4 = 5; cinq 
+icon-5 = 6; six 
+icon-6 = 7; sept 
+icon-7 = 8; huit 
+icon-default = ♟
+
+; Available tags:
+;   <label-monitor>
+;   <label-state> - gets replaced with <label-(active|urgent|occupied|empty)>
+; Default: <label-state>
+format = <label-state>
+
+; Available tokens:
+;   %name%
+; Default: %name%
+label-monitor = %name%
+
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+label-active = %icon%
+label-active-foreground = ${colors.foreground}
+label-active-background = ${colors.background}
+label-active-underline = ${colors.special}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+label-occupied = %icon%
+label-occupied-foreground = ${colors.foreground}
+label-occupied-background = ${colors.background}
+label-occupied-underline = ${colors.special}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+label-urgent = %icon%
+label-urgent-foreground = ${colors.urgent}
+label-urgent-background = ${colors.foreground}
+label-urgent-underline = ${colors.special}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+label-empty = %icon%
+label-empty-foreground = ${colors.foreground}
+label-empty-background = ${colors.background}
+
+
+
+[module/bspwm]
+type = internal/bspwm
+
+; Only show workspaces defined on the same output as the bar
+; NOTE: The bspwm and XRandR monitor names must match, which they do by default.
+; Default: true
+pin-workspaces = true
+
+; Output mode flags after focused state label
+; Default: false
+inline-mode = false
+
+; Create click handler used to focus workspace
+; Default: true
+enable-click = true
+
+; Create scroll handlers used to cycle workspaces
+; Default: true
+enable-scroll = true
+
+; Set the scroll cycle direction 
+; Default: true
+reverse-scroll = false
+
+; Use fuzzy (partial) matching on labels when assigning 
+; icons to workspaces
+; Example: code;♚ will apply the icon to all workspaces 
+; containing 'code' in the label
+; Default: false
+fuzzy-match = true
+
+; ws-icon-[0-9]+ = label;icon
+; Note that the label needs to correspond with the bspwm workspace name
+ws-icon-0 = 1;" un "   
+ws-icon-1 = 2;" deux "
+ws-icon-2 = 3;" trois "
+ws-icon-3 = 4;" quatre "
+ws-icon-4 = 5;" cinq "
+ws-icon-5 = 6;" six "
+ws-icon-6 = 7;" sept "
+ws-icon-7 = 8;" huit "
+ws-icon-default = ♟
+
+; Available tags:
+;   <label-monitor>
+;   <label-state> - gets replaced with <label-(focused|urgent|occupied|empty)>
+;   <label-mode> - gets replaced with <label-(monocle|tiled|fullscreen|floating|locked|sticky|private)>
+; Default: <label-state>
+format = <label-state>
+
+; Available tokens:
+;   %name%
+; Default: %name%
+label-monitor = %name%
+
+; If any values for label-dimmed-N are defined, the workspace/mode
+; colors will get overridden with those values if the monitor is out of focus
+; To only override workspaces in a specific state, use:
+;   label-dimmed-focused
+;   label-dimmed-occupied
+;   label-dimmed-urgent
+;   label-dimmed-empty
+;label-dimmed-foreground = #555
+;label-dimmed-underline = ${bar/top.background}
+;label-dimmed-focused-background = #f00
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+label-focused = %icon%
+label-focused-foreground = ${colors.foreground}
+label-focused-background = ${colors.background}
+label-focused-underline = ${colors.special}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+label-occupied = %icon%
+label-occupied-underline = #555555
+label-occupied-foreground = ${colors.urgent}
+label-occupied-background = ${colors.background}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+label-urgent = %icon%
+label-urgent-foreground = ${colors.foreground}
+label-urgent-background = ${colors.background}
+label-urgent-underline = #9b0a20
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+; Default: %icon%  %name%
+label-empty = %icon%
+label-empty-foreground = ${colors.background}
+
+; The following labels will be used to indicate the layout/mode
+; for the focused workspace. Requires <label-mode>
+;
+; Available tokens:
+;   None
+;label-monocle = 
+;label-tiled = 
+;label-fullscreen = 
+;label-floating = 
+;label-pseudotiled = P
+;label-locked = 
+;label-locked-foreground = #bd2c40
+;label-sticky = 
+;label-sticky-foreground = #fba922
+;label-private = 
+;label-private-foreground = #bd2c40
+
+; Separator in between workspaces
+label-separator = 
+label-separator-padding = 0
+label-separator-foreground = ${colors.urgent}
 
 
 
