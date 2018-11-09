@@ -32,7 +32,7 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvt 
 
 ## keybind for launching alternative terminal
-bindsym $mod+Shift+Return exec termite
+bindsym $mod+Shift+Return exec sakura
 
 # Drawing terminals
 bindsym $mod+x exec --no-startup-id draw
@@ -255,6 +255,7 @@ for_window [class="Yad"] floating enable
 for_window [class="Thunar"] floating enable
 for_window [class="Mousepad"] floating enable
 for_window [class="mpv"] floating enable
+for_window [class="Sakura"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
