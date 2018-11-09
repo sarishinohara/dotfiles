@@ -28,7 +28,7 @@
     padding = 20
     horizontal_padding = 50
     separator_color = auto
-    browser = /usr/local/bin/luakit
+    browser = /usr/local/bin/firefox
     icon_position = off
     frame_width = 10
     frame_color = "#ffffff"

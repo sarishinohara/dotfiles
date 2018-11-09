@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>h2O</name>
+    <name>darker</name>
     <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -496,7 +496,7 @@
     </keybind>
     <keybind key="W-S-Return">
       <action name="Execute">
-        <command>termite</command>
+        <command>sakura</command>
       </action>
     </keybind>
     <keybind key="W-S-p">
