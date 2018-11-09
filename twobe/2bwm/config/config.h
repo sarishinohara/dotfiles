@@ -41,7 +41,7 @@ static const uint8_t borders[] = {9,9,9,9};
 static const char *ignore_names[] = {"bar", "xclock"};
 ///--Menus and Programs---///
 static const char *menucmd[] = { "", NULL };
-static const char *termite[]   = { "termite", NULL };
+static const char *sakura[]   = { "sakura", NULL };
 static const char *urxvt[]   = { "urxvt", NULL };
 static const char *rofi[]   = { "rofir", NULL };
 static const char *dmenu[]   = { "dmenuu", NULL };
@@ -194,7 +194,7 @@ static key keys[] = {
     // {  MOD |SHIFT,        XK_Left,       cursor_move,       {.i=TWOBWM_CURSOR_LEFT}},
     // Start programs
     {  MOD ,              XK_Return,     start,             {.com = urxvt}},
-    {  MOD |SHIFT,        XK_Return,     start,             {.com = termite}},
+    {  MOD |SHIFT,        XK_Return,     start,             {.com = sakura}},
     {  MOD ,              XK_z,          start,             {.com = rofi}},
     {  MOD ,              XK_d,          start,             {.com = dmenu}},
     {  MOD ,              XK_w,          start,             {.com = draw}},
