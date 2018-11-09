@@ -3,11 +3,11 @@
 # Preview
 
 
-**2bwm** - colorful desktop with cream 
+**2bwm** - Seoul 
 ![Screenshot](img/2bwm.png)
 
-**Openbox** - colorful desktop with cream 
+**Openbox** - Waste away 
 ![Screenshot](img/Openbox.png)
 
-**i3** - colorful desktop with cream 
+**i3** - Minimal
 ![Screenshot](img/i3.png)
