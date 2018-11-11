@@ -56,6 +56,8 @@ static const AppRule rules[] = { \
     { "Mousepad",   -1,      False,  True, -1 },
     { "termite",    -1,      False,  True, -1 },
     { "Thunar",     -1,      False,  True, -1 },
+    { "firefox",     -1,      False,  True, -1 },
+    { "mpv",     -1,      False,  True, -1 },
 };
 
 /* helper for spawning shell commands, usually you don't edit this */
@@ -93,8 +95,8 @@ static key keys[] = {
     /* modifier          key            function           argument */
 
     /* select windows */
-    {  MOD4,             XK_Tab,          next_win,          {NULL}},
-    /* {  MOD4,             XK_Tab,          prev_win,          {NULL}}, /*
+    {  MOD4,             XK_h,          next_win,          {NULL}},
+    {  MOD4,             XK_l,          prev_win,          {NULL}},
     /* select the master window, or the previously focussed slave */
     {  MOD4,             XK_w,          focusmaster,       {NULL}},
     /* select urgent window */
@@ -178,9 +180,9 @@ static key keys[] = {
     {  MOD4|CONTROL|SHIFT, XK_l,        rotate_filled,     {.i = +1}},
 
     /* resize master/first stack window */
-    {  MOD4,             XK_h,          resize_master,     {.i = -10}},
-    {  MOD4,             XK_l,          resize_master,     {.i = +10}},
-    {  MOD4,             XK_o,          resize_stack,      {.i = -10}},
+    //{  MOD4,             XK_h,          resize_master,     {.i = -10}},
+    //{  MOD4,             XK_l,          resize_master,     {.i = +10}},
+    //{  MOD4,             XK_o,          resize_stack,      {.i = -10}},
     //{  MOD4,             XK_p,          resize_stack,      {.i = +10}},
 
     /* resize the borders */
