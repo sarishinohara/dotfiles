@@ -79,6 +79,7 @@ static const char *urxvt[] = { "urxvt",     NULL };
 static const char *sakura[] = { "sakura",     NULL };
 static const char *rofi[] = { "rofir",     NULL };
 static const char *draw[] = { "draw",     NULL };
+static const char *lock[] = { "i3lock-next",     NULL };
 /* static const char *scrpcmd[] = { "urxvt", "-name", "scratchpad",  NULL }; */
 
 #define DESKTOPCHANGE(K,N) \
@@ -103,10 +104,10 @@ static key keys[] = {
     {  MOD4,             XK_BackSpace,  focusurgent,       {NULL}},
 
     /* move windows */
-    //{  MOD4|SHIFT,       XK_j,          move_down,         {NULL}}, */
-    //{  MOD4|SHIFT,       XK_k,          move_up,           {NULL}}, */
+    {  MOD1,             XK_j,          move_down,         {NULL}}, 
+    {  MOD1,             XK_k,          move_up,           {NULL}}, 
     /* swap the current window to master */
-    // {  MOD4,             XK_Return,     swap_master,       {NULL}}, */
+    {  MOD4|CONTROL,     XK_Return,     swap_master,       {NULL}},
     /* maximize the current window */
     {  MOD4,             XK_f,          maximize,          {NULL}},
     /* minimize window to queue/pull window from queue */
@@ -117,7 +118,7 @@ static key keys[] = {
     /* toggles inverted stacking modes (left/top stack) */
     {  MOD4|SHIFT,       XK_i,          invertstack,       {NULL}},
     /* show/hide all windows on all desktops */
-    {  MOD4|CONTROL,     XK_s,          showhide,          {NULL}},
+    {  MOD1,             XK_s,          showhide,          {NULL}},
     /* toggle the scratchpad terminal, if enabled */
     {  MOD4,             XK_s,          togglescratchpad,  {NULL}},
 
@@ -152,6 +153,7 @@ static key keys[] = {
     {  MOD4,             XK_Return,     spawn,             {.com = urxvt}},
     {  MOD4,             XK_z,          spawn,             {.com = rofi}},
     {  MOD4,             XK_x,          spawn,             {.com = draw}},
+    {  MOD4,             XK_ccedilla,   spawn,             {.com = lock}},
     /* kill current window */
     {  MOD4|SHIFT,       XK_q,          killclient,        {NULL}},
 
@@ -180,10 +182,10 @@ static key keys[] = {
     {  MOD4|CONTROL|SHIFT, XK_l,        rotate_filled,     {.i = +1}},
 
     /* resize master/first stack window */
-    //{  MOD4,             XK_h,          resize_master,     {.i = -10}},
-    //{  MOD4,             XK_l,          resize_master,     {.i = +10}},
-    //{  MOD4,             XK_o,          resize_stack,      {.i = -10}},
-    //{  MOD4,             XK_p,          resize_stack,      {.i = +10}},
+    {  MOD1,             XK_h,          resize_master,     {.i = -10}},
+    {  MOD1,             XK_l,          resize_master,     {.i = +10}},
+    {  MOD1,             XK_o,          resize_stack,      {.i = -10}},
+    {  MOD1,             XK_p,          resize_stack,      {.i = +10}},
 
     /* resize the borders */
     {  MOD4,             XK_u,          adjust_borders,    {.i = -1}},
