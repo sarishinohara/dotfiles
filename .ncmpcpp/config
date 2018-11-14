@@ -17,7 +17,7 @@ lyrics_directory = ~/.config/ncmpcpp/Lyrics
 mpd_host = localhost
 mpd_port = 6600
 mpd_connection_timeout = 5
-mpd_music_dir = "/run/media/hornet/Miso/Music"
+mpd_music_dir = "/run/media/punpun/Miso/Music"
 
 
 # display
@@ -29,8 +29,8 @@ playlist_display_mode = "columns"
 
 
 # now playing
-now_playing_prefix = "$3─ "
-#now_playing_suffix = " $8x"
+#now_playing_prefix = "$3─ "
+now_playing_suffix = " $3x"
 
 
 # playlist
@@ -44,8 +44,8 @@ message_delay_time= "1"
 
 # progress bar
 progressbar_look = "───"
-#progressbar_color = "black"
-progressbar_elapsed_color = "yellow"
+progressbar_color = "black"
+progressbar_elapsed_color = "green"
 
 
 # colors
@@ -83,5 +83,5 @@ visualizer_type = "spectrum" (spectrum/wave)
 visualizer_color = "white"
 visualizer_look = "∙│"
 
-# Notify meh
-execute_on_song_change = notify-send "Now Playing : $(mpc current)"
+#execute_on_song_change="~/.ncmpcpp/albumart"
+execute_on_player_state_change = "~/.ncmpcpp/albumart"

@@ -29,7 +29,8 @@
     horizontal_padding = 50
     separator_color = auto
     browser = /usr/local/bin/firefox
-    icon_position = off
+    icon_position = left
+    icon_path = /usr/share/icons/Arc/status/:/usr/share/icons/Arc/devices/
     frame_width = 10
     frame_color = "#ffffff"
     corner_radius = 0
