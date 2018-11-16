@@ -1,0 +1,38 @@
+#!/bin/sh
+#
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# Change your keymap:
+setxkbmap fr_intl & 
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+xsetroot -cursor_name left_ptr &
+dunst &
+# maill &
+restt &
+# splash &
+batbat &
+cookie &
+# tint2 &
+# wal -R & 
+# polybar main &
+compton -b &
+numlockx &
+# netwmpager &
+hsetroot -solid "f0f0f2" &
+# hsetroot -solid "#d4d7de" &
+xgamma -gamma 0.9 &
+sleep 3s && xrandr --dpi 102
+xfce4-power-manager &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec fluxbox
+# or if you want to keep a log:
+# exec fluxbox -log "/home/punpun/.fluxbox/log"

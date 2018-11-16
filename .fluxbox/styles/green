@@ -1,0 +1,97 @@
+menu.title:                          Flat Solid
+menu.title.color:                    rgb:37/bf/8d
+menu.title.colorTo:                  rgb:37/bf/8d
+menu.title.textColor:                rgb:00/00/00
+menu.title.justify:                  center
+
+menu.frame:                          Flat Solid
+menu.frame.color:                    rgb:37/bf/8d
+menu.frame.colorTo:                  rgb:37/bf/8d
+menu.frame.textColor:                rgb:ff/ff/ff
+menu.frame.justify:                  center
+
+menu.borderWidth:                    25
+menu.borderColor:                    rgb:37/bf/8d
+
+menu.hilite:                         flat solid
+menu.hilite.textColor:               rgb:00/00/00
+menu.hilite.color:                   rgb:37/bf/8d
+
+menu.bullet:                         empty
+menu.bullet.position:                right
+
+
+! window.title.focus:                flat solid
+! window.title.focus.color:          rgb:e3/cd/a6
+
+
+window.title.height:                 50
+
+window.title.focus:                  Flat Solid
+window.title.focus.color:            rgb:37/bf/8d
+window.title.focus.colorTo:          rgb:37/bf/8d
+window.title.unfocus:                Flat Solid
+window.title.unfocus.color:          rgb:37/bf/8d
+window.title.unfocus.colorTo:        rgb:37/bf/8d
+
+window.label.focus:                  Flat Solid
+window.label.focus.color:            rgb:37/bf/8d
+window.label.focus.colorTo:          rgb:37/bf/8d
+window.label.focus.textColor:        rgb:ff/ff/ff
+window.label.unfocus:                Flat Solid
+window.label.unfocus.color:          rgb:37/bf/8d
+window.label.unfocus.colorTo:        rgb:37/bf/8d
+window.label.unfocus.textColor:      rgb:ff/ff/ff
+
+window.handle.focus:                 Flat Solid
+window.handle.focus.color:           rgb:37/bf/8d
+window.handle.focus.colorTo:         rgb:37/bf/8d
+window.handle.unfocus:               Flat Solid
+window.handle.unfocus.color:         rgb:37/bf/8d
+window.handle.unfocus.colorTo:       rgb:37/bf/8d
+
+window.grip.focus:                   Flat Solid
+window.grip.focus.color:             rgb:37/bf/8d
+window.grip.focus.colorTo:           rgb:37/bf/8d
+window.grip.unfocus:                 Flat Solid
+window.grip.unfocus.color:           rgb:37/bf/8d
+window.grip.unfocus.colorTo:         rgb:37/bf/8d
+
+window.button.focus:                 Flat Solid
+window.button.focus.color:           rgb:37/bf/8d
+window.button.focus.colorTo:         rgb:37/bf/8d
+! window.button.focus.color:         rgb:37/bf/8d
+! window.button.focus.colorTo:       rgb:37/bf/8d
+window.button.focus.picColor:        rgb:0/0/0
+window.button.unfocus:               Flat Solid
+window.button.unfocus.color:         rgb:37/bf/8d
+window.button.unfocus.colorTo:       rgb:37/bf/8d
+window.button.unfocus.picColor:      rgb:37/bf/8d
+
+window.button.pressed:               Flat Solid
+window.button.pressed.color:         rgb:37/bf/8d
+window.button.pressed.colorTo:       rgb:37/bf/8d
+
+window.frame.focusColor:             rgb:37/bf/8d
+window.frame.unfocusColor:           rgb:37/bf/8d
+
+window.justify:                      center
+
+borderColor:                         rgb:ff/ff/ff
+
+borderWidth:                         0
+bevelWidth:                          0
+handleWidth:                         0
+
+*font:                               Roboto-9
+menu*font:                           Roboto-10:medium
+toolbar*font:                        Roboto-10
+
+*textColor:                          rgb:c/c/c
+! - for fluxbox
+window.tab.label.unfocus.textColor:  rgb:5a/5a/5a
+window.tab.label.focus.textColor:    rgb:1a/04/08
+! -
+
+background: none
+background.color: rgb:f0/f0/f2
