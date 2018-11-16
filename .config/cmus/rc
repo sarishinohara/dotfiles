@@ -2,9 +2,9 @@
  
  set aaa_mode=all
  set altformat_current= %F
- set altformat_playlist= %f%= %d
+ set altformat_playlist= %f%=
  set altformat_title=%f
- set altformat_trackwin= %f%= %d
+ set altformat_trackwin= %f%=
  set auto_expand_albums_follow=true
  set auto_expand_albums_search=true
  set auto_expand_albums_selcur=true
@@ -29,7 +29,7 @@
  set color_win_cur_sel_attr=default
  set color_win_cur_sel_bg=black
  set color_win_cur_sel_fg=green
- set color_win_dir=black
+ set color_win_dir=white
  set color_win_fg=default
  set color_win_inactive_cur_sel_attr=white
  set color_win_inactive_cur_sel_bg=black
@@ -54,13 +54,13 @@
  set dsp.oss.device=
  set follow=true
  set format_current=
- set format_playlist= %-21%a %3n %t%= %y %d %{?X!=0?%3X ?    }
- set format_playlist_va= %-21%A %3n %t %= %y %d %{?X!=0?%3X ?    }
+ set format_playlist= %-21%a %3n %t%= %{?X!=0?%3X ?    }
+ set format_playlist_va= %-21%A %3n %t %= %{?X!=0?%3X ?    }
  set format_statusline= %{title} 
  set format_title=%a - %t
- set format_trackwin=%3n. %t%= %y %d
+ set format_trackwin= %t%= 
  set format_trackwin_album= %l
- set format_trackwin_va=%3n. %t (%a)%= %y %d
+ set format_trackwin_va= %t (%a)%=
  set format_treewin=  %l
  set format_treewin_artist=%a
  set icecast_default_charset=ISO-8859-1
