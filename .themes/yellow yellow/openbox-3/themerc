@@ -1,0 +1,126 @@
+# Menu
+menu.border.width: 16
+menu.overlap.x: -20
+menu.overlap.y: 8
+
+menu.border.color: #FDDA2F
+
+menu.title.bg: flat solid
+menu.title.bg.color: #FDDA2F
+menu.title.text.color: #ffffff
+
+menu.items.bg: flat solid
+menu.items.bg.color: #FDDA2F
+
+menu.items.text.color: #ffffff
+menu.items.disabled.text.color: #ffffff
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color:  #FDDA2F
+menu.items.active.text.color: #2AA198
+
+# Active window
+window.active.border.color: #FDDA2F
+
+window.active.title.bg: flat solid
+window.active.title.bg.color: #FDDA2F
+window.active.title.separator.color: #FDDA2F
+window.active.text.justify: left
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.handle.bg: flat solid
+window.active.handle.bg.color: #FDDA2F
+
+window.active.grip.bg: flat solid
+window.active.grip.bg.color: #FDDA2F
+
+window.active.button.unpressed.bg: flat solid
+window.active.button.unpressed.bg.color: #FDDA2F
+window.active.button.unpressed.image.color: #ffffff
+
+window.active.button.pressed.bg: flat solid
+window.active.button.pressed.bg.color: #FDDA2F
+window.active.button.pressed.image.color: #ffffff
+
+window.active.button.disabled.bg: flat solid
+window.active.button.disabled.bg.color: #FDDA2F
+window.active.button.disabled.image.color: #ffffff
+
+
+# Inactive window
+window.inactive.border.color: #D6D597
+
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #D6D597
+window.inactive.title.separator.color: #D6D597
+window.inactive.text.justify: center
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #ffffff
+
+window.inactive.handle.bg: flat solid
+
+window.inactive.grip.bg: flat solid
+window.inactive.grip.bg.color: #D6D597
+
+window.inactive.button.unpressed.bg: flat solid
+window.inactive.button.unpressed.bg.color: #D6D597
+window.inactive.button.unpressed.image.color: #ffffff
+
+window.inactive.button.pressed.bg: flat solid
+window.inactive.button.pressed.bg.color: #D6D597
+window.inactive.button.pressed.image.color: #CF978F
+
+window.inactive.button.disabled.bg: flat solid
+window.inactive.button.disabled.bg.color: #D6D597
+window.inactive.button.disabled.image.color: #D0D0D0
+
+
+# OSD
+osd.border.width: 1
+osd.border.color: #2d2d2d
+
+osd.bg: flat solid
+osd.bg.color: #fff
+
+osd.label.bg: flat solid
+osd.label.bg.color: #dedede
+osd.label.text.color: #555555
+
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #d64937
+
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #888888
+
+osd.button.unpressed.bg: flat border 
+osd.button.unpressed.bg.color: #f0f0f0
+osd.button.unpressed.*.border.color: #b2b2b2
+
+osd.button.pressed.bg: flat border 
+osd.button.pressed.bg.color: #d3d3d3
+osd.button.pressed.*.border.color: #b2b2b2
+
+osd.button.focused.bg: flat solid border 
+osd.button.focused.bg.color: #f0f0f0
+osd.button.focused.*.border.color: #9c9c9c
+
+osd.button.focused.box.color: #d64937
+
+
+# Fonts
+window.active.label.text.font:shadow=n
+window.inactive.label.text.font:shadow=n
+menu.items.font:shadow=n
+menu.title.text.font:shadow=n
+
+
+# Everything else
+border.width: 0
+padding.width: 13
+padding.height: 13
+window.handle.width: 0
+window.client.padding.width: 0
+window.label.text.justify: center

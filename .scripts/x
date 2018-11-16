@@ -1,0 +1,2 @@
+#!/bin/bash
+maim --hidecursor -d 4 ~/Pictures/$(date +%s).png; notify-send 'delayed screenshot taken'
