@@ -4,7 +4,7 @@
 !! Menu background
 menu.items.bg: flat
 menu.items.bg.color: #fefcfc
-menu.overlap.x: -6
+menu.overlap.x: -70
 
 !! Menu text
 menu.items.text.color: #393035
@@ -16,7 +16,7 @@ menu.separator.padding.height: 2
 menu.separator.color: #fefcfc
 
 !! Menu border
-menu.border.width: 6
+menu.border.width: 60
 menu.border.color: #fefcfc
 
 !! Menu headers

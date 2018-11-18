@@ -55,5 +55,3 @@ echo    "          $(lsb_release -is)"
 color-echo    "         $WM"
 echo    "          666"
 echo    "          $(basename ${SHELL})"
-echo
-echo
