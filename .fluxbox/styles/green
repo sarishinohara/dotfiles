@@ -25,7 +25,7 @@ menu.bullet.position:                right
 ! window.title.focus.color:          rgb:e3/cd/a6
 
 
-window.title.height:                 50
+window.title.height:                 30
 
 window.title.focus:                  Flat Solid
 window.title.focus.color:            rgb:37/bf/8d
@@ -33,15 +33,16 @@ window.title.focus.colorTo:          rgb:37/bf/8d
 window.title.unfocus:                Flat Solid
 window.title.unfocus.color:          rgb:37/bf/8d
 window.title.unfocus.colorTo:        rgb:37/bf/8d
+window.title.unfocus.textColor:      rgb:37/bf/8d
 
 window.label.focus:                  Flat Solid
 window.label.focus.color:            rgb:37/bf/8d
 window.label.focus.colorTo:          rgb:37/bf/8d
-window.label.focus.textColor:        rgb:ff/ff/ff
+window.label.focus.textColor:        rgb:37/bf/8d
 window.label.unfocus:                Flat Solid
 window.label.unfocus.color:          rgb:37/bf/8d
 window.label.unfocus.colorTo:        rgb:37/bf/8d
-window.label.unfocus.textColor:      rgb:ff/ff/ff
+window.label.unfocus.textColor:      rgb:37/bf/8d
 
 window.handle.focus:                 Flat Solid
 window.handle.focus.color:           rgb:37/bf/8d
@@ -93,5 +94,3 @@ window.tab.label.unfocus.textColor:  rgb:5a/5a/5a
 window.tab.label.focus.textColor:    rgb:1a/04/08
 ! -
 
-background: none
-background.color: rgb:f0/f0/f2

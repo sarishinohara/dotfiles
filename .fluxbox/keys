@@ -49,29 +49,53 @@ Mod4 Shift Tab :PrevTab
 # Lock screen
 Mod4 9 :Exec i3lock-next
 
+# thunar
+Mod4 Shift F :Exec gksu thunar
+
 # open a terminal
 Mod4 Return :Exec urxvt
 
 Mod4 Shift Return :Exec sakura
 
 # draw a terminal
-Mod1 X :Exec draw
+Mod4 X :Exec draw
 
 # open a dialog to run programs
 Mod4 Z :Exec rofir
 
 Mod4 D :Exec dmenuu
 
+# bar
+Mod4 M :Exec polybar sec
+
+Mod4 P :Exec $HOME/.config/polybar/launch
+
+Mod4 Shift m :Exec $HOME/.config/polybar/kill
+
+# tint2
+Mod4 N :Exec tint2
+
+Mod4 Shift N :Exec killall tint2
+
+
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
-176 :Exec amixer sset Master,0 1+
-174 :Exec amixer sset Master,0 1-
-160 :Exec amixer sset Master,0 toggle
+XF86AudioRaiseVolume :Exec amixer set Master 1%+
+XF86AudioLowerVolume :Exec amixer set Master 1%-
+
+# brightness settings
+#XF86MonBrightnessUp :Exec xbacklight -inc 1
+#XF86MonBrightnessDown :Exec xbacklight -dec 1
+
+# screenshot
+Print :Exec maim --hidecursor ~/Pictures/$(date +%s).png && notify-send "screenshot taken"
+Mod4 Print :Exec maim --hidecursor -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png && exec notify-send 'Window screenshot taken'
+Mod4 Shift Print :Exec maim --hidecursor -s -b 6 ~/Pictures/$(date +%s).png && exec notify-send 'Selection screenshot taken'
 
 # current window commands
 Mod4 Shift Q :Close
 Mod4 Shift C :Kill
-Mod4 Shift M :Minimize
+Mod4 Shift p :Minimize
 Mod4 Shift N :Maximize
 Mod4 F :Fullscreen
 

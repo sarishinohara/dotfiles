@@ -10,7 +10,7 @@ menu.frame.colorTo:                  rgb:ff/ff/ff
 menu.frame.textColor:                rgb:00/00/00
 menu.frame.justify:                  center
 
-menu.borderWidth:                    25
+menu.borderWidth:                    50
 menu.borderColor:                    rgb:ff/ff/ff
 
 menu.hilite:                         flat solid
@@ -31,31 +31,32 @@ window.title.focus:                  Flat Solid
 window.title.focus.color:            rgb:ff/ff/ff
 window.title.focus.colorTo:          rgb:ff/ff/ff
 window.title.unfocus:                Flat Solid
-window.title.unfocus.color:          rgb:ff/ff/ff
-window.title.unfocus.colorTo:        rgb:ff/ff/ff
+window.title.unfocus.color:          rgb:1d/38/3e
+window.title.unfocus.colorTo:        rgb:1d/38/3e
+window.title.unfocus.textColor:      rgb:1d/38/3e
 
 window.label.focus:                  Flat Solid
 window.label.focus.color:            rgb:ff/ff/ff
 window.label.focus.colorTo:          rgb:ff/ff/ff
 window.label.focus.textColor:        rgb:ff/ff/ff
 window.label.unfocus:                Flat Solid
-window.label.unfocus.color:          rgb:ff/ff/ff
-window.label.unfocus.colorTo:        rgb:ff/ff/ff
-window.label.unfocus.textColor:      rgb:ff/ff/ff
+window.label.unfocus.color:          rgb:1d/38/3e
+window.label.unfocus.colorTo:        rgb:1d/38/3e
+window.label.unfocus.textColor:      rgb:1d/38/3e
 
 window.handle.focus:                 Flat Solid
 window.handle.focus.color:           rgb:ff/ff/ff
 window.handle.focus.colorTo:         rgb:ff/ff/ff
 window.handle.unfocus:               Flat Solid
-window.handle.unfocus.color:         rgb:ff/ff/ff
-window.handle.unfocus.colorTo:       rgb:ff/ff/ff
+window.handle.unfocus.color:         rgb:1d/38/3e
+window.handle.unfocus.colorTo:       rgb:1d/38/3e
 
 window.grip.focus:                   Flat Solid
 window.grip.focus.color:             rgb:ff/ff/ff
 window.grip.focus.colorTo:           rgb:ff/ff/ff
 window.grip.unfocus:                 Flat Solid
-window.grip.unfocus.color:           rgb:ff/ff/ff
-window.grip.unfocus.colorTo:         rgb:ff/ff/ff
+window.grip.unfocus.color:           rgb:1d/38/3e
+window.grip.unfocus.colorTo:         rgb:1d/38/3e
 
 window.button.focus:                 Flat Solid
 window.button.focus.color:           rgb:ff/ff/ff
@@ -64,16 +65,16 @@ window.button.focus.colorTo:         rgb:ff/ff/ff
 ! window.button.focus.colorTo:       rgb:ff/ff/ff
 window.button.focus.picColor:        rgb:0/0/0
 window.button.unfocus:               Flat Solid
-window.button.unfocus.color:         rgb:ff/ff/ff
-window.button.unfocus.colorTo:       rgb:ff/ff/ff
-window.button.unfocus.picColor:      rgb:ff/ff/ff
+window.button.unfocus.color:         rgb:1d/38/3e
+window.button.unfocus.colorTo:       rgb:1d/38/3e
+window.button.unfocus.picColor:      rgb:1d/38/3e
 
 window.button.pressed:               Flat Solid
 window.button.pressed.color:         rgb:ff/ff/ff
 window.button.pressed.colorTo:       rgb:ff/ff/ff
 
 window.frame.focusColor:             rgb:ff/ff/ff
-window.frame.unfocusColor:           rgb:ff/ff/ff
+window.frame.unfocusColor:           rgb:1d/38/3e
 
 window.justify:                      center
 
@@ -84,14 +85,13 @@ bevelWidth:                          0
 handleWidth:                         0
 
 *font:                               Roboto-9
-menu*font:                           droid sans-10:medium
+menu*font:                           bebas neue-11:medium
 toolbar*font:                        Roboto-10
 
 *textColor:                          rgb:c/c/c
 ! - for fluxbox
-window.tab.label.unfocus.textColor:  rgb:5a/5a/5a
+window.tab.label.unfocus.textColor:  rgb:ff/ff/ff
 window.tab.label.focus.textColor:    rgb:1a/04/08
 ! -
 
-background: none
-background.color: rgb:f0/f0/f2
+

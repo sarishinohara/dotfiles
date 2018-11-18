@@ -37,7 +37,7 @@ window.title.unfocus.colorTo:        rgb:ff/ff/ff
 window.label.focus:                  Flat Solid
 window.label.focus.color:            rgb:ff/ff/ff
 window.label.focus.colorTo:          rgb:ff/ff/ff
-window.label.focus.textColor:        rgb:ff/ff/ff
+window.label.focus.textColor:        rgb:00/00/00
 window.label.unfocus:                Flat Solid
 window.label.unfocus.color:          rgb:ff/ff/ff
 window.label.unfocus.colorTo:        rgb:ff/ff/ff
@@ -84,7 +84,7 @@ bevelWidth:                          0
 handleWidth:                         0
 
 *font:                               Roboto-9
-menu*font:                           droid sans-10:medium
+menu*font:                           Roboto-10:medium
 toolbar*font:                        Roboto-10
 
 *textColor:                          rgb:c/c/c
@@ -93,5 +93,3 @@ window.tab.label.unfocus.textColor:  rgb:5a/5a/5a
 window.tab.label.focus.textColor:    rgb:1a/04/08
 ! -
 
-background: none
-background.color: rgb:f0/f0/f2
