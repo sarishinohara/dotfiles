@@ -207,6 +207,8 @@ animation-charging-framerate = 100
 [module/2bws]
 type = custom/script
 exec = ~/.config/polybar/2bws
+click-left = tint2 -c /home/onodera/.config/tint2/calcal.tint2rc
+scroll-up = killall tint2
 interval = 0.01
 
 [module/mpd]
