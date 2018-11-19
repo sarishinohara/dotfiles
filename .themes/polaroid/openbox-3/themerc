@@ -15,11 +15,15 @@ menu.title.text.justify: Left
 menu.separator.color: #071d22
 
 
-# osd
-osd.label.text.color: white
-osd.border.width: 0
-osd.border.color: #071d22
-
+# OSD
+osd.bg: Solid Flat
+osd.bg.color: #1d383e
+osd.border.width: 10
+osd.label.bg: parentrelative
+osd.label.text.color: #ffffff
+osd.hilight.bg.color: #1d383e
+osd.unhilight.bg.color: #1d383e
+osd.border.color: #1d383e
 
 # windows
 border.width: 0

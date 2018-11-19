@@ -26,10 +26,12 @@ menu.overlap.x: -60
 # OSD
 osd.bg: Solid Flat
 osd.bg.color: #ffffff
+osd.border.width: 1
 osd.label.bg: parentrelative
 osd.label.text.color: #000000
 osd.hilight.bg.color: #000000
-osd.unhilight.bg.color: #000000
+osd.unhilight.bg.color: #ffffff
+osd.border.color: #000000
 
 # Window - Active
 window.client.padding.width: 0

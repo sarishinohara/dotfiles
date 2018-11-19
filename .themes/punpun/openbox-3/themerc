@@ -8,6 +8,15 @@ window.handle.width: 0
 window.client.padding.width: 0
 border.width: 0
 
+osd.bg: Solid Flat
+osd.bg.color: #1d383e
+osd.border.width: 7
+osd.label.bg: parentrelative
+osd.label.text.color: #ffffff
+osd.hilight.bg.color: #ffffff
+osd.unhilight.bg.color: #1d383e
+osd.border.color: #1d383e
+
 # Title
 padding.width: 16
 padding.height: 8

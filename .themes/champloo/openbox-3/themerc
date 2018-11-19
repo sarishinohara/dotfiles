@@ -31,6 +31,15 @@ window.label.text.justify: center
 # Set buttons color
 window.*.button.*.image.color: #000000
 
+osd.bg: Solid Flat
+osd.bg.color: #E68A8B
+osd.border.width: 1
+osd.label.bg: parentrelative
+osd.label.text.color: #ffffff
+osd.hilight.bg.color: #ffffff
+osd.unhilight.bg.color: #E68A8B
+osd.border.color: #E68A8B
+
 
 ## MENU
 
