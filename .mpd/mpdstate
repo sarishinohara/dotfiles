@@ -1,9 +1,9 @@
 sw_volume: 98
 audio_device_state:1:alsa audio
 audio_device_state:1:my_fifo
-state: pause
-current: 92
-time: 132.911000
+state: play
+current: 0
+time: 0.420000
 random: 0
 repeat: 1
 single: 0
@@ -12,187 +12,13 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:30 seconds to mars/A Beautiful Lie (Album)/01 Attack.flac
-1:30 seconds to mars/A Beautiful Lie (Album)/02 A Beautiful Lie.flac
-2:30 seconds to mars/A Beautiful Lie (Album)/03 The Kill.flac
-3:30 seconds to mars/A Beautiful Lie (Album)/04 Was It A Dream.flac
-4:30 seconds to mars/A Beautiful Lie (Album)/05 The Fantasy.flac
-5:30 seconds to mars/A Beautiful Lie (Album)/06 Savior.flac
-6:30 seconds to mars/A Beautiful Lie (Album)/07 From Yesterday.flac
-7:30 seconds to mars/A Beautiful Lie (Album)/08 The Story.flac
-8:30 seconds to mars/A Beautiful Lie (Album)/09 R-Evolve.flac
-9:30 seconds to mars/A Beautiful Lie (Album)/10 A Modern Myth.flac
-10:30 seconds to mars/A Beautiful Lie (Album)/11 Battle Of One.flac
-11:30 seconds to mars/A Beautiful Lie (Album)/12 Hunter.flac
-12:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/01 Birth.flac
-13:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/02 Conquistador.flac
-14:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/03 Up In The Air.flac
-15:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/04 City Of Angels.flac
-16:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/05 The Race.flac
-17:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/06 End Of All Days.flac
-18:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/07 Pyres Of Varanasi.flac
-19:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/08 Bright Lights.flac
-20:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/09 Do Or Die.flac
-21:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/10 Convergence.flac
-22:30 seconds to mars/LOVE LUST FAITH + DREAMS (Album)/11 Northern Lights.flac
-23:30 seconds to mars/This Is War (Deluxe) (Album)/01 Escape.flac
-24:30 seconds to mars/This Is War (Deluxe) (Album)/02 Night Of The Hunter.flac
-25:30 seconds to mars/This Is War (Deluxe) (Album)/03 Kings And Queens.flac
-26:30 seconds to mars/This Is War (Deluxe) (Album)/04 This Is War.flac
-27:30 seconds to mars/This Is War (Deluxe) (Album)/05 100 Suns.flac
-28:30 seconds to mars/This Is War (Deluxe) (Album)/06 Hurricane.flac
-29:30 seconds to mars/This Is War (Deluxe) (Album)/07 Closer To The Edge.flac
-30:30 seconds to mars/This Is War (Deluxe) (Album)/08 Vox Populi.flac
-31:30 seconds to mars/This Is War (Deluxe) (Album)/09 Search And Destroy.flac
-32:30 seconds to mars/This Is War (Deluxe) (Album)/10 Alibi.flac
-33:30 seconds to mars/This Is War (Deluxe) (Album)/11 Stranger In A Strange Land.flac
-34:30 seconds to mars/This Is War (Deluxe) (Album)/12 L490.flac
-35:30 seconds to mars/This Is War (Deluxe) (Album)/13 Hurricane 2.0.flac
-36:30 seconds to mars/This Is War (Deluxe) (Album)/14 Bad Romance (Live).flac
-37:30 seconds to mars/This Is War (Deluxe) (Album)/15 Stronger (Live).flac
-38:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/1 wrong.mp3
-39:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/10 float.mp3
-40:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/11 wonder.mp3
-41:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/12 love; not wrong (brave).mp3
-42:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/13 falling in reverse.mp3
-43:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/2 take care.mp3
-44:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/3 start-end.mp3
-45:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/4 wings.mp3
-46:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/5 icarus.mp3
-47:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/6 lost-found.mp3
-48:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/7 crash.mp3
-49:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/8 gold.mp3
-50:EDEN - vertigo (2018) Mp3 (320kbps) [Hunter]/EDEN - vertigo (2018) [320]/9 forever-over.mp3
-51:Eminem/Kamikaze (Album)/01 The Ringer.flac
-52:Eminem/Kamikaze (Album)/02 Greatest.flac
-53:Eminem/Kamikaze (Album)/03 Lucky You.flac
-54:Eminem/Kamikaze (Album)/04 Paul (Skit).flac
-55:Eminem/Kamikaze (Album)/05 Normal.flac
-56:Eminem/Kamikaze (Album)/06 Em Calls Paul (Skit).flac
-57:Eminem/Kamikaze (Album)/07 Stepping Stone.flac
-58:Eminem/Kamikaze (Album)/08 Not Alike.flac
-59:Eminem/Kamikaze (Album)/09 Kamikaze.flac
-60:Eminem/Kamikaze (Album)/10 Fall.flac
-61:Eminem/Kamikaze (Album)/11 Nice Guy.flac
-62:Eminem/Kamikaze (Album)/12 Good Guy.flac
-63:Sasha Sloan/sad girl (Album)/01 Normal.flac
-64:Sasha Sloan/sad girl (Album)/02 Fall.flac
-65:Sasha Sloan/sad girl (Album)/03 Ready Yet.flac
-66:Sasha Sloan/sad girl (Album)/04 Hurt.flac
-67:Sasha Sloan/sad girl (Album)/05 Runaway.flac
-68:Sasha Sloan/sad girl (Album)/06 Here.flac
-69:Drake/Scorpion (Album)/Disc 01/01 Survival.flac
-70:Drake/Scorpion (Album)/Disc 01/02 Nonstop.flac
-71:Drake/Scorpion (Album)/Disc 01/03 Elevate.flac
-72:Drake/Scorpion (Album)/Disc 01/04 Emotionless.flac
-73:Drake/Scorpion (Album)/Disc 01/05 God's Plan.flac
-74:Drake/Scorpion (Album)/Disc 01/06 I'm Upset.flac
-75:Drake/Scorpion (Album)/Disc 01/07 8 Out Of 10.flac
-76:Drake/Scorpion (Album)/Disc 01/08 Mob Ties.flac
-77:Drake/Scorpion (Album)/Disc 01/09 Can’t Take A Joke.flac
-78:Drake/Scorpion (Album)/Disc 01/10 Sandra’s Rose.flac
-79:Drake/Scorpion (Album)/Disc 01/11 Talk Up.flac
-80:Drake/Scorpion (Album)/Disc 01/12 Is There More.flac
-81:Drake/Scorpion (Album)/Disc 02/01 Peak.flac
-82:Drake/Scorpion (Album)/Disc 02/02 Summer Games.flac
-83:Drake/Scorpion (Album)/Disc 02/03 Jaded.flac
-84:Drake/Scorpion (Album)/Disc 02/04 Nice For What.flac
-85:Drake/Scorpion (Album)/Disc 02/05 Finesse.flac
-86:Drake/Scorpion (Album)/Disc 02/06 Ratchet Happy Birthday.flac
-87:Drake/Scorpion (Album)/Disc 02/07 That’s How You Feel.flac
-88:Drake/Scorpion (Album)/Disc 02/08 Blue Tint.flac
-89:Drake/Scorpion (Album)/Disc 02/09 In My Feelings.flac
-90:Drake/Scorpion (Album)/Disc 02/10 Don’t Matter To Me.flac
-91:Drake/Scorpion (Album)/Disc 02/11 After Dark.flac
-92:Drake/Scorpion (Album)/Disc 02/12 Final Fantasy.flac
-93:Drake/Scorpion (Album)/Disc 02/13 March 14.flac
-94:BIGBANG/Still Alive (Album)/04 Fantastic Baby.mp3
-95:Breakbot/2Good4Me - My Toy (Remixes) (Album)/01 2Good4Me (Canblaster Remix).flac
-96:Breakbot/Still Waters (Album)/01 Back for More.flac
-97:Breakbot/Still Waters (Album)/02 Arrested.flac
-98:Breakbot/Still Waters (Album)/03 The Sweetest Romance.flac
-99:Breakbot/Still Waters (Album)/04 2Good4Me.flac
-100:Breakbot/Still Waters (Album)/05 My Toy.flac
-101:Breakbot/Still Waters (Album)/06 Get Lost.flac
-102:Breakbot/Still Waters (Album)/07 Turning Around.flac
-103:Breakbot/Still Waters (Album)/08 Man Without Shadow.flac
-104:Breakbot/Still Waters (Album)/09 All It Takes.flac
-105:Breakbot/Still Waters (Album)/10 Wet Dream.flac
-106:Breakbot/Still Waters (Album)/11 Too Soon.flac
-107:Breakbot/Still Waters (Album)/12 In Return.flac
-108:Breakbot/Still Waters (Album)/13 Still Waters.flac
-109:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/02 Trivia 起 _ Just Dance.m4a
-110:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-01 Euphoria.m4a
-111:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-03 Serendipity (Full Length Editio.m4a
-112:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-08 Singularity.m4a
-113:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-11 Trivia 轉 _ Seesaw.m4a
-114:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-13 Epiphany.m4a
-115:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-14 I'm Fine.m4a
-116:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-15 IDOL.m4a
-117:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-16 Answer _ Love Myself.m4a
-118:Ludovico Einaudi/2004 - Una Mattina/01 - Una Mattina.flac
-119:Sasha Sloan/Faking It (Single)/01 Faking It.flac
-120:Sasha Sloan/Normal (stripped) (Single)/01 Normal (stripped).flac
-121:Sasha Sloan/The Only (Single)/01 The Only.flac
-122:Yung Bae/Japanese Disco Edits/YUNG BAE - Japanese Disco Edits - 01 Sailor Babe.mp3
-123:Nirvana (Live) MTV Unplugged in New York/01 - About A Girl.flac
-124:Nirvana (Live) MTV Unplugged in New York/02 - Come As You Are.flac
-125:Nirvana (Live) MTV Unplugged in New York/03 - Jesus Doesn't Want Me For A Sunbeam.flac
-126:Nirvana (Live) MTV Unplugged in New York/04 - The Man Who Sold The World.flac
-127:Nirvana (Live) MTV Unplugged in New York/05 - Pennyroyal Tea.flac
-128:Nirvana (Live) MTV Unplugged in New York/06 - Dumb.flac
-129:Nirvana (Live) MTV Unplugged in New York/07 - Polly.flac
-130:Nirvana (Live) MTV Unplugged in New York/08 - On A Plain.flac
-131:Nirvana (Live) MTV Unplugged in New York/09 - Something In The Way.flac
-132:Nirvana (Live) MTV Unplugged in New York/10 - Plateau.flac
-133:Nirvana (Live) MTV Unplugged in New York/11 - Oh Me.flac
-134:Nirvana (Live) MTV Unplugged in New York/12 - Lake Of Fire.flac
-135:Nirvana (Live) MTV Unplugged in New York/13 - All Apologies.flac
-136:Queen - The Ultimate Best Of Queen (2011) [mp3][www.lokotorrents.com]/04. Bohemian Rhapsody.mp3
-137:Queen - The Ultimate Best Of Queen (2011) [mp3][www.lokotorrents.com]/07. Killer Queen.mp3
-138:The Cure - Greatest Hits (2001) FLAC Soup/06. In Between Days.flac
-139:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/101-blue_swede-hooked_on_a_feeling.flac
-140:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/102-the_raspberries-go_all_the_way.flac
-141:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/103-norman_greenbaum-spirit_in_the_sky.flac
-142:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/104-david_bowie-moonage_daydream.flac
-143:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/105-elvin_bishop-fooled_around_and_fell_in_love.flac
-144:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/106-10cc-im_not_in_love.flac
-145:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/107-the_jackson_5-i_want_you_back.flac
-146:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/108-redbone-come_and_get_your_love.flac
-147:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/109-the_runaways-cherry_bomb.flac
-148:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/110-rupert_holmes-escape_(the_pina_colada_song).flac
-149:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/111-the_five_stairsteps-o-o-h_child.flac
-150:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/112-marvin_gaye_and_tammi_terrell-aint_no_mountain_high_enough.flac
-151:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/201-tyler_bates-morag.flac
-152:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/202-tyler_bates-the_final_battle_begins.flac
-153:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/203-tyler_bates-plasma_ball.flac
-154:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/204-tyler_bates-quills_big_retreat.flac
-155:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/205-tyler_bates-to_the_stars.flac
-156:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/206-tyler_bates-ronans_theme.flac
-157:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/207-tyler_bates-everyones_an_idiot.flac
-158:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/208-tyler_bates-what_a_bunch_of_a-holes.flac
-159:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/209-tyler_bates-busted.flac
-160:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/210-tyler_bates-the_new_meat.flac
-161:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/211-tyler_bates-the_destroyer.flac
-162:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/212-tyler_bates-sanctuary.flac
-163:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/213-tyler_bates-the_kyln_escape.flac
-164:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/214-tyler_bates-dont_mess_with_my_walkman.flac
-165:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/215-tyler_bates-the_great_companion.flac
-166:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/216-tyler_bates-the_road_to_knowhere.flac
-167:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/217-tyler_bates-the_collector.flac
-168:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/218-tyler_bates-ronans_arrival.flac
-169:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/219-tyler_bates-the_pod_chase.flac
-170:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/220-tyler_bates-sacrifice.flac
-171:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/221-tyler_bates-we_all_got_dead_people.flac
-172:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/222-tyler_bates-the_ballad_of_the_nova_corps._(instrumental).flac
-173:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/223-tyler_bates-groot_spores.flac
-174:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/224-tyler_bates-guardians_united.flac
-175:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/225-tyler_bates-the_big_blast.flac
-176:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/226-tyler_bates-groot_cocoon.flac
-177:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/227-tyler_bates-black_tears.flac
-178:VA Guardians Of The Galaxy VOL. 1 and 2 [OST FLAC CD] 1914/VA-Guardians_Of_The_Galaxy_Deluxe-OST-2CD-FLAC-2014-VOLDiES/228-tyler_bates-citizens_unite.flac
-179:The Top 100 Masterpieces of Classical Music 1685-1928 Flac/The Top 100 Masterpieces of Classical Music 1685-1928/Disc 4 - 1788-1810/405 - Beethoven - Für Elise.flac
-180:The Top 100 Masterpieces of Classical Music 1685-1928 Flac/The Top 100 Masterpieces of Classical Music 1685-1928/Disc 1 - 1685-1730/106 - Bach - Air (from Orchestral Suite No. 3 in D.flac
-181:The Top 100 Masterpieces of Classical Music 1685-1928 Flac/The Top 100 Masterpieces of Classical Music 1685-1928/Disc 9 - 1877-1893/910 - J. Strauss II - Emperor Waltz.flac
-182:The Top 100 Masterpieces of Classical Music 1685-1928 Flac/The Top 100 Masterpieces of Classical Music 1685-1928/Disc 9 - 1877-1893/903 - Tchaikovsky - Waltz of the Flowers (from The Nutcracker).flac
+0:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/02 Trivia 起 _ Just Dance.m4a
+1:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-01 Euphoria.m4a
+2:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-03 Serendipity (Full Length Editio.m4a
+3:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-08 Singularity.m4a
+4:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-09 FAKE LOVE.m4a
+5:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-13 Epiphany.m4a
+6:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-14 I'm Fine.m4a
+7:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-15 IDOL.m4a
+8:BTS - Love Yourself 結 'Answer' (iTunes Plus)  [www.k2nblog.com]/1-16 Answer _ Love Myself.m4a
 playlist_end

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MUSIC_DIR=/run/media/punpun/Miso/Music
+MUSIC_DIR=/run/media/onodera/Miso/Music
 
 COVER=/tmp/cover.jpg
 

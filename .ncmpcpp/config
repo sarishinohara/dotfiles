@@ -17,7 +17,7 @@ lyrics_directory = ~/.config/ncmpcpp/Lyrics
 mpd_host = localhost
 mpd_port = 6600
 mpd_connection_timeout = 5
-mpd_music_dir = "/run/media/punpun/Miso/Music"
+mpd_music_dir = "/run/media/onodera/Miso/Music"
 
 
 # display
