@@ -54,5 +54,4 @@ ${c0}       ${lc}UPTIME:       ${ic}${uptime}${reset}
 ${c0}       ${lc}PACKAGES:     ${ic}${packages}${reset}
 ${c0}       ${lc}SHELL:        ${ic}${shell}${reset}
 ${c0}       ${lc}${envtype}:           ${ic}${WM}${reset}
-${c0}          
 EOF
