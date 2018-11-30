@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>darker</name>
+    <name>polaroid</name>
     <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -518,22 +518,22 @@
     <!-- Take a screenshot, say "Cheeeese!" -->
     <keybind key="Print">
       <action name="Execute">
-        <command>sh -c "maim --hidecursor ~/Pictures/$(date +%s).png; notify-send 'Screenshot taken' "</command>
+        <command>sh -c "maim --hidecursor ~/Pictures/$(date +%s).png; notify-send 'wubba lubba dub dub' "</command>
       </action>
     </keybind>
     <keybind key="W-Print">
       <action name="Execute">
-        <command>sh -c "maim --hidecursor -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; notify-send 'Window screenshot taken' "</command>
+        <command>sh -c "maim --hidecursor -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; notify-send 'wubba lubba dub dub' "</command>
       </action>
     </keybind>
     <keybind key="W-S-Print">
       <action name="Execute">
-        <command>sh -c "maim --hidecursor -s -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send 'Selection screenshot taken' "</command>
+        <command>sh -c "maim --hidecursor -s -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send 'wubba lubba dub dub' "</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>sh -c "maim --hidecursor -d 4 ~/Pictures/$(date +%s).png; notify-send 'delayed screenshot taken' "</command>
+        <command>sh -c "maim --hidecursor -d 4 ~/Pictures/$(date +%s).png; notify-send 'wubba lubba dub dub' "</command>
       </action>
     </keybind>
     <!-- Screen Lock -->
