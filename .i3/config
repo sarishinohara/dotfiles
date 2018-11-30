@@ -332,7 +332,7 @@ exec --no-startup-id clipit
 # exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-exec --no-startup-id hsetroot -solid "#ffd5c0"
+exec --no-startup-id hsetroot -solid "#f2c8aa"
 exec_always --no-startup-id numlockx
 exec --no-startup-id xrandr --dpi 102
 
