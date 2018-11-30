@@ -2,11 +2,11 @@
 ## Menu generated with fbmenugen v0.82
 #
 
-[begin] (#)
+[begin] (Menu)
 [encoding] {UTF-8}
-  [exec] (Files) {thunar}
+  [exec] (files) {thunar}
   [separator]
-  [exec] (Term) {urxvt}
+  [exec] (term) {urxvt}
   [separator]
   [exec] (www) {firefox}
   [separator]

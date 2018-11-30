@@ -84,8 +84,8 @@ XF86AudioRaiseVolume :Exec amixer set Master 1%+
 XF86AudioLowerVolume :Exec amixer set Master 1%-
 
 # brightness settings
-#XF86MonBrightnessUp :Exec xbacklight -inc 1
-#XF86MonBrightnessDown :Exec xbacklight -dec 1
+XF86MonBrightnessUp :Exec light -A 0.5
+XF86MonBrightnessDown :Exec light -U 0.5
 
 # screenshot
 Print :Exec maim --hidecursor ~/Pictures/$(date +%s).png && notify-send "screenshot taken"
@@ -114,7 +114,7 @@ Mod1 Shift R :Restart
 Mod4 t :ToggleDecor
 
 # Center 
-Mod4 a :Exec center
+Mod4 A :Exec center
 
 
 # change to previous/next workspace

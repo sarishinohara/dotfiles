@@ -10,7 +10,7 @@ menu.frame.colorTo:                  rgb:ff/ff/ff
 menu.frame.textColor:                rgb:00/00/00
 menu.frame.justify:                  center
 
-menu.borderWidth:                    50
+menu.borderWidth:                    25
 menu.borderColor:                    rgb:ff/ff/ff
 
 menu.hilite:                         flat solid
@@ -33,6 +33,8 @@ window.title.focus.colorTo:          rgb:ff/ff/ff
 window.title.unfocus:                Flat Solid
 window.title.unfocus.color:          rgb:1d/38/3e
 window.title.unfocus.colorTo:        rgb:1d/38/3e
+window.title.unfocus.textColor:      rgb:1d/38/3e
+window.title.focus.textColor:        rgb:ff/ff/ff
 window.title.unfocus.textColor:      rgb:1d/38/3e
 
 window.label.focus:                  Flat Solid
@@ -84,9 +86,9 @@ borderWidth:                         0
 bevelWidth:                          0
 handleWidth:                         0
 
-*font:                               Roboto-9
-menu*font:                           bebas neue-11:medium
-toolbar*font:                        Roboto-10
+*font:                               Roboto-8
+menu*font:                           Roboto-9:medium
+toolbar*font:                        Roboto-9
 
 *textColor:                          rgb:c/c/c
 ! - for fluxbox

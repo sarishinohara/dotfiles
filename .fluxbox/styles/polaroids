@@ -25,7 +25,7 @@ menu.bullet.position:                right
 ! window.title.focus.color:          rgb:e3/cd/a6
 
 
-window.title.height:                 50
+window.title.height:                 0
 
 window.title.focus:                  Flat Solid
 window.title.focus.color:            rgb:ff/ff/ff
@@ -34,7 +34,7 @@ window.title.unfocus:                Flat Solid
 window.title.unfocus.color:          rgb:ff/ff/ff
 window.title.unfocus.colorTo:        rgb:ff/ff/ff
 window.title.focus.textColor:        rgb:ff/ff/ff
-window.title.unfocus.textColor:      rgb:ff/ff/ff
+window.title.unfocus.textColor:        rgb:ff/ff/ff
 
 window.label.focus:                  Flat Solid
 window.label.focus.color:            rgb:ff/ff/ff
@@ -81,9 +81,9 @@ window.justify:                      center
 
 borderColor:                         rgb:ff/ff/ff
 
-borderWidth:                         0
+borderWidth:                         16
 bevelWidth:                          0
-handleWidth:                         0
+handleWidth:                         60
 
 *font:                               Roboto-8
 menu*font:                           Roboto-9:medium
