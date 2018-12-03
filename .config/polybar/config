@@ -208,7 +208,7 @@ animation-charging-framerate = 100
 type = custom/script
 exec = ~/.config/polybar/2bws
 click-left = tint2 -c /home/onodera/.config/tint2/calcal.tint2rc
-scroll-up = killall tint2
+click-right = xkill
 interval = 0.01
 
 [module/mpd]
@@ -483,6 +483,7 @@ label-urgent-padding = 1
 ; label-separator-foreground = ${colors.special}
 
 
+
 [module/backlight]
 type = internal/xbacklight
 
@@ -568,7 +569,7 @@ separator = "  |  "
 padding-left = 4
 padding-right = 4
 
-modules-left = mpcc 
+modules-left = i3 
 modules-center =   
 modules-right = wewe
 
