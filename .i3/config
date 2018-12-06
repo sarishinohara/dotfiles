@@ -17,8 +17,8 @@ hide_edge_borders none
 # change borders
 bindsym $mod+u border none
 bindsym $mod+y border pixel 6
+bindsym $mod+Shift+y border pixel 20
 bindsym $mod+n border normal 0
-bindsym $mod+Shift+y border pixel 2
 
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -101,7 +101,7 @@ exec_always --no-startup-id batbat
 exec_always --no-startup-id cookie
 
 
-# focus_follows_mouse no
+focus_follows_mouse no
 
 # change focus
 bindsym $mod+j focus left
@@ -300,10 +300,10 @@ mode "resize" {
         bindsym semicolon resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 2 px or 2 ppt
+        bindsym Down resize grow height 2 px or 2 ppt
+        bindsym Up resize shrink height 2 px or 2 ppt
+        bindsym Right resize grow width 2 px or 2 ppt
 
         # exit resize mode: Enter or Escape
         bindsym Return mode "default"
