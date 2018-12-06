@@ -62,21 +62,16 @@ Mod4 X :Exec draw
 
 # open a dialog to run programs
 Mod4 Z :Exec rofir
-
 Mod4 D :Exec dmenuu
 
 # bar
 Mod4 M :Exec polybar sec
-
 Mod4 P :Exec $HOME/.config/polybar/launch
-
 Mod4 Shift m :Exec $HOME/.config/polybar/kill
 
 # tint2
 Mod4 N :Exec tint2
-
 Mod4 Shift N :Exec killall tint2
-
 
 # volume settings, using common keycodes
 # if these don't work, use xev to find out your real keycodes
@@ -86,6 +81,14 @@ XF86AudioLowerVolume :Exec amixer set Master 1%-
 # brightness settings
 XF86MonBrightnessUp :Exec light -A 0.5
 XF86MonBrightnessDown :Exec light -U 0.5
+
+# Media
+XF86AudioStop :Exec mpc stop
+XF86AudioPlay :Exec mpc toggle
+XF86AudioPrev :Exec mpc prev
+XF86AudioNext :Exec mpc next
+Mod4 B :Exec bum --size "200"
+Mod4 Shift B :Exec killall -9 bum
 
 # screenshot
 Print :Exec maim --hidecursor ~/Pictures/$(date +%s).png && notify-send "screenshot taken"
@@ -116,7 +119,6 @@ Mod4 t :ToggleDecor
 # Center 
 Mod4 A :Exec center
 
-
 # change to previous/next workspace
 Control Mod1 Left :PrevWorkspace
 Control Mod1 Right :NextWorkspace
@@ -129,6 +131,20 @@ Mod4 Right :SendToNextWorkspace
 Control Mod4 Left :TakeToPrevWorkspace
 Control Mod4 Right :TakeToNextWorkspace
 
+# Misc 
+Mod4 F1 :Exec ~/.scripts/batt
+Mod4 F2 :Exec ~/.scripts/date
+Mod4 F3 :Exec ~/.scripts/cookies
+Mod4 F4 :Exec solsol
+Mod4 F5 :Exec ~/.scripts/batt
+
+# wal
+Mod4 I :Exec wal -i $HOME/Pictures/Wallpapers -o wal-set
+Mod4 C :Exec wal -i $HOME/Pictures/Wallpapers -l -o wal-se
+
+# termiate
+Mod4 Control x :Exec xkill
+
 # change to a specific workspace
 Mod4 1 :Workspace 1
 Mod4 2 :Workspace 2
@@ -138,10 +154,6 @@ Mod4 5 :Workspace 5
 Mod4 6 :Workspace 6
 Mod4 7 :Workspace 7
 Mod4 8 :Workspace 8
-#F9 :Workspace 9
-#F10 :Workspace 10
-#F11 :Workspace 11
-#F12 :Workspace 12
 
 # send the current window to a specific workspace
 Mod4 Shift 1 :SendToWorkspace 1
@@ -152,10 +164,6 @@ Mod4 Shift 5 :SendToWorkspace 5
 Mod4 Shift 6 :SendToWorkspace 6
 Mod4 Shift 7 :SendToWorkspace 7
 Mod4 Shift 8 :SendToWorkspace 8
-#Mod4 F9 :SendToWorkspace 9
-#Mod4 F10 :SendToWorkspace 10
-#Mod4 F11 :SendToWorkspace 11
-#Mod4 F12 :SendToWorkspace 12
 
 # send the current window and change to a specific workspace
 Control Mod4 F1 :TakeToWorkspace 1
