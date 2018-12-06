@@ -1,0 +1,97 @@
+menu.title:                          Flat Solid
+menu.title.color:                    rgb:ff/ff/ff
+menu.title.colorTo:                  rgb:ff/ff/ff
+menu.title.textColor:                rgb:00/00/00
+menu.title.justify:                  center
+
+menu.frame:                          Flat Solid
+menu.frame.color:                    rgb:ff/ff/ff
+menu.frame.colorTo:                  rgb:ff/ff/ff
+menu.frame.textColor:                rgb:00/00/00
+menu.frame.justify:                  center
+
+menu.borderWidth:                    25
+menu.borderColor:                    rgb:ff/ff/ff
+
+menu.hilite:                         flat solid
+menu.hilite.textColor:               rgb:37/bf/8d
+menu.hilite.color:                   rgb:ff/ff/ff
+
+menu.bullet:                         empty
+menu.bullet.position:                right
+
+
+! window.title.focus:                flat solid
+! window.title.focus.color:          rgb:e3/cd/a6
+
+
+window.title.height:                 0
+
+window.title.focus:                  Flat Solid
+window.title.focus.color:            rgb:07/1d/22
+window.title.focus.colorTo:          rgb:07/1d/22
+window.title.unfocus:                Flat Solid
+window.title.unfocus.color:          rgb:07/1d/22
+window.title.unfocus.colorTo:        rgb:07/1d/22
+window.title.focus.textColor:        rgb:07/1d/22
+window.title.unfocus.textColor:      rgb:07/1d/22
+
+window.label.focus:                  Flat Solid
+window.label.focus.color:            rgb:07/1d/22
+window.label.focus.colorTo:          rgb:07/1d/22
+window.label.focus.textColor:        rgb:07/1d/22
+window.label.unfocus:                Flat Solid
+window.label.unfocus.color:          rgb:07/1d/22
+window.label.unfocus.colorTo:        rgb:07/1d/22
+window.label.unfocus.textColor:      rgb:07/1d/22
+
+window.handle.focus:                 Flat Solid
+window.handle.focus.color:           rgb:ff/ff/ff
+window.handle.focus.colorTo:         rgb:ff/ff/ff
+window.handle.unfocus:               Flat Solid
+window.handle.unfocus.color:         rgb:ff/ff/ff
+window.handle.unfocus.colorTo:       rgb:ff/ff/ff
+
+window.grip.focus:                   Flat Solid
+window.grip.focus.color:             rgb:ff/ff/ff
+window.grip.focus.colorTo:           rgb:ff/ff/ff
+window.grip.unfocus:                 Flat Solid
+window.grip.unfocus.color:           rgb:ff/ff/ff
+window.grip.unfocus.colorTo:         rgb:ff/ff/ff
+
+window.button.focus:                 Flat Solid
+window.button.focus.color:           rgb:07/1d/22
+window.button.focus.colorTo:         rgb:07/1d/22
+! window.button.focus.color:         rgb:07/1d/22
+! window.button.focus.colorTo:       rgb:07/1d/22
+window.button.focus.picColor:        rgb:0/0/0
+window.button.unfocus:               Flat Solid
+window.button.unfocus.color:         rgb:07/1d/22
+window.button.unfocus.colorTo:       rgb:07/1d/22
+window.button.unfocus.picColor:      rgb:07/1d/22
+
+window.button.pressed:               Flat Solid
+window.button.pressed.color:         rgb:07/1d/22
+window.button.pressed.colorTo:       rgb:07/1d/22
+
+window.frame.focusColor:             rgb:ff/ff/ff
+window.frame.unfocusColor:           rgb:ff/ff/ff
+
+window.justify:                      center
+
+borderColor:                         rgb:ff/ff/ff
+
+borderWidth:                         10
+bevelWidth:                          0
+handleWidth:                         0
+
+*font:                               Roboto-8
+menu*font:                           Roboto-9:medium
+toolbar*font:                        Roboto-9
+
+*textColor:                          rgb:c/c/c
+! - for fluxbox
+window.tab.label.unfocus.textColor:  rgb:5a/5a/5a
+window.tab.label.focus.textColor:    rgb:1a/04/08
+! -
+
