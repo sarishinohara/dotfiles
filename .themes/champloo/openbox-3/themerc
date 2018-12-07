@@ -50,11 +50,11 @@ menu.*.text.color: #ffffff
 menu.*.active.text.color: #000000
 
 # Add some padding
-menu.border.width: 40
+menu.border.width: 60
 menu.border.color: #E68A8B
 
 # Add some submenu padding
-menu.overlap.x: -30
+menu.overlap.x: -70
 menu.overlap.y: 0
 
 # Add padding between items
