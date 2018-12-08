@@ -22,7 +22,7 @@ super + Return
 
 # alternative terminal emulator
 super + shift + Return
-	termite
+	sakura
 
 ## Drawing terminal
 super + x 
@@ -258,26 +258,26 @@ super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,cc
 
 ### Toggle window gaps
 super + g
-    bspc config window_gap {5,30,60,100}
+    bspc config window_gap {5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100}
 
 alt + g
-    bspc config -d focused window_gap {5,30,60,100}
+    bspc config -d focused window_gap {5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100}
 
 
 # Toggle window borders 
 super + y
-    bspc config -d focused border_width {0,1,4,5,6,7,10,13}
+    bspc config -d focused border_width {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
 
 alt + y
-    bspc config -n focused border_width {0,1,4,5,6,7,10,13}
+    bspc config -n focused border_width {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15}
 
 
 # Toggle Rounded borders 
 super + u
-    bspc config -d focused border_radius {-20,0,1,4,5,6,7,8,9,10,11,12,13}
+    bspc config -d focused border_radius {-20,0,1,2,3,4,5,6,7,8,9,10,11,12,13}
 
 alt + u
-    bspc config -n focused border_radius {-20,0,1,4,5,6,7,8,9,10,11,12,13}
+    bspc config -n focused border_radius {-20,0,1,2,3,4,5,6,7,8,9,10,11,12,13}
 
 
 ### Flip the tree
@@ -293,15 +293,15 @@ alt + h
 
 ## expanding windows
 super + ctrl + {Left,Right,Up,Down}
-	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
+	bspc node -z {left -10 0,right 10 0,top 0 -10,bottom 0 10}
 	
 ## shrinking windows
 super + alt + {Right,Left,Down,Up}
-	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
+	bspc node -z {left 10 0,right -10 0,top 0 10,bottom 0 -10}
 
 # move a floating window
 super + alt + ctrl + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
+	bspc node -v {-10 0,0 10,0 -10,10 0}
 
 
 
