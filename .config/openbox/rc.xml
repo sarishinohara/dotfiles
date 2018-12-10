@@ -42,8 +42,8 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>polaroid</name>
-    <titleLayout>IMC</titleLayout>
+    <name>xena</name>
+    <titleLayout>C</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -305,18 +305,18 @@
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>-0</x>
-        <y>+0</y>
+        <y>+20</y>
         <width>50/100</width>
-        <height>100/100</height>
+        <height>95/100</height>
       </action>
     </keybind>
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MoveResizeTo">
         <x>+0</x>
-        <y>+0</y>
+        <y>+20</y>
         <width>50/100</width>
-        <height>100/100</height>
+        <height>95/100</height>
       </action>
     </keybind>
     <keybind key="W-Up">
@@ -598,6 +598,12 @@
     <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
         <command>sh -c "xbacklight -dec 1; notify-send 'brightness down' "</command>
+      </action>
+    </keybind>
+    <!-- Keybindings for tiling  -->
+    <keybind key="W-S-space">
+      <action name="Execute">
+        <command>rtile --all</command>
       </action>
     </keybind>
     <!-- Reload and Exit keybinds -->
@@ -985,7 +991,7 @@
     <hideDelay>200</hideDelay>
     <!-- if a press-release lasts longer than this setting (in milliseconds), the
        menu is hidden again -->
-    <middle>no</middle>
+    <middle>yes</middle>
     <!-- center submenus vertically about the parent entry -->
     <submenuShowDelay>100</submenuShowDelay>
     <!-- time to delay before showing a submenu after hovering over the parent
