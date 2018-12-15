@@ -7,7 +7,7 @@ padding.width: 14
 # Menu
 menu.items.active.bg: Solid Flat
 menu.items.active.bg.color: #1d383e
-menu.items.active.text.color: #6bd27e
+menu.items.active.text.color: #ef7870
 menu.items.bg: Flat Solid
 menu.items.bg.color: #1d383e
 menu.items.disabled.text.color: #777777
@@ -21,7 +21,7 @@ menu.title.bg.color: #1d383e
 menu.title.text.color: #ffffff
 menu.title.text.font: shadow=n
 menu.title.text.justify: Center
-menu.overlap.x: -60
+menu.overlap.x: -65
 
 # OSD
 osd.bg: Solid Flat

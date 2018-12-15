@@ -7,13 +7,13 @@ menu.items.bg: Flat
 menu.items.bg.color: #ffffff
 menu.items.disabled.text.color: #94a9d9
 menu.items.text.color: black
-menu.border.width: 60
+menu.border.width: 80
 menu.border.color: #ffffff
 menu.title.bg: Flat
 menu.title.*.color: #000000
 menu.title.text.justify: Left
 menu.separator.color: #ffffff
-menu.overlap.x: -65
+menu.overlap.x: -85
 
 
 # osd
@@ -50,13 +50,13 @@ window.inactive.*.*.image.color: white
 
 # handle
 window.active.handle.bg: Flat
-window.active.handle.bg.color: #3e424d
+window.active.handle.bg.color: #1c2430
 window.inactive.handle.bg: Flat
-window.inactive.handle.bg.color: #3e424d
+window.inactive.handle.bg.color: #1c2430
 
 
 # grip
 window.active.grip.bg: Flat
-window.active.grip.bg.color: #3e424d
+window.active.grip.bg.color: #1c2430
 window.inactive.grip.bg: Flat
-window.inactive.grip.bg.color: #3e424d
+window.inactive.grip.bg.color: #1c2430

@@ -31,16 +31,16 @@ URxvt*scrollBar_right:   false
 
 URxvt*transparent:       false
 
-URxvt*depth: 32
+! URxvt*depth: 32
 URxvt.background: [99]#012128
 
-URxvt.font: xft:Roboto Mono Medium:size=8.5,xft:DejaVu Sans:size=7
-URxvt.boldFont: 
+URxvt.font: xft:drift:size=7,xft:DejaVu Sans Mono:size=7
+URxvt.boldFont:
 URxvt.letterSpace: 0
-URxvt.internalBorder: 80
+URxvt.internalBorder: 100
 
 
-*antialias:  true
+*antialias:  false
 *autohint:   true
 
 Xft.dpi: 102
@@ -50,4 +50,16 @@ Xft.rgba: rgb
 Xft.autohint: false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
+
+
+twobwm.border_width: 0
+twobwm.outer_border: 0
+twobwm.focus_color: #3a3c4a
+twobwm.unfocus_color: #3a3c4a
+twobwm.fixed_color: #ffffff
+twobwm.unkill_color: #ffffff
+twobwm.outer_border_color: #3a3c4a
+twobwm.fixed_unkill_color: #ffffff
+twobwm.inverted_colors: false
+twobwm.enable_compton: true
 

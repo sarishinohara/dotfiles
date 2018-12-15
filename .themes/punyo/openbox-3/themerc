@@ -21,7 +21,7 @@ menu.title.bg.color: #ffffff
 menu.title.text.color: #000000
 menu.title.text.font: shadow=n
 menu.title.text.justify: Center
-menu.overlap.x: -60
+menu.overlap.x: -65
 
 # OSD
 osd.bg: Solid Flat

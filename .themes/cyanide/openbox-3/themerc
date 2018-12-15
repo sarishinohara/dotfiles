@@ -1,6 +1,6 @@
 # Menu
-menu.border.width: 40
-menu.overlap.x: -20
+menu.border.width: 70
+menu.overlap.x: -75
 menu.overlap.y: 8
 
 menu.border.color: #2AA198

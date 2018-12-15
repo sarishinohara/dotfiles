@@ -1,7 +1,7 @@
  # Windows
 border.width: 0
 border.color: #151515
-padding.height: 14
+padding.height: 10
 padding.width: 14
 
 # Menu
@@ -13,7 +13,8 @@ menu.items.bg.color: #eeeeee
 menu.items.disabled.text.color: #777777
 menu.items.font: shadow=n
 menu.items.text.color: #333333
-menu.border.width: 30
+menu.border.width: 70
+menu.overlap.x: -75
 menu.border.color: #eeeeee
 menu.separator.color: #eeeeee
 menu.title.bg: Solid Flat
@@ -37,7 +38,7 @@ window.active.button.disabled.bg: Solid Flat
 window.active.button.disabled.bg.color: #6bd27e
 window.active.button.disabled.image.color: #439752
 window.active.button.hover.bg: Solid Flat
-window.active.button.hover.bg.color: #333333
+window.active.button.hover.bg.color: #6bd27e
 window.active.button.hover.image.color: #eeeeee
 window.active.button.pressed.bg: Solid Flat
 window.active.button.pressed.bg.color: #404040
@@ -67,7 +68,7 @@ window.inactive.button.disabled.bg: Solid Flat
 window.inactive.button.disabled.bg.color: #ffbf7b
 window.inactive.button.disabled.image.color: #bf966a
 window.inactive.button.hover.bg: Solid Flat
-window.inactive.button.hover.bg.color: #333333
+window.inactive.button.hover.bg.color: #ffbf7b
 window.inactive.button.hover.image.color: #eeeeee
 window.inactive.button.pressed.bg: Solid Flat
 window.inactive.button.pressed.bg.color: #ffbf7b

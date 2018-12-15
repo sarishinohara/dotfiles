@@ -6,11 +6,11 @@ window.*.button.*.image.color: #ffffff
 # Borders
 window.handle.width: 0
 window.client.padding.width: 0
-border.width: 1
+border.width: 0
 
 # Title
 padding.width: 13
-padding.height: 13
+padding.height: 8
 window.*.title.bg: Solid Flat
 window.*.*.bg: Parentrelative
 window.label.text.justify: center
@@ -26,7 +26,7 @@ menu.title.bg: Flat
 menu.title.bg.color: white
 menu.title.text.color: #071d22
 menu.title.text.justify: Right
-menu.border.width: 60
+menu.border.width: 70
 menu.border.color: white
 menu.separator.color: white
-menu.overlap.x: -65
+menu.overlap.x: -75

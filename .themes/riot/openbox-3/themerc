@@ -13,7 +13,8 @@ menu.items.bg.color: #ffffff
 menu.items.disabled.text.color: #000000
 menu.items.font: shadow=n
 menu.items.text.color: #000000
-menu.border.width: 40
+menu.border.width: 70
+menu.overlap.x: -75
 menu.border.color: #ffffff
 menu.separator.color: #ffffff
 menu.title.bg: Solid Flat

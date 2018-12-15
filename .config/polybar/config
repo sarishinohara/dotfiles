@@ -20,8 +20,6 @@ override-redirect = true
 # wm-restack = i3
 
 
-
-
 border-top-size = 0
 border-top-color = ${colors.special}
 
@@ -551,7 +549,7 @@ border-left-color = ${colors.special}
 
 bottom = true
 
-font-0 = Roboto:size=9;2:antialias=true
+font-0 = cure:size=9;2:antialias=true
 font-7 = Font Awesome:pixelsize=11;2:antialias=true
 font-2 = Kochi Gothic:pixelsize=8;2
 font-3 = FontAwesome 5 Brands:pixelsize=11;2:antialias=true
@@ -566,8 +564,8 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 separator = "  |  "
-padding-left = 4
-padding-right = 4
+padding-left = 2
+padding-right = 2
 
 modules-left = i3 
 modules-center =   
