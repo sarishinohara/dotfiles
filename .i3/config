@@ -410,13 +410,13 @@ bindsym $mod+Shift+m exec --no-startup-id $HOME/.config/polybar/kill
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          $term_foreground $term_foreground $term_foreground $term_foreground  $term_foreground
+  client.focused          #ffffff #ffffff #ffffff #ffffff  #ffffff
   client.focused_inactive #1d383e #1d383e #1d383e #1d383e  #1d383e
   client.unfocused        #1d383e #1d383e #1d383e #1d383e  #1d383e
-  client.urgent           $term_foreground $term_foreground $term_foreground $term_foreground  $term_foreground
-  client.placeholder      $term_foreground $term_foreground $term_foreground $term_foreground  $term_foreground
+  client.urgent           #ffffff #ffffff #ffffff #ffffff  #ffffff
+  client.placeholder      #ffffff #ffffff #ffffff #ffffff  #ffffff
 
-  client.background       #2B2C2B
+  client.background       #ffffff
 
 #############################
 ### settings for i3-gaps: ###
