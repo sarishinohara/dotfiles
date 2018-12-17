@@ -256,6 +256,7 @@ for_window [class="Thunar"] floating enable
 for_window [class="Mousepad"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="Sakura"] floating enable
+for_window [class="Xed"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
