@@ -6,7 +6,7 @@
 **2bwm** - Seoul 
 ![Screenshot](img/2bwm.png)
 
-**Openbox** - Waste away 
+**Openbox** - サリシノハラ 
 ![Screenshot](img/Openbox.png)
 
 **i3** - Minimal
