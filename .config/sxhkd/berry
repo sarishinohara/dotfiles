@@ -40,10 +40,10 @@ super + {Left,Down,Up,Right}
 super + shift +  {Left,Down,Up,Right}
     berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
 
-super + {0-9}
+super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
     berryc switch_workspace {0-9}
 
-super + shift + {0-9}
+super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
     berryc send_to_workspace {0-9}
 
 super + m
