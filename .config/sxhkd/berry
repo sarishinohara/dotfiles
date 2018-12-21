@@ -29,7 +29,9 @@ super + s
 super + shift + e
     pkill -USR1 -x berry
 
-
+# lock That baby up!
+super + ccedilla
+         i3lock-next
 #
 # berry hotkeys
 #
