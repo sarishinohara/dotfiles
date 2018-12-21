@@ -1,0 +1,83 @@
+#
+# wm independent hotkeys
+#
+
+# terminal emulator
+super + Return
+	urxvt
+
+# alt emulator
+super + shift + Return
+	sakura
+
+# draw emulator
+super + x
+	draw
+
+# program launcher
+super + d
+	dmenuu
+
+# alt program launcher
+super + z
+	rofir
+
+# make sxhkd reload its configuration files:
+super + s
+	pkill -USR1 -x sxhkd
+
+super + shift + e
+    pkill -USR1 -x berry
+
+
+#
+# berry hotkeys
+#
+
+super + {Left,Down,Up,Right}
+    berryc window_move {-50 0, 0 50, 0 -50, 50 0}
+
+super + shift +  {Left,Down,Up,Right}
+    berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
+
+super + {0-9}
+    berryc switch_workspace {0-9}
+
+super + shift + {0-9}
+    berryc send_to_workspace {0-9}
+
+super + m
+    berryc window_monocle
+
+super + f
+    berryc fullscreen
+
+super +  p
+    berryc snap_right
+
+super + o 
+    berryc snap_left
+
+super + alt + {Left,Down,Up,Right}
+    berryc cardinal_focus {2, 3, 1, 0}
+
+super + n
+    berryc toggle_decorations
+
+super + Tab
+    berryc cycle_focus
+
+super + shift + q
+    berryc window_close
+
+super + a
+    berryc window_center
+
+alt + !button1
+    berryc pointer_move 1
+
+alt + @button1
+    berryc pointer_move 2
+
+~button1
+berryc pointer_move 0 0

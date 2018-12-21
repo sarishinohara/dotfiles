@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sxhkd -c $HOME/.config/berry/berry
+
+berryc border_width 5
+berryc inner_border_width 5
+berryc title_height 5
+
+berryc focus_color ffffff
+berryc unfocus_color ffffff
+berryc inner_focus_color ffffff
+berryc inner_unfocus_color ffffff
