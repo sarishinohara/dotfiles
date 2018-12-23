@@ -37,7 +37,7 @@ URxvt.background: [99]#012128
 URxvt.font: xft:nu:size=8,xft:DejaVu Sans:size=18
 URxvt.boldFont:
 URxvt.letterSpace: 0
-URxvt.internalBorder: 50
+URxvt.internalBorder: 80
 
 
 *antialias:  false
