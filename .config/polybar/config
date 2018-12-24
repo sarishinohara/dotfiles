@@ -35,7 +35,7 @@ border-left-color = ${colors.special}
 
 bottom = false
 
-font-0 = nu:pixelsize=9;1:antialias=true
+font-0 = metis:pixelsize=9;1:antialias=true
 font-7 = Font Awesome:pixelsize=11;2:antialias=true
 font-2 = Kochi Gothic:pixelsize=8;2
 font-3 = FontAwesome 5 Brands:pixelsize=11;2:antialias=true
@@ -549,7 +549,7 @@ border-left-color = ${colors.special}
 
 bottom = true
 
-font-0 = cure:size=9;2:antialias=true
+font-0 = nu:size=8;2:antialias=true
 font-7 = Font Awesome:pixelsize=11;2:antialias=true
 font-2 = Kochi Gothic:pixelsize=8;2
 font-3 = FontAwesome 5 Brands:pixelsize=11;2:antialias=true
