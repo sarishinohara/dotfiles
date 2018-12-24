@@ -13,7 +13,7 @@ menu.items.bg.color: #ffffff
 menu.items.disabled.text.color: #777777
 menu.items.font: shadow=n
 menu.items.text.color: #000000
-menu.border.width: 60
+menu.border.width: 75
 menu.border.color: #ffffff
 menu.separator.color: #ffffff
 menu.title.bg: Solid Flat
@@ -21,7 +21,7 @@ menu.title.bg.color: #ffffff
 menu.title.text.color: #000000
 menu.title.text.font: shadow=n
 menu.title.text.justify: Center
-menu.overlap.x: -65
+menu.overlap.x: -80
 
 # OSD
 osd.bg: Solid Flat
