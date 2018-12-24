@@ -22,15 +22,16 @@ mpd_music_dir = "/run/media/onodera/Miso/Music"
 
 # display
 song_list_format = "%t"
-# alternative -- song_columns_list_format = "(5)[]{}(55)[16]{t}"
-song_columns_list_format = "(0)[16]{t}"
+#song_columns_list_format = "(5)[]{}(55)[16]{t}"
+song_columns_list_format = "(50)[white]{ar} (50)[white]{t}"
+#song_columns_list_format = "(0)[16]{t}"
 song_status_format = "$3%t"
 playlist_display_mode = "columns"
 
 
 # now playing
-#now_playing_prefix = "$3─ "
-now_playing_suffix = " $3x"
+now_playing_prefix = "$3─"
+#now_playing_suffix = " $3x"
 
 
 # playlist
@@ -78,7 +79,7 @@ visualizer_in_stereo = "yes"
 visualizer_sync_interval = "128"
 visualizer_output_name = "fifo"
 visualizer_fifo_path = "/tmp/mpd.fifo"
-visualizer_type = "spectrum" (spectrum/wave)
+visualizer_type = "wave" (spectrum/wave)
 # visualizer_sample_multiplier = 0.20
 visualizer_color = "white"
 visualizer_look = "∙│"
