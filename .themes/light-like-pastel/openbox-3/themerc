@@ -1,8 +1,7 @@
 
 # Menu
-menu.border.width: 10
-menu.overlap.x:    -20
-menu.overlap.y:    -20
+menu.border.width: 80
+menu.overlap.x:    -85
 
 menu.border.color:              #fefefe
 menu.separator.color:           #fefefe
@@ -165,9 +164,9 @@ menu.items.font:                     shadow=n
 menu.title.text.font:                shadow=n
 
 # Everything else
-border.width:                5
+border.width:                0
 padding.width:               15
-padding.height:              10
+padding.height:              20
 window.handle.width:         0
 window.client.padding.width: 0
 window.label.text.justify:   center

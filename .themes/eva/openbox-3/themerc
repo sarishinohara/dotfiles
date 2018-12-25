@@ -1,8 +1,8 @@
 
 # Menu
-menu.border.width: 10
-menu.overlap.x:    -20
-menu.overlap.y:    -20
+menu.border.width: 80
+menu.overlap.x:    -85
+
 
 menu.border.color:              #fefefe
 menu.separator.color:           #fefefe
