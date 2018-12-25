@@ -29,9 +29,7 @@ super + s
 super + shift + e
     pkill -USR1 -x berry
 
-# lock That baby up!
-super + ccedilla
-         i3lock-next
+
 #
 # berry hotkeys
 #
@@ -42,10 +40,10 @@ super + {Left,Down,Up,Right}
 super + shift +  {Left,Down,Up,Right}
     berryc window_resize {-50 0, 0 50, 0 -50, 50 0}
 
-super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+super + {0-9}
     berryc switch_workspace {0-9}
 
-super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+super + shift + {0-9}
     berryc send_to_workspace {0-9}
 
 super + m

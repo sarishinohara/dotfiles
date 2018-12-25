@@ -90,20 +90,20 @@ super + F6
 
 ## Take a screenshot
 Print
-	maim --hidecursor ~/Pictures/$(date +%s).png; notify-send "Screenshot taken"
+	maim --hidecursor ~/Pictures/$(date +%s).png; notify-send "wubba lubba dub dub"
 
 
 ## Take a window screenshot
 super + Print
-	maim --hidecursor -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; notify-send "Window screenshot taken"
+	maim --hidecursor -i $(xdotool getactivewindow) ~/Pictures/$(date +%s).png; notify-send "wubba lubba dub dub"
 
 ## Take a selection screenshot
 super + shift + Print
-	maim --hidecursor -s -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send "Selection screenshot taken" 
+	maim --hidecursor -s -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send "wubba lubba dub dub" 
 
 ## Take a delayed screenshot
 alt + Print
-	maim --hidecursor -d 4 -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send "Selection screenshot taken"
+	maim --hidecursor -d 4 -b 6 -c 255,255,255 ~/Pictures/$(date +%s).png; notify-send "wubba lubba dub dub"
 
 
 ## Make sxhkd reload its configuration files
