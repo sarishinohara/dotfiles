@@ -44,12 +44,13 @@ padding.width: 0
 window.active.*.bg: Flat
 window.active.*.*.bg.color: white
 window.active.*.*.image.color: white
-
+window.active.label.text.color: #ffffff
 
 # inactive window
 window.inactive.*.bg: Flat
 window.inactive.*.*.bg.color: white
 window.inactive.*.*.image.color: white
+window.inactive.label.text.color: #ffffff
 
 
 # handle

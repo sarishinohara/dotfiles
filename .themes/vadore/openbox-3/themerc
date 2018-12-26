@@ -1,5 +1,5 @@
 window.*.title.bg.color: #000000
-window.*.label.text.color: #ffffff
+window.*.label.text.color: #000000
 window.*.button.*.image.color: #000000
 
 # Borders

@@ -17,8 +17,13 @@ menu.overlap.x: -85
 
 
 # osd
-osd.label.text.color: black
-osd.border.width: 20
+osd.bg: Solid Flat
+osd.bg.color: #ffffff
+osd.border.width: 10
+osd.label.bg: parentrelative
+osd.label.text.color: #000000
+osd.hilight.bg.color: #000000
+osd.unhilight.bg.color: #ffffff
 osd.border.color: #ffffff
 
 
@@ -40,13 +45,13 @@ padding.width: 0
 window.active.*.bg: Flat
 window.active.*.*.bg.color: #ffffff
 window.active.*.*.image.color: white
-
+window.active.label.text.color: #ffffff
 
 # inactive window
 window.inactive.*.bg: Flat
 window.inactive.*.*.bg.color: #ffffff
 window.inactive.*.*.image.color: white
-
+window.inactive.label.text.color: #ffffff
 
 # handle
 window.active.handle.bg: Flat

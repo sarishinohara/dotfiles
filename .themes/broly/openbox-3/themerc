@@ -45,12 +45,14 @@ padding.width: 0
 window.active.*.bg: Flat
 window.active.*.*.bg.color: #071d22
 window.active.*.*.image.color: #071d22
+window.active.label.text.color: #071d22
 
 
 # inactive window
 window.inactive.*.bg: Flat
 window.inactive.*.*.bg.color: #071d22
 window.inactive.*.*.image.color: #071d22
+window.inactive.label.text.color: #071d22
 
 
 # handle

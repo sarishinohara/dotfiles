@@ -92,7 +92,7 @@ window.inactive.grip.bg.color: #000000
 window.inactive.handle.bg: Solid Flat
 window.inactive.handle.bg.color: #000000
 window.inactive.label.bg: Parentrelative
-window.inactive.label.text.color: #000000
+window.inactive.label.text.color: #ffffff
 window.inactive.label.text.font: shadow=n
 window.inactive.title.bg: Solid Flat
 window.inactive.title.bg.color: #ffffff
