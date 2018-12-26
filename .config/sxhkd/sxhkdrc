@@ -256,6 +256,13 @@ super + shift + {1-9,0}
 super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
         bspc desktop -f '^{1-9,10}'
 
+### Toggle padding
+super + k
+    bspc config -d focused {top_padding,bottom_padding,left_padding,right_padding} {100,100,100,100}
+
+super + j
+    bspc config -d focused {top_padding,bottom_padding,left_padding,right_padding} {1,1,1,1}
+
 ### Toggle window gaps
 super + g
     bspc config window_gap {5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100}
