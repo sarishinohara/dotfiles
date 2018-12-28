@@ -1,0 +1,69 @@
+# menu
+menu.items.active.bg: Flat
+menu.items.active.bg.color: #ffffff
+menu.items.active.text.color: #37BF8D
+menu.items.*.border.width: 10
+menu.items.bg: Flat
+menu.items.bg.color: #ffffff
+menu.items.disabled.text.color: #37BF8D
+menu.items.text.color: black
+menu.border.width: 80
+menu.border.color: #ffffff
+menu.title.bg: Flat
+menu.title.*.color: #000000
+menu.title.text.justify: Left
+menu.separator.color: #ffffff
+menu.overlap.x: -85
+
+
+# OSD
+osd.bg: Solid Flat
+osd.bg.color: #ffffff
+osd.border.width: 10
+osd.label.bg: parentrelative
+osd.label.text.color: #000000
+osd.hilight.bg.color: #000000
+osd.unhilight.bg.color: #ffffff
+osd.border.color: #ffffff
+
+
+# windows
+border.width: 0
+*.border.color: white
+# *.active.border.color: white
+# *.inactive.border.color: #f2f2f2
+window.client.padding.width: 0
+window.handle.width: 98
+
+
+# titlebars
+padding.height: 0
+padding.width: 0
+
+
+# active window
+window.active.*.bg: Flat
+window.active.*.*.bg.color: #071d22
+window.active.*.*.image.color: #071d22
+window.active.label.text.color: #071d22
+
+
+# inactive window
+window.inactive.*.bg: Flat
+window.inactive.*.*.bg.color: #071d22
+window.inactive.*.*.image.color: #071d22
+window.inactive.label.text.color: #071d22
+
+
+# handle
+window.active.handle.bg: Flat
+window.active.handle.bg.color: #ffffff
+window.inactive.handle.bg: Flat
+window.inactive.handle.bg.color: #ffffff
+
+
+# grip
+window.active.grip.bg: Flat
+window.active.grip.bg.color: #ffffff
+window.inactive.grip.bg: Flat
+window.inactive.grip.bg.color: #ffffff
