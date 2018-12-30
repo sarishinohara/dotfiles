@@ -3,6 +3,6 @@
 
 while true
 do      
-        sleep 60m
-	pkill dunst && notify-send -u critical "Take a break."
+        sleep 20m
+	pkill dunst && notify-send -u critical "Take a break! and stay hydrated"
 done
