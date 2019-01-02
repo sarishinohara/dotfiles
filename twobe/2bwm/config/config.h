@@ -19,7 +19,7 @@ static const uint8_t offsets[] = {0,0,0,0};
  *2)fixedcol         3)unkilcol
  *4)fixedunkilcol    5)outerbordercol
  *6)emptycol         */
-static const char *colors[] = {"#1d383e","#1d383e","#ffffff","#e47d73","#ffffff","#1d383e","#3a3c4a"};
+static const char *colors[] = {"#1d383e","#1d383e","#ffffff","#e47d73","#ffffff","#1d383e","#1d383e"};
 /* if this is set to true the inner border and outer borders colors will be swapped */
 static const bool inverted_colors = false;
 ///---Cursor---///
@@ -32,7 +32,7 @@ static const bool inverted_colors = false;
 /*0) Outer border size. If you put this negative it will be a square.
  *1) Full borderwidth    2) Magnet border size
  *3) Resize border size  */
-static const uint8_t borders[] = {8,8,8,8};
+static const uint8_t borders[] = {0,0,0,4};
 /* Windows that won't have a border.
  * It uses substring comparison with what is found in the WM_NAME
  * attribute of the window. You can test this using `xprop WM_NAME`
@@ -47,10 +47,10 @@ static const char *rofi[]   = { "rofir", NULL };
 static const char *dmenu[]   = { "dmenuu", NULL };
 static const char *draw[]   = { "draw", NULL };
 static const char *std[]   = { "std", NULL };
-static const char *brightup[]   = { "xbacklight", "-inc","1", NULL };
-static const char *brightdown[]   = { "xbacklight", "-dec", "1", NULL };
-static const char *volup[]   = { "volup", NULL };
-static const char *voldown[]   = { "voldown", NULL };
+static const char *brightup[]   = { "light", "-A","0.5", NULL };
+static const char *brightdown[]   = { "light", "-U", "0.5", NULL };
+static const char *volup[]   = { "amixer", "-q", "set", "Master", "5%+", NULL };
+static const char *voldown[]   = { "amixer", "-q", "set", "Master", "5%-", NULL };
 static const char *wall[]   = { "wall", NULL };
 static const char *wald[]   = { "wald", NULL };
 static const char *date[]   = { "dato", NULL };
@@ -237,3 +237,4 @@ static Button buttons[] = {
     {  MOD|ALT,    XCB_BUTTON_INDEX_1,     changescreen,    {.i=1}, false},
     {  MOD|ALT,    XCB_BUTTON_INDEX_3,     changescreen,    {.i=0}, false}
 };
+
