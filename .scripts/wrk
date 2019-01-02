@@ -1,0 +1,44 @@
+#!/bin/bash
+
+pkill lemonbar
+
+. "${HOME}/.cache/wal/colors.sh"
+
+bg="%{B$background}%{F$foreground}"
+active="%{B$background}%{F$color5}"
+geo="1366x35+0+0"
+f1="metis:size=8"
+f1="metis:size=8"
+
+swsa="%{B$background}%{F$foreground}%{B-}%{F-}"
+swsn="%{B$background}%{F$background}%{B-}%{F-}"
+
+
+get_ws(){
+    desk=$(xdotool get_desktop)
+    wsname=(" ichi " " ni " " san " " yon ")
+    for i in {0..3}; do
+        echo -n "$bg%{A:xdotool set_desktop $i:}"
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "$swsa$active"
+        else
+            echo -n ""
+        fi
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "${wsname[$((i))]}$swsn" | tr '[:lower:]' '[:lower:]'
+        else
+            echo -n "${wsname[$((i))]}" | tr '[:lower:]' '[:lower:]'
+        fi
+        echo -n "%{A}%{B-}%{F-}"
+done
+}
+
+get_time() {
+        echo "%{B$background}%{F$foreground} TODAY AT $(date +'%H:%M') %{B-}%{F-}"
+}
+
+while true; do
+    echo " %{B$background}%{5}%{O5}$(get_ws) \
+    %{r} $(get_time)%{O5} "
+    sleep 1
+done | lemonbar -g "${geo}" -f "${f1}" -B "$background" -F "$foreground" -u 4 -a 25 | sh & > /dev/null
