@@ -1,0 +1,54 @@
+#!/bin/bash
+
+pkill lemonbar
+
+bg="%{B#12171f}%{F#bfbec3}"
+active="%{B#12171f}%{F#ffffff}"
+geo="1366x35+0+0"
+f1="metis:size=8"
+f1="metis:size=8"
+
+swsa="$bg%{B-}%{F-}"
+swsn="$bg%{B-}%{F-}"
+
+get_ws(){
+    desk=$(xdotool get_desktop)
+    wsname=(" ichi " " ni " " san " " yon ")
+    for i in {0..3}; do
+        echo -n "$bg%{A:xdotool set_desktop $i:}"
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "$swsa$active"
+        else
+            echo -n ""
+        fi
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "${wsname[$((i))]}$swsn" | tr '[:lower:]' '[:lower:]'
+        else
+            echo -n "${wsname[$((i))]}" | tr '[:lower:]' '[:lower:]'
+        fi
+        echo -n "%{A}%{B-}%{F-}"
+done
+}
+
+get_window(){	
+	id=$(xtitle -t 50)
+	echo "%{B#12171f}%{F#ffffff} $id %{B-}%{F-}"
+}
+
+get_weather() {
+        echo "%{B#12171f}%{F#ffffff} $(wewe) %{B-}%{F-}"
+}
+
+get_song(){
+    echo "%{B#12171f}%{F#ffffff}%{A:mpc toggle:}%{A2:bum --size "200":} $(mpcc) %{A}%{B-}%{F-}"
+}
+
+get_time() {
+        echo "%{B#12171f}%{F#ffffff}%{A:tint2 -c $HOME/.config/tint2/calright.tint2rc:} TODAY AT $(date +'%H:%M') %{A}%{B-}%{F-}"
+}
+
+while true; do
+    echo " %{B#12171f}%{5}%{O5}$(get_ws) \
+    %{r} $(get_time)%{O5} "
+    sleep 1
+done | lemonbar -g "${geo}" -f "${f1}" -B "#12171f" -F "#ffffff" -o 1 -a 25 -b | sh & > /dev/null
