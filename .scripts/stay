@@ -1,0 +1,53 @@
+#!/bin/bash
+
+pkill lemonbar
+
+bg="%{B#5394c9}%{F#ffffff}"
+active="%{B#72a7d3}%{F#ffffff}"
+geo="1366x29+0+0"
+f1="bitbuntufull:size=8"
+f2="Source Han Sans JP:size=8"
+
+swsa="$bg%{B-}%{F-}"
+swsn="$bg%{B-}%{F-}"
+
+get_ws(){
+    desk=$(xdotool get_desktop)
+    wsname=("     אחד    " "    שתיים    " "    שלוש    ")
+    for i in {0..3}; do
+        echo -n "$bg%{A:xdotool set_desktop $i:}"
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "$swsa$active"
+        else
+            echo -n ""
+        fi
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "${wsname[$((i))]}$swsn" | tr '[:lower:]' '[:lower:]'
+        else
+            echo -n "${wsname[$((i))]}" | tr '[:lower:]' '[:lower:]'
+        fi
+        echo -n "%{A}%{B-}%{F-}"
+done
+}
+
+get_window(){	
+	id=$(xtitle -t 50)
+	echo "%{B#37bf8d}%{F#ffffff}    $id    %{B-}%{F-}"
+}
+
+get_weather() {
+        echo "%{B#3c4f5b}%{F#c0c5ce}    $(wewe)    %{B-}%{F-}"
+}
+
+get_song(){
+    echo "%{B#3c4f5b}%{F#c0c5ce}%{A:mpc toggle:}    $(mpcc)    %{A}%{B-}%{F-}"
+}
+
+get_time() {
+        echo "%{B#445967}%{F#c0c5ce}%{A:tint2 -c $HOME/.config/tint2/calright.tint2rc:} TODAY AT $(date +'%H:%M') %{A}%{B-}%{F-}"
+}
+
+while true; do
+    echo "%{B#12171f}%{5}%{O0}$(get_window)$(get_ws) %{c} $(get_time)%{O0} %{r} $(get_song)%{O0}"
+    sleep 1
+done | lemonbar -g "${geo}" -f "${f1}" -B "#445967" -F "#ffffff" -o 0 -a 25 | sh & > /dev/null

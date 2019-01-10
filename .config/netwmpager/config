@@ -1,5 +1,5 @@
 # geometry
-geometry = "160x30+5-720"
+geometry = "200x35+1140-25"
 border_width = 10
 win_shift_x = 0
 win_shift_y = 0
@@ -29,16 +29,16 @@ popup_font = "Roboto"
 window_font = "Roboto"
 
 # colors
-active_page_color = "rgb:13/19/1e"
-inactive_page_color = "rgb:13/19/1e"
+active_page_color = "rgb:02/1b/21"
+inactive_page_color = "rgb:02/1b/21"
 
-win_border_color = "rgb:13/19/1e"
-pager_border_color = "rgb:13/19/1e"
+win_border_color = "rgb:ff/ff/ff"
+pager_border_color = "rgb:02/1b/21"
 
-grid_color = "rgb:13/19/1e"
-desk_grid_color = "rgb:13/19/1e"
+grid_color = "rgb:02/1b/21"
+desk_grid_color = "rgb:02/1b/21"
 
-active_win_color = "rgb:ff/ff/ff"
-inactive_win_color = "rgb:40/4b/54"
+active_win_color = "rgb:02/1b/21"
+inactive_win_color = "rgb:02/1b/21"
 
 popup_color = "rgb:ff/ff/ff"

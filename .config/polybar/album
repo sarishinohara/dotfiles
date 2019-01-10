@@ -10,11 +10,11 @@ urgent = ${xrdb:color5:#FFF}
 monitor = eDP-1
 
 dpi = 102
-width = 5%
-height = 65
-offset-x = 2%
-offset-y = 88%
-radius = 33
+width = 15%
+height = 40
+offset-x = 82%
+offset-y = 90%
+radius = 0
 fixed-center = true
 override-redirect = true
 # wm-restack = i3
@@ -50,13 +50,13 @@ font-8 = metis:pixelsize=10;2:antialias=false
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-separator = "  |  "
+separator = " "
 padding-left = 3
-padding-right = 4
+padding-right = 3
 
 modules-left = 
-modules-center = 2bws 
-modules-right =   
+modules-center = mpd 
+modules-right = n30f 
 
 workspace-label-current = "#" 
 workspace-current-foreground = ${colors.special}
@@ -66,39 +66,6 @@ workspace-occupied-foreground = ${colors.darkened}
 
 workspace-label-unoccupied = #
 workspace-unoccupied-foreground = ${colors.foreground}
-
-[module/date]
-type = internal/date
-
-; Seconds to sleep between updates
-interval = 1.0
-
-; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
-; NOTE: if you want to use syntax tags here you need to use %%{...}
-date = %j jours autour du soleil
-
-; Optional time format
-time = "  %H:%M  "
-
-
-; if `date-alt` or `time-alt` is defined, clicking
-; the module will toggle between formats
-date-alt = " %A,%d %B" 
-; time-alt = | %H:%M:%S
-
-; Available tags:
-;   <label> (default)
-; format = <label>
-: format-background = ${colors.background}
-: format-foreground = ${colors.foreground}
-
-; Available tokens:
-;   %date%
-;   %time%
-; Default: %date%
-label = %date%
-label-font = 0
-label-foreground = ${colors.foreground}
 
 [module/calendar]
 type = custom/script
@@ -139,75 +106,15 @@ tail = true
 click-left = calendar
 label-padding = 1
 
-
-[module/volume]
-type = internal/alsa
-
-; Available tags:
-;   <label-volume> (default)
-;   <ramp-volume>
-;   <bar-volume>
-format-volume = <ramp-volume> <label-volume>
-
-; Available tags:
-;   <label-muted> (default)
-;   <ramp-volume>
-;   <bar-volume>
-format-muted = <label-muted>
-
-; Available tokens:
-;   %percentage% (default)
-label-volume = %percentage%%
-label-volume-foreground = ${colors.special}
-
-; Available tokens:
-;   %percentage% (default)
-label-muted = 
-label-muted-foreground = ${colors.urgent}
-
-; Only applies if <ramp-volume> is used
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-foreground = ${colors.foreground}
-
-[module/temperature]
-type = internal/temperature
-
-warn-temperature = 80
-
-label =  %temperature-c%
-label-warn =  %temperature-c%
-
-format-foreground = ${colors.foreground}
-format-warn-foreground = ${colors.urgent}
-
-[module/battery]
-type = internal/battery
-
-battery = BAT1
-adapter = AC
-
-poll-interval = 1
-
-format-full = FULLBAT <label-full>
-format-charging =  <animation-charging> <label-charging>
-format-discharging =   <label-discharging>
-
-animation-charging-0 = :..
-animation-charging-1 = .:.
-animation-charging-2 = ..:
-animation-charging-3 = ...
-animation-charging-4 = ...
-
-animation-charging-framerate = 100
-
-[module/2bws]
+[module/n30f]
 type = custom/script
-exec = ~/.config/polybar/2bws
-click-left = tint2 -c /home/onodera/.config/tint2/calcal.tint2rc
-click-right = xkill
+exec = echo "Album"
+tail = true
 interval = 0.01
+click-left = popup-polybar
+click-right = pkill n30f
+click-middle = mpc toggle
+label-padding = 0
 
 [module/mpd]
 type = internal/mpd
@@ -239,7 +146,7 @@ interval = 1
 ;   <icon-next>
 ;   <icon-seekb>
 ;   <icon-seekf>
-format-online = <label-song> <label-time>
+format-online = <bar-progress>
 ;format-playing = ${self.format-online}
 ;format-paused = ${self.format-online}
 ;format-stopped = ${self.format-online}
@@ -255,7 +162,7 @@ format-offline = <label-offline>
 ;   %date%
 ;   %title%
 ; Default: %artist% - %title%
-label-song =  %artist% : %title%
+label-song = %title%
 
 ; Available tokens:
 ;   %elapsed%
@@ -287,234 +194,97 @@ toggle-on-foreground = #ff
 toggle-off-foreground = #55
 
 ; Only applies if <bar-progress> is used
-bar-progress-width = 8
-bar-progress-indicator = 
-bar-progress-fill = 
+bar-progress-width = 16
+bar-progress-indicator = ─
+bar-progress-fill = ─
 bar-progress-fill-foreground = ${colors.foreground}
-bar-progress-empty = 
-bar-progress-empty-foreground = ${colors.special}
+bar-progress-empty = ─
+bar-progress-empty-foreground = ${colors.background}
 
+[module/mpd2]
+type = internal/mpd
 
+; Host where mpd is running (either ip or domain name)
+; Can also be the full path to a unix socket where mpd is running.
+host = localhost
+port = 6600
 
-[module/network]
-type = internal/network
-interface = wlp2s0
-
-; Seconds to sleep between updates
+; Seconds to sleep between progressbar/song timer sync
 ; Default: 1
 interval = 1
 
-; Test connectivity every Nth update
-; A value of 0 disables the feature
-; NOTE: Experimental (needs more testing)
-; Default: 0
-ping-interval = 0
+; Available tags:
+;   <label-song> (default)
+;   <label-time>
+;   <bar-progress>
+;   <toggle> - gets replaced with <icon-(pause|play)>
+;   <toggle-stop> - gets replaced with <icon-(stop|play)>
+;   <icon-random>
+;   <icon-repeat>
+;   <icon-repeatone> (deprecated)
+;   <icon-single> - Toggle playing only a single song. Replaces <icon-repeatone>
+;   <icon-consume>
+;   <icon-prev>
+;   <icon-stop>
+;   <icon-play>
+;   <icon-pause>
+;   <icon-next>
+;   <icon-seekb>
+;   <icon-seekf>
+format-online = <icon-prev> <label-song> <icon-next>
+;format-playing = ${self.format-online}
+;format-paused = ${self.format-online}
+;format-stopped = ${self.format-online}
 
 ; Available tags:
-;   <label-connected> (default)
-;   <ramp-signal>
-format-connected = <label-connected> 
-
-; Available tags:
-;   <label-disconnected> (default)
-format-disconnected = <label-disconnected>
-
-; Available tags:
-;   <label-connected> (default)
-;   <label-packetloss>
-;   <animation-packetloss>
-format-packetloss = <label-connected>
+;   <label-offline>
+format-offline = <label-offline>
 
 ; Available tokens:
-;   %ifname%    [wireless+wired]
-;   %local_ip%  [wireless+wired]
-;   %local_ip6% [wireless+wired]
-;   %essid%     [wireless]
-;   %signal%    [wireless]
-;   %upspeed%   [wireless+wired]
-;   %downspeed% [wireless+wired]
-;   %linkspeed% [wired]
-; Default: %ifname% %local_ip%
-label-connected = %essid% 
-label-connected-foreground = ${colors.special}
+;   %artist%
+;   %album-artist%
+;   %album%
+;   %date%
+;   %title%
+; Default: %artist% - %title%
+label-song = %title%
 
 ; Available tokens:
-;   %ifname%    [wireless+wired]
-; Default: (none)
-label-disconnected = not connected
-label-disconnected-foreground = ${colors.special}
+;   %elapsed%
+;   %total%
+; Default: %elapsed% / %total%
+label-time = %elapsed%
 
 ; Available tokens:
-;   %ifname%    [wireless+wired]
-;   %local_ip%  [wireless+wired]
-;   %local_ip6% [wireless+wired]
-;   %essid%     [wireless]
-;   %signal%    [wireless]
-;   %linkspeed% [wired]
-; Default: (none)
-;label-packetloss = %essid%
-;label-packetloss-foreground = #eefafafa
+;   None
+label-offline = you're offline
 
-; Only applies if <ramp-signal> is used
-ramp-signal-0 = 
-ramp-signal-1 = 
-ramp-signal-2 = 
-ramp-signal-3 = 
-ramp-signal-4 = 
-ramp-signal-5 = 
+; Only applies if <icon-X> is used
+icon-play = 
+icon-pause = 
+icon-stop = ⏹
+icon-prev = " < "
+icon-next = " > "
+icon-seekb = ⏪
+icon-seekf = ⏩
+icon-random = 🔀
+icon-repeat = 🔁
+icon-repeatone = 🔂
+icon-single = 🔂
+icon-consume = ✀
 
+; Used to display the state of random/repeat/repeatone/single
+; Only applies if <icon-[random|repeat|repeatone|single]> is used
+toggle-on-foreground = #ff
+toggle-off-foreground = #55
 
-[module/i3]
-type = internal/i3
-
-; Only show workspaces defined on the same output as the bar
-;
-; Useful if you want to show monitor specific workspaces
-; on different bars
-;
-; Default: false
-pin-workspaces = true
-
-; This will split the workspace name on ':'
-; Default: false
-strip-wsnumbers = true
-
-; Sort the workspaces by index instead of the default
-; sorting that groups the workspaces by output
-; Default: false
-index-sort = true
-
-; Create click handler used to focus workspace
-; Default: true
-enable-click = true
-
-; Create scroll handlers used to cycle workspaces
-; Default: true
-enable-scroll = false
-
-; Wrap around when reaching the first/last workspace
-; Default: true
-wrapping-scroll = false
-
-; Set the scroll cycle direction 
-; Default: true
-reverse-scroll = false
-
-; Use fuzzy (partial) matching on labels when assigning 
-; icons to workspaces
-; Example: code;♚ will apply the icon to all workspaces 
-; containing 'code' in the label
-; Default: false
-fuzzy-match = true
-
-; ws-icon-[0-9]+ = label;icon
-; NOTE: The label needs to match the name of the i3 workspace
-ws-icon-0 = 1;ichi   
-ws-icon-1 = 2;ni
-ws-icon-2 = 3;san
-ws-icon-3 = 4;yon
-ws-icon-4 = 5;go
-ws-icon-5 = 6;roku
-ws-icon-6 = 7;shichi
-ws-icon-7 = 8;hachi
-ws-icon-default = ♟
-; NOTE: You cannot skip icons, e.g. to get a ws-icon-6
-; you must also define a ws-icon-5.
-
-; Available tags:
-;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
-;   <label-mode> (default)
-format = <label-state> <label-mode>
-
-; Available tokens:
-;   %mode%
-; Default: %mode%
-label-mode = %mode%
-label-mode-padding = 1
-label-mode-background = ${colors.urgent}
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-;   %output%
-; Default: %icon%  %name%
-label-focused = %icon%
-label-focused-foreground = ${colors.urgent}
-label-focused-background = ${colors.background}
-label-focused-underline = ${colors.special}
-label-focused-padding = 1
-
-; Available tokens:
-;   %name%                      
-;   %icon%
-;   %index%
-;   %output%
-; Default: %icon%  %name%
-label-unfocused = %icon%
-label-unfocused-padding = 1
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-;   %output%
-; Default: %icon%  %name%
-label-visible = %icon%
-label-visible-underline = ${colors.foreground}
-label-visible-padding = 1
-
-; Available tokens:
-;   %name%
-;   %icon%
-;   %index%
-;   %output%
-; Default: %icon%  %name%
-label-urgent = %icon%
-label-urgent-foreground = ${colors.background}
-label-urgent-background = ${colors.foreground}
-label-urgent-padding = 1
-
-; Separator in between workspaces
-; label-separator = x
-; label-separator-padding = 0
-; label-separator-foreground = ${colors.special}
-
-
-
-[module/backlight]
-type = internal/xbacklight
-
-; XRandR output to get get values from
-; Default: the monitor defined for the running bar
-output = eDP-1
-
-; Create scroll handlers used to set the backlight value
-; Default: true
-enable-scroll = true
-
-; Available tags:
-;   <label> (default)
-;   <ramp>
-;   <bar>
-format = <label> <ramp>
-
-; Available tokens:
-;   %percentage% (default)
-label = %percentage%%
-
-; Only applies if <ramp> is used
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
-
-; Only applies if <bar> is used
-bar-width = 10
-bar-indicator = |
-bar-fill = ─
-bar-empty = ─
+; Only applies if <bar-progress> is used
+bar-progress-width = 16
+bar-progress-indicator = ─
+bar-progress-fill = ─
+bar-progress-fill-foreground = ${colors.foreground}
+bar-progress-empty = ─
+bar-progress-empty-foreground = ${colors.background}
 
 
 [bar/sec]
@@ -522,10 +292,10 @@ monitor = eDP-1
 
 
 dpi = 102
-width = 100%
-height = 35
-offset-x = 0%
-offset-y = 0%
+width = 15%
+height = 40
+offset-x = 82%
+offset-y = 85%
 radius = 1
 fixed-center = true
 override-redirect = true
@@ -547,11 +317,11 @@ border-left-color = ${colors.special}
 # line-size = 5
 # line-color = ${colors.special}
 
-bottom = true
+bottom = false
 
-font-0 = nu:size=8;2:antialias=true
+font-0 = metis:size=8;2:antialias=true
 font-7 = Font Awesome:pixelsize=11;2:antialias=true
-font-2 = Kochi Gothic:pixelsize=8;2
+font-2 = Source Han Sans KR:pixelsize=8;2
 font-3 = FontAwesome 5 Brands:pixelsize=11;2:antialias=true
 font-4 = FuraMono Nerd Font Mono:pixelsize=11;2:antialias=true
 font-5 = Material Icons:pixelsize=11;2:antialias=true
@@ -563,13 +333,13 @@ font-1 = Wuncon siji:pixelsize=11;2
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-separator = "  |  "
-padding-left = 2
-padding-right = 2
+separator = "   -   "
+padding-left = 3
+padding-right = 3
 
-modules-left = ewmh 
-modules-center =   
-modules-right = wewe
+modules-left =  
+modules-center = mpd2 
+modules-right = 
 
 workspace-label-current = "✖" 
 workspace-current-foreground = ${colors.special}

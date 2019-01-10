@@ -1,0 +1,22 @@
+#!/bin/bash
+input=$1
+output=$2
+file=$(cat ~/.todo)
+
+if [ $input == "add" ]
+then
+	echo $output >> ~/.todo
+	notify-send Todo: "Item added!"
+fi
+
+if [ $input == "show" ]
+then
+	notify-send Todo: "$file"
+fi
+
+if [ $input == "clear" ]
+then
+	rm ~/.todo
+	touch ~/.todo
+	notify-send Todo: "Notifications cleared!"
+fi

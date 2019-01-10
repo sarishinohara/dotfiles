@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Sets wallpaper a certian color depending on the time (hourminutesecond)
+# To run as a daemon (in the background), run ./colordate &
+
+while true
+do
+color=$(date +%H%M%S)
+hsetroot -solid "#$color"
+trap "echo Exited!; exit;" SIGINT SIGTERM
+sleep 1s
+done

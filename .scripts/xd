@@ -1,0 +1,57 @@
+#!/bin/sh
+#
+# ufetch-arch - tiny system info for arch
+
+## INFO
+
+# user is already defined
+host="superhacker"
+os='LINUX WINDOWS OS X FEDORA DEBIAN 60.2 OPENBSD'
+kernel="x_86_64_32_Linux.ripoff_3oiudoibeiwy_code"
+uptime="0d 00h 00m 01s"
+packages="tf is this"
+shell="rainmeter"
+wm="USB drive"
+font="Edgy cool Hacker font"
+ram="1MB/12TB"
+## DEFINE COLORS
+
+# probably don't change these
+bold="$(tput bold)"
+black="$(tput setaf 0)"
+red="$(tput setaf 1)"
+red2="$(tput setaf 9)"
+green="$(tput setaf 2)"
+green2="$(tput setaf 10)"
+yellow="$(tput setaf 3)"
+yellow2="$(tput setaf 11)"
+blue="$(tput setaf 4)"
+blue2="$(tput setaf 12)"
+magenta="$(tput setaf 5)"
+magenta2="$(tput setaf 13)"
+cyan="$(tput setaf 6)"
+cyan2="$(tput setaf 14)"
+white="$(tput setaf 7)"
+white2="$(tput setaf 15)"
+reset="$(tput sgr0)"
+# you can change these
+lc="${reset}${magenta}"		# labels
+nc="${reset}${cyan}"		# user and hostname
+ic="${reset}${white}"	# info
+c0="${reset}${blue2}"		# first color
+c1="${reset}${blue}"			# second color
+
+## OUTPUT
+
+cat <<EOF
+
+${lc}       os: ${ic}${os}${reset}
+${lc}     kern: ${ic}${kernel}${reset}
+${lc}    shell: ${ic}${shell}${reset}
+${lc} packages: ${ic}${packages}${reset}
+${lc}     font: ${ic}${font}${reset}
+${lc}      ram: ${ic}${ram}${reset}
+${lc}       wm: ${ic}${wm}${reset}
+
+${reset} ${red}▪${reset}${red2}▪${reset} ${green}▪${reset}${green2}▪${reset} ${blue}▪${reset}${blue2}▪${reset} ${yellow}▪${reset}${yellow2}▪${reset} ${cyan}▪${reset}${cyan2}▪${reset} ${magenta}▪${reset}${magenta2}▪${reset} ${white}▪${reset}${white2}▪${reset}
+EOF
