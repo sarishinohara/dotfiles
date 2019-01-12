@@ -366,9 +366,3 @@
 		background: var(--tool-bg) !important;
 		color: var(--primary-color) !important;
 	}
-
-	.customizationmode-button {
-		background: var(--tab-bg) !important;
-		border-color: var(--border-color) !important;
-		color: var(--primary-color) !important;
-	}

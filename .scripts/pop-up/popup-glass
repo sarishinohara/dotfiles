@@ -3,7 +3,7 @@ pkill n30f
 	MUSIC_DIR=/run/media/onodera/Miso/Music/
 	COVER=/tmp/cover.png
 	bg=/tmp/begron.png
-    back="$HOME/.covers/cover9.png"
+    back="$HOME/.covers/cover3.png"
     
 {	album="$(mpc -p 6600 --format %album% current)"
     file="$(mpc -p 6600 --format %file% current)"
@@ -13,8 +13,8 @@ pkill n30f
     covers="$(find "$album_dir" -type d -exec find {} -maxdepth 1 -type f -iregex ".*/.*\(${album}\|cover\|folder\|artwork\|front\).*[.]\(jpe?g\|png\|gif\|bmp\)" \; )"
     src="$(echo -n "$covers" | head -n1)"
     rm -f "$COVER" 
-    convert "$src" -resize 205 "$COVER"
-	convert "$back" -resize 220 "$bg"
-    n30f -x 20 -y 492 -d ${bg}
-    n30f -x 28 -y 500 -d ${COVER}
+    convert "$src" -resize 250 "$COVER"
+	convert "$back" -resize 20 "$bg"
+    n30f -x 669 -y 677 -d ${bg}
+    n30f -x 555 -y 420 -d ${COVER}
 } &

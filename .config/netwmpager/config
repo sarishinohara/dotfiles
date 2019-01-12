@@ -1,6 +1,6 @@
 # geometry
-geometry = "200x35+1140-25"
-border_width = 10
+geometry = "200x35+1130-35"
+border_width = 0
 win_shift_x = 0
 win_shift_y = 0
 
@@ -25,8 +25,8 @@ auto_hide = false
 switch_delay = 50
 
 # fonts
-popup_font = "Roboto"
-window_font = "Roboto"
+popup_font = "Dina"
+window_font = "Dina"
 
 # colors
 active_page_color = "rgb:02/1b/21"
