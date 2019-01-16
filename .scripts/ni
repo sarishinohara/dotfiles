@@ -5,8 +5,7 @@ pkill lemonbar
 bg="%{B#12171f}%{F#bfbec3}"
 active="%{B#12171f}%{F#ffffff}"
 geo="1366x35+0+0"
-f1="metis:size=8"
-f1="metis:size=8"
+f1="tewi:size=8"
 
 swsa="$bg%{B-}%{F-}"
 swsn="$bg%{B-}%{F-}"
