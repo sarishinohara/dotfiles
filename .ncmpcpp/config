@@ -23,14 +23,15 @@ mpd_music_dir = "/run/media/onodera/Miso/Music"
 # display
 song_list_format = "%t"
 #song_columns_list_format = "(5)[]{}(55)[16]{t}"
-song_columns_list_format = "(50)[white]{ar} (50)[white]{t}"
+#song_columns_list_format = "(50)[white]{ar} (50)[white]{t}"
+song_columns_list_format = "(46)[]{}(50)[16]{t}"
 #song_columns_list_format = "(0)[16]{t}"
 song_status_format = "$3%t"
 playlist_display_mode = "columns"
 
 
 # now playing
-now_playing_prefix = "$3─"
+#now_playing_prefix = "$3─"
 #now_playing_suffix = " $3x"
 
 
@@ -46,7 +47,7 @@ message_delay_time= "1"
 # progress bar
 progressbar_look = "───"
 progressbar_color = "black"
-progressbar_elapsed_color = "green"
+progressbar_elapsed_color = "black"
 
 
 # colors
@@ -65,7 +66,7 @@ autocenter_mode = "yes"
 centered_cursor = "yes"
 titles_visibility = "no"
 statusbar_visibility = "no"
-mouse_support = "no"
+mouse_support = "yes"
 header_visibility = "no"
 display_remaining_time = "no"
 ask_before_clearing_playlists = "yes"
@@ -79,10 +80,10 @@ visualizer_in_stereo = "yes"
 visualizer_sync_interval = "128"
 visualizer_output_name = "fifo"
 visualizer_fifo_path = "/tmp/mpd.fifo"
-visualizer_type = "wave" (spectrum/wave)
+visualizer_type = "wave" (spectrum/wave/ellipse)
 # visualizer_sample_multiplier = 0.20
 visualizer_color = "white"
 visualizer_look = "∙│"
 
-#execute_on_song_change="~/.ncmpcpp/albumart"
-execute_on_player_state_change = "~/.ncmpcpp/albumart"
+execute_on_song_change="~/.ncmpcpp/yeet"
+#execute_on_player_state_change = "~/.ncmpcpp/albumart"

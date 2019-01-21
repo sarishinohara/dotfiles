@@ -1,0 +1,52 @@
+#!/bin/bash
+
+pkill lemonbar
+
+bg="%{B#232a31}%{F#8d8f92}"
+active="%{B#2c343d}%{F#ffffff}"
+geo="1366x29+0+0"
+f1="BFantezy:size=11"
+
+swsa="$bg%{B-}%{F-}"
+swsn="$bg%{B-}%{F-}"
+
+get_ws(){
+    desk=$(xdotool get_desktop)
+    wsname=("     ٣‬    " "    ٢    " "    ١‬    ")
+    for i in {0..3}; do
+        echo -n "$bg%{A:xdotool set_desktop $i:}"
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "$swsa$active"
+        else
+            echo -n ""
+        fi
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "${wsname[$((i))]}$swsn" | tr '[:lower:]' '[:lower:]'
+        else
+            echo -n "${wsname[$((i))]}" | tr '[:lower:]' '[:lower:]'
+        fi
+        echo -n "%{A}%{B-}%{F-}"
+done
+}
+
+get_window(){	
+	id=$(xtitle -t 50)
+	echo "%{B#1b2025}%{F#8d8f92}      $id      %{B-}%{F-}"
+}
+
+get_weather() {
+        echo "%{B#3c4f5b}%{F#c0c5ce}    $(wewe)    %{B-}%{F-}"
+}
+
+get_song(){
+    echo "%{B#232a31}%{F#8d8f92}%{A:mpc toggle:}%{A3:popup-night:}%{A2:pkill n30f:}    $(mpcc)    %{A}%{A}%{A}%{B-}%{F-}"
+}
+
+get_time() {
+        echo "%{B#1b2025}%{F#8d8f92}%{A:todo show:}      لمع      %{A}%{B-}%{F-}"
+}
+
+while true; do
+    echo "%{c} $(get_time) %{r} $(get_ws)%{O0}"
+    sleep 1
+done | lemonbar -g "${geo}" -f "${f1}" -B "#1b2025" -F "#ffffff" -b -o 4 -a 25 | sh & > /dev/null

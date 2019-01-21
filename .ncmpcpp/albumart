@@ -24,7 +24,6 @@ function reset_background
     if [[ -n "$src" ]] ; then
 	convert "$src" -resize 100x "$COVER"
         if [[ -f "$COVER" ]] ; then
-           #scale down the cover to 30% of the original
            
            notify-send --expire-time=2000 -i ${COVER} "$mpd_state" "$title"
         else

@@ -57,4 +57,13 @@
 	<patterns>*</patterns>
 	<other-files/>
 </action>
+<action>
+	<icon></icon>
+	<name>feh</name>
+	<unique-id>1547831601585526-1</unique-id>
+	<command>feh --bg-fill %f</command>
+	<description>feh</description>
+	<patterns>*</patterns>
+	<image-files/>
+</action>
 </actions>
