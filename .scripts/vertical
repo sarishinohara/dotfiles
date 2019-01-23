@@ -1,0 +1,53 @@
+#!/bin/bash
+
+pkill lemonbar
+
+bg="%{B#343d46}%{F#bfbec3}"
+active="%{B#343d46}%{F#ffffff}"
+geo="6x29+0+0"
+f1="-*-terminus-*-*-*-*-12-*-*-*-*-*-*-*"
+f2="-*-Baekmuk Batang-*-*-*-*-12-*-*-*-*-*-*-*"
+
+swsa="$bg%{B-}%{F-}"
+swsn="$bg%{B-}%{F-}"
+
+get_ws(){
+    desk=$(xdotool get_desktop)
+    wsname=("     ichi    " "    ni    " "    san    ")
+    for i in {0..3}; do
+        echo -n "$bg%{A:xdotool set_desktop $i:}"
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "$swsa$active"
+        else
+            echo -n ""
+        fi
+        if [[ "$((desk))" == "$i" ]]; then
+            echo -n "${wsname[$((i))]}$swsn" | tr '[:lower:]' '[:lower:]'
+        else
+            echo -n "${wsname[$((i))]}" | tr '[:lower:]' '[:lower:]'
+        fi
+        echo -n "%{A}%{B-}%{F-}"
+done
+}
+
+get_window(){	
+	id=$(xtitle -t 50)
+	echo "%{B#fc99ad}%{F#ffffff}   $id   %{B-}%{F-}"
+}
+
+get_weather() {
+        echo "%{B#343d46}%{F#c0c5ce}   $(wewe)   %{B-}%{F-}"
+}
+
+get_song(){
+    echo "%{B#343d46}%{F#c0c5ce}%{A:mpc toggle:}%{A3:popup-art:}%{A2:pkill n30f:}     $(mpcc)     %{A}%{A}%{A}%{B-}%{F-}"
+}
+
+get_time() {
+        echo "%{B#2b303b}%{F#c0c5ce}%{A:todo show:} $(date "+%a %R") %{A}%{B-}%{F-}"
+}
+
+while true; do
+    echo "%{B#12171f}%{5}%{O0}$(get_weather) %{r} $(get_window)%{O0}"
+    sleep 1
+done | lemonbar -g "${geo}" -f "${f1}" -f "${f2}" -B "#2b303b" -F "#ffffff" -a 25 -R | sh & > /dev/null
