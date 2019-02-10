@@ -1,0 +1,23 @@
+/* XPM */
+static char * window_lower_xpm[] = {
+"16 16 4 1",
+" 	c None",
+".	c #000000000000",
+"X	c #FFFFFFFFFFFF",
+"o	c #BFBFBFBFBFBF",
+"                ",
+"..........      ",
+"..........      ",
+".XXXXXXXX.      ",
+".XXXXX..........",
+".XXXXX..........",
+".XXXXX.oooooooo.",
+".XX..........oo.",
+".............oo.",
+"   .oooooooo.oo.",
+"   .oooooooo....",
+"   .oooooooo.   ",
+"   .oooooooo.   ",
+"   ..........   ",
+"                ",
+"                "};

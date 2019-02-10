@@ -1,0 +1,22 @@
+/* XPM */
+static char * window_iconify_xpm[] = {
+"16 16 3 1",
+" 	c None",
+".	c #000000000000",
+"X	c #FFFFFFFFFFFF",
+"                ",
+" ..........     ",
+" ..........     ",
+" .XXXXXXXX..    ",
+" .XXXXXXXX..    ",
+" .XXXXXXXX. .   ",
+" .XXXXXXXX. .   ",
+" .XXXXXXXX.  .  ",
+" ..........  .  ",
+"  ..       .  . ",
+"    ...     . . ",
+"       ...   ...",
+"          ....X.",
+"             ...",
+"                ",
+"                "};

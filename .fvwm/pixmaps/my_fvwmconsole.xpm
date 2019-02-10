@@ -1,0 +1,22 @@
+/* XPM */
+static char * my_fvwmconsole_xpm[] = {
+"14 14 4 1",
+" 	c None",
+".	c #000000000000",
+"X	c #000000006E6E",
+"o	c #FFFFFFFFFFFF",
+"..............",
+".XXXXXXXXXXXX.",
+".XXXXXXXXXXXX.",
+".oooooooooooo.",
+".oooooooooooo.",
+".oooooooooooo.",
+".oooooooooooo.",
+".oooooooooooo.",
+".oooooooooooo.",
+"..............",
+"              ",
+" ..           ",
+" .... . . ... ",
+" .  . ... . . "
+};
