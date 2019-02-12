@@ -156,5 +156,3 @@ source ~/.cache/wal/colors-tty.sh
 
 fortune 
 
-
-fish

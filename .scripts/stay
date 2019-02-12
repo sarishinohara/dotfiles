@@ -5,16 +5,16 @@ pkill lemonbar
 bg="%{B#5394c9}%{F#ffffff}"
 active="%{B#72a7d3}%{F#ffffff}"
 geo="1366x29+0+0"
-f1="euphon:size=8"
-f2="bitbuntufull:size=8"
-f3="Baekmuk Batang:size=8"
+f1="-*-euphon-*-*-*-*-*-*-*-*-*-*-*-*"
+f2="-aaron-bitbuntufull-*-*-*-*-*-*-*-*-*-*-*-*"
+
 
 swsa="$bg%{B-}%{F-}"
 swsn="$bg%{B-}%{F-}"
 
 get_ws(){
     desk=$(xdotool get_desktop)
-    wsname=("     אחד    " "    שתיים    " "    שלוש    ")
+    wsname=("    דחא    " "     םייתש    " "    שולש     ")
     for i in {0..3}; do
         echo -n "$bg%{A:xdotool set_desktop $i:}"
         if [[ "$((desk))" == "$i" ]]; then
@@ -51,4 +51,4 @@ get_time() {
 while true; do
     echo "%{B#12171f}%{5}%{O0}$(get_window)$(get_ws) %{c} $(get_time)%{O0} %{r} $(get_song)%{O0}"
     sleep 1
-done | lemonbar -g "${geo}" -f "${f1}" -f "${f2}" -f "${f3}" -B "#445967" -F "#ffffff" -o -1 -a 25 | sh & > /dev/null
+done | lemonbar -g "${geo}" -f "${f1}" -f "${f2}" -B "#445967" -F "#ffffff" -o -1 -a 25 | sh & > /dev/null
